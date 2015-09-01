@@ -19,6 +19,8 @@
 #import "PFRESTUserCommand.h"
 #import "PFUserPrivate.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @implementation PFUserController
 
 ///--------------------------------------
@@ -124,12 +126,12 @@
         PFUser *user = [PFUser _objectFromDictionary:result.result
                                     defaultClassName:[PFUser parseClassName]
                                         completeData:YES];
-        @synchronized ([user lock]) {
+        return @synchronized ([user lock]) {
             user.authData[authType] = authData;
             [user.linkedServiceNames addObject:authType];
             [user startSave];
             return [user _handleServiceLoginCommandResult:result];
-        }
+        };
     }];
 }
 

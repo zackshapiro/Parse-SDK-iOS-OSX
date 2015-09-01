@@ -11,6 +11,8 @@
 
 #import "PFAssert.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @implementation PFPaymentTransactionObserver
 
 @synthesize blocks;
@@ -62,7 +64,7 @@
         if (!transaction.error && completion) {
             completion(transaction);
         }
-    }
+    };
 
     @synchronized(runOnceLockObj) {
         void(^runOnceBlock)(NSError *) = (void(^)(NSError *))[self.runOnceBlocks objectForKey:productIdentifier];
@@ -70,7 +72,7 @@
             runOnceBlock(transaction.error);
             [self.runOnceBlocks removeObjectForKey:productIdentifier];
         }
-    }
+    };
 
     // Calling finish:transaction here prevents the user from registering another observer to handle this transaction.
     [queue finishTransaction:transaction];
@@ -83,10 +85,11 @@
 - (void)handle:(NSString *)productIdentifier block:(void(^)(SKPaymentTransaction *))block {
     @synchronized(lockObj) {
         self.blocks[productIdentifier] = block;
-    }
+    };
 }
 
-- (void)handle:(NSString *)productIdentifier runOnceBlock:(void(^)(NSError *))block {
+- (void)handle:(NSString *)productIdentifier runOnceBlock:(void(^)(NSError *))blockP {
+    __block void (^block)(NSError *) = blockP;
     @synchronized(runOnceLockObj) {
         PFConsistencyAssert(self.runOnceBlocks[productIdentifier] == nil,
                             @"You cannot purchase a product that is in the process of being purchased.");
@@ -99,7 +102,7 @@
             };
         }
         self.runOnceBlocks[productIdentifier] = block;
-    }
+    };
 }
 
 @end

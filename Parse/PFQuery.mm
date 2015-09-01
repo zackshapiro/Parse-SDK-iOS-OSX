@@ -32,31 +32,33 @@
 #import "ParseInternal.h"
 #import "Parse_Private.h"
 
-NSString *const PFQueryKeyNotEqualTo = @"$ne";
-NSString *const PFQueryKeyLessThan = @"$lt";
-NSString *const PFQueryKeyLessThanEqualTo = @"$lte";
-NSString *const PFQueryKeyGreaterThan = @"$gt";
-NSString *const PFQueryKeyGreaterThanOrEqualTo = @"$gte";
-NSString *const PFQueryKeyContainedIn = @"$in";
-NSString *const PFQueryKeyNotContainedIn = @"$nin";
-NSString *const PFQueryKeyContainsAll = @"$all";
-NSString *const PFQueryKeyNearSphere = @"$nearSphere";
-NSString *const PFQueryKeyWithin = @"$within";
-NSString *const PFQueryKeyRegex = @"$regex";
-NSString *const PFQueryKeyExists = @"$exists";
-NSString *const PFQueryKeyInQuery = @"$inQuery";
-NSString *const PFQueryKeyNotInQuery = @"$notInQuery";
-NSString *const PFQueryKeySelect = @"$select";
-NSString *const PFQueryKeyDontSelect = @"$dontSelect";
-NSString *const PFQueryKeyRelatedTo = @"$relatedTo";
-NSString *const PFQueryKeyOr = @"$or";
-NSString *const PFQueryKeyQuery = @"query";
-NSString *const PFQueryKeyKey = @"key";
-NSString *const PFQueryKeyObject = @"object";
+#import "PFSynchronizationHelpers.h"
 
-NSString *const PFQueryOptionKeyMaxDistance = @"$maxDistance";
-NSString *const PFQueryOptionKeyBox = @"$box";
-NSString *const PFQueryOptionKeyRegexOptions = @"$options";
+extern "C" NSString *const PFQueryKeyNotEqualTo = @"$ne";
+extern "C" NSString *const PFQueryKeyLessThan = @"$lt";
+extern "C" NSString *const PFQueryKeyLessThanEqualTo = @"$lte";
+extern "C" NSString *const PFQueryKeyGreaterThan = @"$gt";
+extern "C" NSString *const PFQueryKeyGreaterThanOrEqualTo = @"$gte";
+extern "C" NSString *const PFQueryKeyContainedIn = @"$in";
+extern "C" NSString *const PFQueryKeyNotContainedIn = @"$nin";
+extern "C" NSString *const PFQueryKeyContainsAll = @"$all";
+extern "C" NSString *const PFQueryKeyNearSphere = @"$nearSphere";
+extern "C" NSString *const PFQueryKeyWithin = @"$within";
+extern "C" NSString *const PFQueryKeyRegex = @"$regex";
+extern "C" NSString *const PFQueryKeyExists = @"$exists";
+extern "C" NSString *const PFQueryKeyInQuery = @"$inQuery";
+extern "C" NSString *const PFQueryKeyNotInQuery = @"$notInQuery";
+extern "C" NSString *const PFQueryKeySelect = @"$select";
+extern "C" NSString *const PFQueryKeyDontSelect = @"$dontSelect";
+extern "C" NSString *const PFQueryKeyRelatedTo = @"$relatedTo";
+extern "C" NSString *const PFQueryKeyOr = @"$or";
+extern "C" NSString *const PFQueryKeyQuery = @"query";
+extern "C" NSString *const PFQueryKeyKey = @"key";
+extern "C" NSString *const PFQueryKeyObject = @"object";
+
+extern "C" NSString *const PFQueryOptionKeyMaxDistance = @"$maxDistance";
+extern "C" NSString *const PFQueryOptionKeyBox = @"$box";
+extern "C" NSString *const PFQueryOptionKeyRegexOptions = @"$options";
 
 /*!
  Checks if an object can be used as value for query equality clauses.
@@ -69,8 +71,8 @@ static void PFQueryAssertValidEqualityClauseClass(id object) {
                      [PFObject class], [PFGeoPoint class] ];
     });
 
-    for (Class class in classes) {
-        if ([object isKindOfClass:class]) {
+    for (Class kls in classes) {
+        if ([object isKindOfClass:kls]) {
             return;
         }
     }
@@ -88,8 +90,8 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
         classes = @[ [NSString class], [NSNumber class], [NSDate class] ];
     });
 
-    for (Class class in classes) {
-        if ([object isKindOfClass:class]) {
+    for (Class kls in classes) {
+        if ([object isKindOfClass:kls]) {
             return;
         }
     }
@@ -306,20 +308,22 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
 
 - (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint withinRadians:(double)maxDistance {
     return [[self whereKey:key condition:PFQueryKeyNearSphere object:geopoint]
-            whereKey:key condition:PFQueryOptionKeyMaxDistance object:@(maxDistance)];
+            whereKey:key
+            condition:PFQueryOptionKeyMaxDistance
+            object:@(maxDistance)];
 }
 
 - (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint withinMiles:(double)maxDistance {
-    return [self whereKey:key nearGeoPoint:geopoint withinRadians:(maxDistance/EARTH_RADIUS_MILES)];
+    return [self whereKey:key nearGeoPoint:geopoint withinRadians:(maxDistance / EARTH_RADIUS_MILES)];
 }
 
 - (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint withinKilometers:(double)maxDistance {
-    return [self whereKey:key nearGeoPoint:geopoint withinRadians:(maxDistance/EARTH_RADIUS_KILOMETERS)];
+    return [self whereKey:key nearGeoPoint:geopoint withinRadians:(maxDistance / EARTH_RADIUS_KILOMETERS)];
 }
 
 - (instancetype)whereKey:(NSString *)key withinGeoBoxFromSouthwest:(PFGeoPoint *)southwest toNortheast:(PFGeoPoint *)northeast {
     NSArray *array = @[ southwest, northeast ];
-    NSDictionary *dictionary = @{ PFQueryOptionKeyBox : array };
+    NSDictionary *dictionary = @{PFQueryOptionKeyBox : array};
     return [self whereKey:key condition:PFQueryKeyWithin object:dictionary];
 }
 
@@ -595,7 +599,8 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
                         // This should never happen.
                         [NSException raise:NSInternalInconsistencyException
                                     format:@"A predicate had a non-comparison predicate inside an AND "
-                         "after normalization. %@", predicate];
+                         "after normalization. %@",
+                         predicate];
                     }
                     NSComparisonPredicate *comparison = (NSComparisonPredicate *)subpredicate;
                     [query whereComparisonPredicate:comparison];
@@ -632,19 +637,19 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
 ///--------------------------------------
 
 - (void)checkIfCommandIsRunning {
-    @synchronized (self) {
+    @synchronized(self) {
         if (_cancellationTokenSource) {
             [NSException raise:NSInternalInconsistencyException
                         format:@"This query has an outstanding network connection. You have to wait until it's done."];
         }
-    }
+    };
 }
 
 - (void)markAsRunning:(BFCancellationTokenSource *)source {
     [self checkIfCommandIsRunning];
-    @synchronized (self) {
+    @synchronized(self) {
         _cancellationTokenSource = source;
-    }
+    };
 }
 
 ///--------------------------------------
@@ -721,7 +726,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
 }
 
 - (void)getObjectInBackgroundWithId:(NSString *)objectId block:(PFObjectResultBlock)block {
-    @synchronized (self) {
+    @synchronized(self) {
         if (!self.state.queriesLocalDatastore && self.state.cachePolicy == kPFCachePolicyCacheThenNetwork) {
             BFTask *cacheTask = [[self _getObjectWithIdAsync:objectId
                                                  cachePolicy:kPFCachePolicyCacheOnly
@@ -732,7 +737,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
         } else {
             [[self getObjectInBackgroundWithId:objectId] thenCallBackOnMainThreadAsync:block];
         }
-    }
+    };
 }
 
 - (void)getObjectInBackgroundWithId:(NSString *)objectId target:(id)target selector:(SEL)selector {
@@ -811,7 +816,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
         } else {
             [[self findObjectsInBackground] thenCallBackOnMainThreadAsync:block];
         }
-    }
+    };
 }
 
 - (void)findObjectsInBackgroundWithTarget:(id)target selector:(SEL)selector {
@@ -846,10 +851,10 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
             return task;
         }
         @synchronized (self) {
-            if (_cancellationTokenSource == cancellationTokenSource) {
+            if (self && _cancellationTokenSource == cancellationTokenSource) {
                 _cancellationTokenSource = nil;
             }
-        }
+        };
         return task;
     }];
 }
@@ -873,7 +878,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
 }
 
 - (void)getFirstObjectInBackgroundWithBlock:(PFObjectResultBlock)block {
-    @synchronized (self) {
+    @synchronized(self) {
         if (!self.state.queriesLocalDatastore && self.state.cachePolicy == kPFCachePolicyCacheThenNetwork) {
             BFTask *cacheTask = [[self _getFirstObjectAsyncWithCachePolicy:kPFCachePolicyCacheOnly
                                                                      after:nil] thenCallBackOnMainThreadAsync:block];
@@ -882,7 +887,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
         } else {
             [[self getFirstObjectInBackground] thenCallBackOnMainThreadAsync:block];
         }
-    }
+    };
 }
 
 - (void)getFirstObjectInBackgroundWithTarget:(id)target selector:(SEL)selector {
@@ -944,7 +949,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
         };
     }
 
-    @synchronized (self) {
+    @synchronized(self) {
         if (!self.state.queriesLocalDatastore && self.state.cachePolicy == kPFCachePolicyCacheThenNetwork) {
             PFQueryState *cacheQueryState = [self _queryStateCopyWithCachePolicy:kPFCachePolicyCacheOnly];
             BFTask *cacheTask = [[self _countObjectsAsyncForQueryState:cacheQueryState
@@ -956,7 +961,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
         } else {
             [[self countObjectsInBackground] thenCallBackOnMainThreadAsync:callback];
         }
-    }
+    };
 }
 
 - (BFTask *)_countObjectsAsyncForQueryState:(PFQueryState *)queryState after:(BFTask *)previousTask {
@@ -983,7 +988,7 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
             if (_cancellationTokenSource == cancellationTokenSource) {
                 _cancellationTokenSource = nil;
             }
-        }
+        };
         return task;
     }];
 }
@@ -993,12 +998,12 @@ static void PFQueryAssertValidOrderingClauseClass(id object) {
 ///--------------------------------------
 
 - (void)cancel {
-    @synchronized (self) {
+    @synchronized(self) {
         if (_cancellationTokenSource) {
             [_cancellationTokenSource cancel];
             _cancellationTokenSource = nil;
         }
-    }
+    };
 }
 
 ///--------------------------------------

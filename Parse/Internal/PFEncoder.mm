@@ -20,6 +20,8 @@
 #import "PFOfflineStore.h"
 #import "PFRelationPrivate.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @implementation PFEncoder
 
 + (instancetype)objectEncoder {
@@ -227,14 +229,14 @@
                 return nil;
             }];
             [self.tasks addObject:uuidTask];
-        }
+        };
         return result;
     }
 }
 
 - (BFTask *)encodeFinished {
     return [[BFTask taskForCompletionOfAllTasks:self.tasks] continueWithBlock:^id(BFTask *ignore) {
-        @synchronized (self.tasksLock) {
+        return @synchronized (self.tasksLock) {
             // TODO (hallucinogen) It might be better to return an aggregate error here
             for (BFTask *task in self.tasks) {
                 if (task.cancelled || task.error != nil) {
@@ -243,7 +245,7 @@
             }
             [self.tasks removeAllObjects];
             return [BFTask taskWithResult:nil];
-        }
+        };
     }];
 }
 

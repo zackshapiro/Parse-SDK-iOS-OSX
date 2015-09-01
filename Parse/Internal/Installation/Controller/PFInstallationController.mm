@@ -16,6 +16,8 @@
 #import "PFObjectController.h"
 #import "PFObjectPrivate.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @implementation PFInstallationController
 
 ///--------------------------------------
@@ -51,13 +53,13 @@
         }
 
         if (task.faulted && task.error.code == kPFErrorObjectNotFound) {
-            @synchronized (object.lock) {
+            return @synchronized (object.lock) {
                 // Retry the fetch as a save operation because this Installation was deleted on the server.
                 // We always want [currentInstallation fetch] to succeed.
                 object.objectId = nil;
                 [object _markAllFieldsDirty];
                 return [[object saveAsync:nil] continueWithSuccessResult:object];
-            }
+            };
         }
         return task;
     }] continueWithBlock:^id(BFTask *task) {

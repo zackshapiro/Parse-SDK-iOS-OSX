@@ -15,6 +15,8 @@
 #import "PFGeoPoint.h"
 #import "PFApplication.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @interface PFLocationManager () <CLLocationManagerDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -94,7 +96,7 @@
 - (void)addBlockForCurrentLocation:(PFLocationManagerLocationUpdateBlock)handler {
     @synchronized (self.blockSet) {
         [self.blockSet addObject:[handler copy]];
-    }
+    };
 
 #if TARGET_OS_IPHONE
     if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
@@ -124,7 +126,7 @@
     @synchronized (self.blockSet) {
         [callbacks setSet:self.blockSet];
         [self.blockSet removeAllObjects];
-    }
+    };
     for (PFLocationManagerLocationUpdateBlock block in callbacks) {
         block(location, nil);
     }
@@ -133,11 +135,11 @@
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     [manager stopUpdatingLocation];
 
-    NSMutableSet *callbacks = nil;
+    __block NSMutableSet *callbacks = nil;
     @synchronized (self.blockSet) {
         callbacks = [self.blockSet copy];
         [self.blockSet removeAllObjects];
-    }
+    };
     for (PFLocationManagerLocationUpdateBlock block in callbacks) {
         block(nil, error);
     }

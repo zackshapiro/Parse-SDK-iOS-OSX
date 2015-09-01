@@ -58,6 +58,8 @@
 #import "ParseInternal.h"
 #import "Parse_Private.h"
 
+#import "PFSynchronizationHelpers.h"
+
 /*!
  Checks if an object can be used as a value for PFObject.
  */
@@ -70,8 +72,8 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                      [PFObject class], [PFFile class], [PFACL class], [PFGeoPoint class] ];
     });
 
-    for (Class class in classes) {
-        if ([object isKindOfClass:class]) {
+    for (Class kls in classes) {
+        if ([object isKindOfClass:kls]) {
             return;
         }
     }
@@ -154,7 +156,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
     [mutexes sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         void *lock1 = (__bridge void *)obj1;
         void *lock2 = (__bridge void *)obj2;
-        return lock1 - lock2;
+        return NSComparisonResult((uint8_t *)lock1 - (uint8_t *)lock2);
     }];
     for (NSObject *lock in mutexes) {
         objc_sync_enter(lock);
@@ -198,16 +200,19 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
  and adds them to the given mutable array.  It traverses arrays and json objects.
  @param node  An kind object to search for children.
  @param dirtyChildren  The array to collect the result into.
- @param seen  The set of all objects that have already been seen.
- @param seenNew  The set of new objects that have already been seen since the
+ @param seenP  The set of all objects that have already been seen.
+ @param seenNewP  The set of new objects that have already been seen since the
  last existing object.
  */
 + (void)collectDirtyChildren:(id)node
                     children:(NSMutableSet *)dirtyChildren
                        files:(NSMutableSet *)dirtyFiles
-                        seen:(NSSet *)seen
-                     seenNew:(NSSet *)seenNew
+                        seen:(NSSet *)seenP
+                     seenNew:(NSSet *)seenNewP
                  currentUser:(PFUser *)currentUser {
+    __block NSSet *seen = seenP;
+    __block NSSet *seenNew = seenNewP;
+
     if ([node isKindOfClass:[NSArray class]]) {
         for (id elem in node) {
             @autoreleasepool {
@@ -276,7 +281,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             if ([object isDirty:NO]) {
                 [dirtyChildren addObject:object];
             }
-        }
+        };
 
     } else if ([node isKindOfClass:[PFFile class]]) {
         PFFile *file = (PFFile *)node;
@@ -347,7 +352,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 // @param saved A set of objects that we can assume will have been saved.
 // @param error The reason why it can't be serialized.
 - (BOOL)canBeSerializedAfterSaving:(NSMutableArray *)saved withCurrentUser:(PFUser *)user error:(NSError **)error {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         // This method is only used for batching sets of objects for saveAll
         // and when saving children automatically. Since it's only used to
         // determine whether or not save should be called on them, it only
@@ -369,7 +374,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         }
 
         return YES;
-    }
+    };
 }
 
 // This saves all of the objects and files reachable from the given object.
@@ -452,7 +457,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                     return [toAwait continueAsyncWithBlock:^id(BFTask *task) {
                         NSMutableArray *commands = [NSMutableArray arrayWithCapacity:[objectBatch count]];
                         for (PFObject *object in objectBatch) {
-                            PFRESTCommand *command = nil;
+                            __block PFRESTCommand *command = nil;
                             @synchronized ([object lock]) {
                                 [object _objectWillSave];
                                 [object _checkSaveParametersWithCurrentUser:currentUser];
@@ -460,7 +465,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                                                                      sessionToken:sessionToken
                                                                     objectEncoder:[PFPointerObjectEncoder objectEncoder]];
                                 [object startSave];
-                            }
+                            };
                             [commands addObject:command];
                         }
 
@@ -619,11 +624,11 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 }
 
 - (BFTask *)_saveChildrenInBackgroundWithCurrentUser:(PFUser *)currentUser sessionToken:(NSString *)sessionToken {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return [[self class] _deepSaveAsync:_estimatedData.dictionaryRepresentation
                             withCurrentUser:currentUser
                                sessionToken:sessionToken];
-    }
+    };
 }
 
 ///--------------------------------------
@@ -631,7 +636,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 ///--------------------------------------
 
 - (BOOL)isDirty:(BOOL)considerChildren {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         if (self._state.deleted || dirty || [self _hasChanges]) {
             return YES;
         }
@@ -642,13 +647,13 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         }
 
         return NO;
-    }
+    };
 }
 
 - (void)_setDirty:(BOOL)aDirty {
     @synchronized (lock) {
         dirty = aDirty;
-    }
+    };
 }
 
 - (BOOL)_areChildrenDirty:(NSMutableSet *)seenObjects {
@@ -657,7 +662,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
     }
     [seenObjects addObject:self];
 
-    @synchronized(lock) {
+    return @synchronized(lock) {
         if (self._state.deleted || dirty || [self _hasChanges]) {
             return YES;
         }
@@ -673,7 +678,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             }
         }];
         return retValue;
-    }
+    };
 }
 
 ///--------------------------------------
@@ -688,7 +693,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             state.complete = fetched;
             self._state = state;
         }
-    }
+    };
 }
 
 - (void)_setDeleted:(BOOL)deleted {
@@ -698,7 +703,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             state.deleted = deleted;
             self._state = state;
         }
-    }
+    };
 }
 
 - (BOOL)isDataAvailableForKey:(NSString *)key {
@@ -706,12 +711,12 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         return NO;
     }
 
-    @synchronized (lock) {
+    return @synchronized (lock) {
         if ([self isDataAvailable]) {
             return YES;
         }
         return [_availableKeys containsObject:key];
-    }
+    };
 }
 
 ///--------------------------------------
@@ -742,7 +747,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                                 @"A localId should not be created for an object with an objectId.");
             self.localId = [[Parse _currentManager].coreManager.objectLocalIdStore createLocalId];
         }
-    }
+    };
     return self.localId;
 }
 
@@ -762,7 +767,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         // Nil out the localId so that the new objectId won't be saved back to the PFObjectLocalIdStore.
         self.localId = nil;
         self.objectId = newObjectId;
-    }
+    };
 }
 
 + (id)_objectFromDictionary:(NSDictionary *)dictionary
@@ -876,13 +881,13 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
  */
 - (NSDictionary *)RESTDictionaryWithObjectEncoder:(PFEncoder *)objectEncoder
                                 operationSetUUIDs:(NSArray **)operationSetUUIDs {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         PFObjectState *state = self._state;
         return [self RESTDictionaryWithObjectEncoder:objectEncoder
                                    operationSetUUIDs:operationSetUUIDs
                                                state:state
                                    operationSetQueue:operationSetQueue];
-    }
+    };
 }
 
 - (NSDictionary *)RESTDictionaryWithObjectEncoder:(PFEncoder *)objectEncoder
@@ -1038,7 +1043,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             }
         }
         [self rebuildEstimatedData];
-    }
+    };
 }
 
 ///--------------------------------------
@@ -1057,12 +1062,15 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         return [[toAwait continueAsyncWithBlock:^id(BFTask *task) {
             return [self _validateSaveEventuallyAsync];
         }] continueWithSuccessBlock:^id(BFTask *task) {
-            @synchronized (lock) {
+            BFTask *saveTask = @synchronized (lock) {
                 [self _objectWillSave];
                 if (![self isDirty:NO]) {
                     return [BFTask taskWithResult:@YES];
                 }
-            }
+                return (BFTask *)nil;
+            };
+            if (saveTask)
+                return saveTask;
 
             BFTask *saveChildrenTask = nil;
             if (saveChildren) {
@@ -1072,7 +1080,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             }
 
             return [saveChildrenTask continueWithSuccessBlock:^id(BFTask *task) {
-                BFTask *saveTask = nil;
+                __block BFTask *saveTask = nil;
                 @synchronized (lock) {
                     // Snapshot the current set of changes, and push a new changeset into the queue.
                     PFOperationSet *changes = [self unsavedChanges];
@@ -1086,7 +1094,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                     // Enqueue the eventually operation!
                     saveTask = [[Parse _currentManager].eventuallyQueue enqueueCommandInBackground:command withObject:self];
                     [self _enqueueSaveEventuallyOperationAsync:changes];
-                }
+                };
                 saveTask = [saveTask continueWithBlock:^id(BFTask *task) {
                     @try {
                         if (!task.isCancelled && !task.exception && !task.error) {
@@ -1136,13 +1144,13 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 
 - (NSMutableDictionary *)_convertToDictionaryForSaving:(PFOperationSet *)changes
                                      withObjectEncoder:(PFEncoder *)encoder {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         NSMutableDictionary *serialized = [NSMutableDictionary dictionary];
         [changes enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             serialized[key] = obj;
         }];
         return [encoder encodeObject:serialized];
-    }
+    };
 }
 
 /*!
@@ -1157,37 +1165,38 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         PFFieldOperation *newOperation = [operation mergeWithPrevious:oldOperation];
         [[self unsavedChanges] setObject:newOperation forKey:key];
         [_availableKeys addObject:key];
-    }
+    };
 }
 
 - (BOOL)_containsOperationSet:(PFOperationSet *)operationSet {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         for (PFOperationSet *existingOperationSet in operationSetQueue) {
             if (existingOperationSet == operationSet ||
                 [existingOperationSet.uuid isEqualToString:operationSet.uuid]) {
                 return YES;
             }
         }
-    }
-    return NO;
+
+        return NO;
+    };
 }
 
 /*!
  Returns the set of PFFieldOperations that will be sent in the next save.
  */
 - (PFOperationSet *)unsavedChanges {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return [operationSetQueue lastObject];
-    }
+    };
 }
 
 /*!
  @returns YES if there's unsaved changes in this object. This complements ivar `dirty` for `isDirty` check.
  */
 - (BOOL)_hasChanges {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return [[self unsavedChanges] count] > 0;
-    }
+    };
 }
 
 /*!
@@ -1195,21 +1204,21 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
  NO if there are no operations in the operationSetQueue.
  */
 - (BOOL)_hasOutstandingOperations {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         // > 1 since 1 is unsaved changes.
         return [operationSetQueue count] > 1;
-    }
+    };
 }
 
 - (void)rebuildEstimatedData {
     @synchronized (lock) {
         _estimatedData = [PFObjectEstimatedData estimatedDataFromServerData:self._state.serverData
                                                           operationSetQueue:operationSetQueue];
-    }
+    };
 }
 
 - (PFObject *)mergeFromObject:(PFObject *)other {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         if (self == other) {
             // If they point to the same instance, then don't merge.
             return self;
@@ -1226,7 +1235,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 
         [self rebuildEstimatedData];
         return self;
-    }
+    };
 }
 
 - (void)_mergeAfterFetchWithResult:(NSDictionary *)result decoder:(PFDecoder *)decoder completeData:(BOOL)completeData {
@@ -1236,7 +1245,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             [self removeOldKeysAfterFetch:result];
         }
         [self rebuildEstimatedData];
-    }
+    };
 }
 
 - (void)removeOldKeysAfterFetch:(NSDictionary *)result {
@@ -1251,7 +1260,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         [_availableKeys minusSet:[NSSet setWithArray:removedKeys]];
 
         self._state = state;
-    }
+    };
 }
 
 - (void)_mergeAfterSaveWithResult:(NSDictionary *)result decoder:(PFDecoder *)decoder {
@@ -1271,7 +1280,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             [self _mergeFromServerWithResult:result decoder:decoder completeData:NO];
             [self rebuildEstimatedData];
         }
-    }
+    };
 }
 
 - (void)_mergeFromServerWithResult:(NSDictionary *)result decoder:(PFDecoder *)decoder completeData:(BOOL)completeData {
@@ -1314,7 +1323,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         [_availableKeys addObjectsFromArray:[result allKeys]];
 
         dirty = NO;
-    }
+    };
 }
 
 ///--------------------------------------
@@ -1334,7 +1343,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         @synchronized (self.lock) {
             // TODO (hallucinogen): t5611821 we need to make mergeAfterSave that accepts decoder and operationBeforeSave
             [self _mergeAfterSaveWithResult:result decoder:decoder];
-        }
+        };
         return nil;
     }];
 
@@ -1346,12 +1355,12 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
     }
 
     return [task continueWithBlock:^id(BFTask *task) {
-        @synchronized (lock) {
+        return @synchronized (lock) {
             if (self.saveDelegate) {
                 [self.saveDelegate invoke:self error:nil];
             }
             return [BFTask taskWithResult:@(!!result)];
-        }
+        };
     }];
 }
 
@@ -1362,7 +1371,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 - (void)startSave {
     @synchronized (lock) {
         [operationSetQueue addObject:[[PFOperationSet alloc] init]];
-    }
+    };
 }
 
 - (BFTask *)saveAsync:(BFTask *)toAwait {
@@ -1379,7 +1388,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             }
             return nil;
         }] continueWithBlock:^id(BFTask *task) {
-            @synchronized (lock) {
+            return @synchronized (lock) {
                 if (![self isDirty:YES]) {
                     return [BFTask taskWithResult:@YES];
                 }
@@ -1413,7 +1422,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                     PFCommandResult *result = task.result;
                     return [self handleSaveResultAsync:result.result];
                 }];
-            }
+            };
         }];
     }];
 }
@@ -1445,7 +1454,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 - (PFRESTCommand *)_constructSaveCommandForChanges:(PFOperationSet *)changes
                                       sessionToken:(NSString *)sessionToken
                                      objectEncoder:(PFEncoder *)encoder {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         NSDictionary *parameters = [self _convertToDictionaryForSaving:changes withObjectEncoder:encoder];
 
         if (self._state.objectId) {
@@ -1460,7 +1469,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                                                      operationSetUUID:changes.uuid
                                                          sessionToken:sessionToken];
 
-    }
+    };
 }
 
 - (PFRESTCommand *)_currentDeleteCommandWithSessionToken:(NSString *)sessionToken {
@@ -1492,7 +1501,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 
         PFObjectAssertValueIsKindOfValidClass(object);
         [self performOperation:[PFSetOperation setWithValue:object] forKey:key];
-    }
+    };
 }
 
 ///--------------------------------------
@@ -1513,7 +1522,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             self.saveDelegate = [[PFMulticastDelegate alloc] init];
         }
         [self.saveDelegate subscribe:callback];
-    }
+    };
 }
 
 - (void)unregisterSaveListener:(void (^)(id result, NSError *error))callback {
@@ -1522,13 +1531,13 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             self.saveDelegate = [[PFMulticastDelegate alloc] init];
         }
         [self.saveDelegate unsubscribe:callback];
-    }
+    };
 }
 
 - (PFACL *)ACLWithoutCopying {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return _estimatedData[@"ACL"];
-    }
+    };
 }
 
 // Overriden by classes which want to ignore the default ACL.
@@ -1559,7 +1568,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             }
             return obj;
         }];
-    }
+    };
     return fetchedObjects;
 }
 
@@ -1616,12 +1625,13 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 + (instancetype)objectWithClassName:(NSString *)className
                            objectId:(NSString *)objectId
                        completeData:(BOOL)completeData {
-    Class class = [[[self class] subclassingController] subclassForParseClassName:className] ?: [PFObject class];
-    PFObjectState *state = [class _newObjectStateWithParseClassName:className objectId:objectId isComplete:completeData];
-    PFObject *object = [[class alloc] initWithObjectState:state];
+    Class kls = [[[self class] subclassingController] subclassForParseClassName:className] ?: [PFObject class];
+
+    PFObjectState *state = [kls _newObjectStateWithParseClassName:className objectId:objectId isComplete:completeData];
+    PFObject *object = [[kls alloc] initWithObjectState:state];
     if (!completeData) {
         PFConsistencyAssert(![object _hasChanges],
-                            @"The init method of %@ set values on the object, which is not allowed.", class);
+                            @"The init method of %@ set values on the object, which is not allowed.", kls);
     }
     return object;
 }
@@ -1658,8 +1668,8 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
     PFConsistencyAssert([self conformsToProtocol:@protocol(PFSubclassing)],
                         @"Can only call +object on subclasses conforming to PFSubclassing");
     NSString *className = [(id<PFSubclassing>)self parseClassName];
-    Class class = [[self subclassingController] subclassForParseClassName:className] ?: [PFObject class];
-    return [class objectWithClassName:className];
+    Class kls = [[self subclassingController] subclassForParseClassName:className] ?: [PFObject class];
+    return [kls objectWithClassName:className];
 }
 
 + (instancetype)objectWithoutDataWithObjectId:(NSString *)objectId {
@@ -1720,7 +1730,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 ///--------------------------------------
 
 - (void)set_state:(PFObjectState *)state {
-    @synchronized(lock) {
+    return @synchronized(lock) {
         NSString *oldObjectId = _pfinternal_state.objectId;
         if (self._state != state) {
             _pfinternal_state = [state copy];
@@ -1730,19 +1740,19 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         if (![PFObjectUtilities isObject:oldObjectId equalToObject:newObjectId]) {
             [self _notifyObjectIdChangedFrom:oldObjectId toObjectId:newObjectId];
         }
-    }
+    };
 }
 
 - (PFObjectState *)_state {
-    @synchronized(lock) {
+    return @synchronized(lock) {
         return _pfinternal_state;
-    }
+    };
 }
 
 - (PFObjectEstimatedData *)_estimatedData {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return _estimatedData;
-    }
+    };
 }
 
 - (void)setObjectId:(NSString *)objectId {
@@ -1759,7 +1769,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         _pfinternal_state = state;
 
         [self _notifyObjectIdChangedFrom:oldObjectId toObjectId:objectId];
-    }
+    };
 }
 
 - (NSString *)objectId {
@@ -1777,7 +1787,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             [[Parse _currentManager].coreManager.objectLocalIdStore setObjectId:toObjectId forLocalId:self.localId];
             self.localId = nil;
         }
-    }
+    };
 }
 
 - (NSString *)parseClassName {
@@ -1921,7 +1931,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         return [[toAwait continueAsyncWithBlock:^id(BFTask *task) {
             return [self _validateDeleteAsync];
         }] continueWithSuccessBlock:^id(BFTask *task) {
-            @synchronized (lock) {
+            return @synchronized (lock) {
                 _deletingEventually += 1;
 
                 PFOfflineStore *store = [Parse _currentManager].offlineStore;
@@ -1940,7 +1950,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
                     return task;
                 }];
                 return deleteTask;
-            }
+            };
         }];
     }] continueWithSuccessBlock:^id(BFTask *task) {
         // The result of the previous task will be an instance of BFTask.
@@ -1958,9 +1968,9 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 }
 
 - (BOOL)isDirtyForKey:(NSString *)key {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return !![[self unsavedChanges] objectForKey:key];
-    }
+    };
 }
 
 ///--------------------------------------
@@ -2150,7 +2160,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 }
 
 - (id)objectForKey:(NSString *)key {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         PFConsistencyAssert([self isDataAvailableForKey:key],
                             @"Key \"%@\" has no data.  Call fetchIfNeeded before getting its value.", key);
 
@@ -2160,7 +2170,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             if ([acl isShared]) {
                 PFACL *copy = [acl createUnsharedCopy];
                 self[PFObjectACLRESTKey] = copy;
-                return copy;
+                return (id)copy;
             }
         }
 
@@ -2171,7 +2181,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
         }
 
         return result;
-    }
+    };;
 }
 
 - (id)objectForKeyedSubscript:(NSString *)key {
@@ -2184,7 +2194,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             PFDeleteOperation *operation = [[PFDeleteOperation alloc] init];
             [self performOperation:operation forKey:key];
         }
-    }
+    };
 }
 
 - (void)revert {
@@ -2204,7 +2214,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 
             [self rebuildEstimatedData];
         }
-    }
+    };
 }
 
 - (void)revertObjectForKey:(NSString *)key {
@@ -2214,7 +2224,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             [self rebuildEstimatedData];
             [_availableKeys removeObject:key];
         }
-    }
+    };
 }
 
 #pragma mark Relations
@@ -2224,7 +2234,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 }
 
 - (PFRelation *)relationForKey:(NSString *)key {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         // All the sanity checking is done when addObject or
         // removeObject is called on the relation.
         PFRelation *relation = [PFRelation relationForObject:self forKey:key];
@@ -2234,7 +2244,7 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
             relation.targetClass = ((PFRelation *)object).targetClass;
         }
         return relation;
-    }
+    };
 }
 
 #pragma mark Array
@@ -2290,9 +2300,9 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 ///--------------------------------------
 
 - (NSArray *)allKeys {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return [_estimatedData allKeys];
-    }
+    };
 }
 
 - (NSString *)description {
@@ -2309,17 +2319,17 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 }
 
 - (NSString *)_recursiveDescription {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return [NSString stringWithFormat:@"%@ %@",
                 [self _flatDescription], [_estimatedData.dictionaryRepresentation description]];
-    }
+    };
 }
 
 - (NSString *)_flatDescription {
-    @synchronized (lock) {
+    return @synchronized (lock) {
         return [NSString stringWithFormat:@"<%@: %p, objectId: %@, localId: %@>",
                 self.displayClassName, self, [self displayObjectId], localId];
-    }
+    };
 }
 
 ///--------------------------------------

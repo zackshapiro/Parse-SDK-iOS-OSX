@@ -24,6 +24,8 @@
 #import "PFUserConstants.h"
 #import "PFUserPrivate.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @interface PFCurrentUserController () {
     dispatch_queue_t _dataQueue;
     PFAsyncTaskQueue *_dataTaskQueue;
@@ -161,7 +163,7 @@
             @synchronized (user.lock) {
                 [user setIsCurrentUser:YES];
                 [user synchronizeAllAuthData];
-            }
+            };
             return [self _saveCurrentUserToDiskAsync:user];
         }] continueWithBlock:^id(BFTask *task) {
             dispatch_barrier_sync(_dataQueue, ^{
@@ -298,7 +300,7 @@
                     [user synchronizeAuthDataWithAuthType:key];
                 }];
             }
-        }
+        };
         return nil;
     }];
 }
@@ -313,7 +315,7 @@
             if ([user.authData count]) {
                 userData[PFUserAuthDataRESTKey] = [user.authData copy];
             }
-        }
+        };
         self.commonDataSource.keychainStore[itemName] = userData;
 
         return nil;

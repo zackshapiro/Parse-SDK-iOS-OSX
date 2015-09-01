@@ -11,6 +11,8 @@
 
 #import <Bolts/BFTask.h>
 
+#import "PFSynchronizationHelpers.h"
+
 @interface PFTaskQueue ()
 
 @property (nonatomic, strong, readwrite) BFTask *tail;
@@ -30,7 +32,7 @@
 }
 
 - (BFTask *)enqueue:(BFTask *(^)(BFTask *toAwait))taskStart {
-    @synchronized (self.mutex) {
+    return @synchronized (self.mutex) {
         BFTask *oldTail = self.tail ?: [BFTask taskWithResult:nil];
 
         // The task created by taskStart is responsible for waiting on the
@@ -44,7 +46,7 @@
         self.tail = [BFTask taskForCompletionOfAllTasks:@[oldTail, task]];
 
         return task;
-    }
+    };
 }
 
 @end

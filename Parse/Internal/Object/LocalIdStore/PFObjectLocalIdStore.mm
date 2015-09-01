@@ -17,6 +17,8 @@
 #import "PFLogging.h"
 #import "Parse_Private.h"
 
+#import "PFSynchronizationHelpers.h"
+
 static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
 
 ///--------------------------------------
@@ -190,7 +192,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
  * Creates a new local id in the map.
  */
 - (NSString *)createLocalId {
-    @synchronized (_lock) {
+    return @synchronized (_lock) {
         // Generate a new random string of upper and lower case letters.
 
         // Start by generating a number. It will be the localId as a base-52 number.
@@ -201,7 +203,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
         PFConsistencyAssert([[self class] isLocalId:localId], @"Generated an invalid local id: \"%@\".", localId);
 
         return localId;
-    }
+    };
 }
 
 /*!
@@ -212,7 +214,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
         PFObjectLocalIdStoreMapEntry *entry = [self getMapEntry:localId];
         entry.referenceCount++;
         [self putMapEntry:entry forLocalId:localId];
-    }
+    };
 }
 
 /*!
@@ -227,7 +229,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
         } else {
             [self removeMapEntry:localId];
         }
-    }
+    };
 }
 
 /*!
@@ -241,7 +243,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
             [self putMapEntry:entry forLocalId:localId];
         }
         [_inMemoryCache setObject:objectId forKey:localId];
-    }
+    };
 }
 
 /*!
@@ -249,7 +251,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
  * Returns nil if no objectId is yet known for the lcoal id.
  */
 - (NSString *)objectIdForLocalId:(NSString *)localId {
-    @synchronized (_lock) {
+    return @synchronized (_lock) {
         NSString *objectId = [_inMemoryCache objectForKey:localId];
         if (objectId) {
             return objectId;
@@ -257,14 +259,14 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
 
         PFObjectLocalIdStoreMapEntry *entry = [self getMapEntry:localId];
         return entry.objectId;
-    }
+    };
 }
 
 /*!
  * Removes all local ids from the disk and memory caches.
  */
 - (BOOL)clear {
-    @synchronized (_lock) {
+    return @synchronized (_lock) {
         [self clearInMemoryCache];
 
         BOOL empty = ([[[[NSFileManager defaultManager] enumeratorAtPath:_diskPath] allObjects] count] == 0);
@@ -276,7 +278,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
                                                    attributes:nil
                                                         error:nil];
         return !empty;
-    }
+    };
 }
 
 /*!
@@ -285,7 +287,7 @@ static NSString *const _PFObjectLocalIdStoreDiskFolderPath = @"LocalId";
 - (void)clearInMemoryCache {
     @synchronized (_lock) {
         [_inMemoryCache removeAllObjects];
-    }
+    };
 }
 
 @end

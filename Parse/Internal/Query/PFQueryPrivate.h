@@ -13,31 +13,39 @@
 
 #import "PFQueryState.h"
 
-extern NSString *const PFQueryKeyNotEqualTo;
-extern NSString *const PFQueryKeyLessThan;
-extern NSString *const PFQueryKeyLessThanEqualTo;
-extern NSString *const PFQueryKeyGreaterThan;
-extern NSString *const PFQueryKeyGreaterThanOrEqualTo;
-extern NSString *const PFQueryKeyContainedIn;
-extern NSString *const PFQueryKeyNotContainedIn;
-extern NSString *const PFQueryKeyContainsAll;
-extern NSString *const PFQueryKeyNearSphere;
-extern NSString *const PFQueryKeyWithin;
-extern NSString *const PFQueryKeyRegex;
-extern NSString *const PFQueryKeyExists;
-extern NSString *const PFQueryKeyInQuery;
-extern NSString *const PFQueryKeyNotInQuery;
-extern NSString *const PFQueryKeySelect;
-extern NSString *const PFQueryKeyDontSelect;
-extern NSString *const PFQueryKeyRelatedTo;
-extern NSString *const PFQueryKeyOr;
-extern NSString *const PFQueryKeyQuery;
-extern NSString *const PFQueryKeyKey;
-extern NSString *const PFQueryKeyObject;
+#ifdef __cplusplus
+#define PARSE_EXTERN extern "C"
+#else
+#define PARSE_EXTERN extern
+#endif
 
-extern NSString *const PFQueryOptionKeyMaxDistance;
-extern NSString *const PFQueryOptionKeyBox;
-extern NSString *const PFQueryOptionKeyRegexOptions;
+PARSE_EXTERN NSString *const PFQueryKeyNotEqualTo;
+PARSE_EXTERN NSString *const PFQueryKeyLessThan;
+PARSE_EXTERN NSString *const PFQueryKeyLessThanEqualTo;
+PARSE_EXTERN NSString *const PFQueryKeyGreaterThan;
+PARSE_EXTERN NSString *const PFQueryKeyGreaterThanOrEqualTo;
+PARSE_EXTERN NSString *const PFQueryKeyContainedIn;
+PARSE_EXTERN NSString *const PFQueryKeyNotContainedIn;
+PARSE_EXTERN NSString *const PFQueryKeyContainsAll;
+PARSE_EXTERN NSString *const PFQueryKeyNearSphere;
+PARSE_EXTERN NSString *const PFQueryKeyWithin;
+PARSE_EXTERN NSString *const PFQueryKeyRegex;
+PARSE_EXTERN NSString *const PFQueryKeyExists;
+PARSE_EXTERN NSString *const PFQueryKeyInQuery;
+PARSE_EXTERN NSString *const PFQueryKeyNotInQuery;
+PARSE_EXTERN NSString *const PFQueryKeySelect;
+PARSE_EXTERN NSString *const PFQueryKeyDontSelect;
+PARSE_EXTERN NSString *const PFQueryKeyRelatedTo;
+PARSE_EXTERN NSString *const PFQueryKeyOr;
+PARSE_EXTERN NSString *const PFQueryKeyQuery;
+PARSE_EXTERN NSString *const PFQueryKeyKey;
+PARSE_EXTERN NSString *const PFQueryKeyObject;
+
+PARSE_EXTERN NSString *const PFQueryOptionKeyMaxDistance;
+PARSE_EXTERN NSString *const PFQueryOptionKeyBox;
+PARSE_EXTERN NSString *const PFQueryOptionKeyRegexOptions;
+
+#undef PARSE_EXTERN
 
 @class BFTask PF_GENERIC(__covariant BFGenericType);
 @class PFObject;

@@ -29,6 +29,8 @@
 #import "Parse_Private.h"
 #import "PFErrorUtilities.h"
 
+#import "PFSynchronizationHelpers.h"
+
 @implementation PFInstallation (Private)
 
 static NSSet *protectedKeys;
@@ -76,7 +78,7 @@ static NSSet *protectedKeys;
         [estimatedData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             [super setObject:obj forKey:key];
         }];
-    }
+    };
 }
 
 - (NSString *)displayClassName {
@@ -226,13 +228,13 @@ static NSSet *protectedKeys;
         }
 
         if (task.error.code == kPFErrorObjectNotFound) {
-            @synchronized (self.lock) {
+            return @synchronized (self.lock) {
                 // Retry the fetch as a save operation because this Installation was deleted on the server.
                 // We always want [currentInstallation save] to succeed.
                 self.objectId = nil;
                 [self _markAllFieldsDirty];
                 return [super saveAsync:nil];
-            }
+            };
         }
         return task;
     }];
@@ -253,7 +255,7 @@ static NSSet *protectedKeys;
             [self _updateBadgeFromDevice];
             [self _updateVersionInfoFromDevice];
             [self _updateLocaleIdentifierFromDevice];
-        }
+        };
     }
 }
 
