@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFSignUpFields.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFSignUpFields</TokenIdentifier>
+			<Abstract type="html">PFSignUpFields bitmask specifies the sign up elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFSignUpViewController</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/PFSignUpView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFSignUpFieldsUsernameAndPassword</TokenIdentifier>
+            <Abstract type="html">Username and password fields.</Abstract>
+            <Declaration>PFSignUpFieldsUsernameAndPassword</Declaration>
+            
+            <DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFSignUpFieldsEmail</TokenIdentifier>
+            <Abstract type="html">Email field.</Abstract>
+            <Declaration>PFSignUpFieldsEmail</Declaration>
+            
+            <DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFSignUpFieldsAdditional</TokenIdentifier>
+            <Abstract type="html">This field can be used for something else.</Abstract>
+            <Declaration>PFSignUpFieldsAdditional</Declaration>
+            
+            <DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFSignUpFieldsSignUpButton</TokenIdentifier>
+            <Abstract type="html">Sign Up Button</Abstract>
+            <Declaration>PFSignUpFieldsSignUpButton</Declaration>
+            
+            <DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFSignUpFieldsDismissButton</TokenIdentifier>
+            <Abstract type="html">Dismiss Button</Abstract>
+            <Declaration>PFSignUpFieldsDismissButton</Declaration>
+            
+            <DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFSignUpFieldsDefault</TokenIdentifier>
+            <Abstract type="html">Default value. Combines Username, Password, Email, Sign Up and Dismiss Buttons.</Abstract>
+            <Declaration>PFSignUpFieldsDefault</Declaration>
+            
+            <DeclaredIn>PFSignUpView.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+	</File>
+</Tokens>

@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFQuery</TokenIdentifier>
+			<Abstract type="html">This category lists all methods of PFQuery class that are synchronous, but have asynchronous counterpart,
+Calling one of these synchronous methods could potentially block the current thread for a large amount of time,
+since it might be fetching from network or saving/loading data from disk.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/getObjectOfClass:objectId:</TokenIdentifier>
+			<Abstract type="html">Returns a PFObject with a given class and id.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFGenericObject)getObjectOfClass:(NSString *)objectClass objectId:(NSString *)objectId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class name for the object that is being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PFObject if found. Returns nil if the object isn&apos;t found, or if there was an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/getObjectOfClass:objectId:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/getObjectOfClass:objectId:error:</TokenIdentifier>
+			<Abstract type="html">Returns a PFObject with a given class and id and sets an error if necessary.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFGenericObject)getObjectOfClass:(NSString *)objectClass objectId:(NSString *)objectId error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class name for the object that is being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PFObject if found. Returns nil if the object isn&apos;t found, or if there was an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/getObjectOfClass:objectId:error:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getObjectWithId:</TokenIdentifier>
+			<Abstract type="html">Returns a PFObject with the given id.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFGenericObject)getObjectWithId:(NSString *)objectId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PFObject if found. Returns nil if the object isn&apos;t found, or if there was an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/getObjectWithId:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getObjectWithId:error:</TokenIdentifier>
+			<Abstract type="html">Returns a PFObject with the given id and sets an error if necessary.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFGenericObject)getObjectWithId:(NSString *)objectId error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PFObject if found. Returns nil if the object isn&apos;t found, or if there was an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/getObjectWithId:error:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/getUserObjectWithId:</TokenIdentifier>
+			<Abstract type="html">Returns a PFUser with a given id.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFUser *)getUserObjectWithId:(NSString *)objectId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PFUser if found. Returns nil if the object isn&apos;t found, or if there was an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/getUserObjectWithId:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/getUserObjectWithId:error:</TokenIdentifier>
+			<Abstract type="html">Returns a PFUser with a given class and id and sets an error if necessary.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFUser *)getUserObjectWithId:(NSString *)objectId error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PFUser if found. Returns nil if the object isn&apos;t found, or if there was an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/getUserObjectWithId:error:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/findObjects</TokenIdentifier>
+			<Abstract type="html">Finds objects synchronously based on the constructed query.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSArray&lt;PFGenericObject&gt; *)findObjects</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns an array of PFObject objects that were found.</Abstract></ReturnValue>
+			<Anchor>//api/name/findObjects</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/findObjects:</TokenIdentifier>
+			<Abstract type="html">Finds objects synchronously based on the constructed query and sets an error if there was one.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSArray&lt;PFGenericObject&gt; *)findObjects:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an array of PFObject objects that were found.</Abstract></ReturnValue>
+			<Anchor>//api/name/findObjects:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getFirstObject</TokenIdentifier>
+			<Abstract type="html">Gets an object synchronously based on the constructed query.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFGenericObject)getFirstObject</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns a PFObject, or nil if none was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/getFirstObject</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getFirstObject:</TokenIdentifier>
+			<Abstract type="html">Gets an object synchronously based on the constructed query and sets an error if any occurred.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFGenericObject)getFirstObject:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a PFObject, or nil if none was found.</Abstract></ReturnValue>
+			<Anchor>//api/name/getFirstObject:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/countObjects</TokenIdentifier>
+			<Abstract type="html">Counts objects synchronously based on the constructed query.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)countObjects</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the number of PFObject objects that match the query, or -1 if there is an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/countObjects</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/countObjects:</TokenIdentifier>
+			<Abstract type="html">Counts objects synchronously based on the constructed query and sets an error if there was one.</Abstract>
+			<DeclaredIn>PFQuery+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)countObjects:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the number of PFObject objects that match the query, or -1 if there is an error.</Abstract></ReturnValue>
+			<Anchor>//api/name/countObjects:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/initWithClassName:</TokenIdentifier>
+			<Abstract type="html">Initializes the query with a class name.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithClassName:(NSString *)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The class name.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithClassName:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/queryWithClassName:</TokenIdentifier>
+			<Abstract type="html">Returns a PFQuery for a given class.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)queryWithClassName:(NSString *)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The class to query on.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A PFQuery object.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryWithClassName:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/queryWithClassName:predicate:</TokenIdentifier>
+			<Abstract type="html">Creates a PFQuery with the constraints given by predicate.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)queryWithClassName:(NSString *)className predicate:(nullable NSPredicate *)predicate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The class to query on.</Abstract>
+				</Parameter><Parameter>
+					<Name>predicate</Name>
+					<Abstract type="html">The predicate to create conditions from.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryWithClassName:predicate:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setParseClassName:</TokenIdentifier>
+			<Abstract type="html">The class name to query for.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/parseClassName</TokenIdentifier>
+			<Abstract type="html">The class name to query for.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/parseClassName</TokenIdentifier>
+			<Abstract type="html">The class name to query for.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/includeKey:</TokenIdentifier>
+			<Abstract type="html">Make the query include PFObjects that have a reference stored at the provided key.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)includeKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to load child PFObjects for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/includeKey:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/includeKeys:</TokenIdentifier>
+			<Abstract type="html">Make the query include PFObjects that have a reference stored at the provided keys.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)includeKeys:(NSArray&lt;NSString*&gt; *)keys</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keys</Name>
+					<Abstract type="html">The keys to load child PFObjects for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/includeKeys:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/selectKeys:</TokenIdentifier>
+			<Abstract type="html">Make the query restrict the fields of the returned PFObjects to include only the provided keys.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)selectKeys:(NSArray&lt;NSString*&gt; *)keys</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keys</Name>
+					<Abstract type="html">The keys to include in the result.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/selectKeys:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKeyExists:</TokenIdentifier>
+			<Abstract type="html">Add a constraint that requires a particular key exists.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKeyExists:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that should exist.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKeyExists:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKeyDoesNotExist:</TokenIdentifier>
+			<Abstract type="html">Add a constraint that requires a key not exist.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKeyDoesNotExist:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that should not exist.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKeyDoesNotExist:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:equalTo:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object to be equal to the provided object.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key equalTo:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that must be equalled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:equalTo:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:lessThan:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object to be less than the provided object.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key lessThan:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that provides an upper bound.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:lessThan:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:lessThanOrEqualTo:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object
+to be less than or equal to the provided object.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key lessThanOrEqualTo:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that must be equalled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:lessThanOrEqualTo:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:greaterThan:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object
+to be greater than the provided object.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key greaterThan:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that must be equalled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:greaterThan:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:greaterThanOrEqualTo:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s
+object to be greater than or equal to the provided object.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key greaterThanOrEqualTo:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that must be equalled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:greaterThanOrEqualTo:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:notEqualTo:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object
+to be not equal to the provided object.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key notEqualTo:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that must not be equalled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:notEqualTo:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:matchesText:</TokenIdentifier>
+			<Abstract type="html">Add a constraint for finding string values that contain a provided
+string using Full Text Search</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key matchesText:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">the substring that the value must contain.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:matchesText:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:containedIn:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object
+to be contained in the provided array.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key containedIn:(NSArray *)array</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>array</Name>
+					<Abstract type="html">The possible values for the key&apos;s object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:containedIn:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:notContainedIn:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s object
+not be contained in the provided array.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key notContainedIn:(NSArray *)array</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>array</Name>
+					<Abstract type="html">The list of values the key&apos;s object should not be.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:notContainedIn:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:containsAllObjectsInArray:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s array
+contains every element of the provided array.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key containsAllObjectsInArray:(NSArray *)array</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>array</Name>
+					<Abstract type="html">The array of values to search for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:containsAllObjectsInArray:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:nearGeoPoint:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s coordinates (specified via PFGeoPoint
+be near a reference point.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>geopoint</Name>
+					<Abstract type="html">The reference point represented as a PFGeoPoint.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:nearGeoPoint:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:nearGeoPoint:withinMiles:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s coordinates (specified via PFGeoPoint
+be near a reference point and within the maximum distance specified (in miles).</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint withinMiles:(double)maxDistance</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>geopoint</Name>
+					<Abstract type="html">The reference point represented as a PFGeoPoint.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxDistance</Name>
+					<Abstract type="html">Maximum distance in miles.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:nearGeoPoint:withinMiles:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:nearGeoPoint:withinKilometers:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s coordinates (specified via PFGeoPoint
+be near a reference point and within the maximum distance specified (in kilometers).</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint withinKilometers:(double)maxDistance</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>geopoint</Name>
+					<Abstract type="html">The reference point represented as a PFGeoPoint.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxDistance</Name>
+					<Abstract type="html">Maximum distance in kilometers.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:nearGeoPoint:withinKilometers:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:nearGeoPoint:withinRadians:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s coordinates (specified via PFGeoPoint be near
+a reference point and within the maximum distance specified (in radians).  Distance is calculated based on
+angular distance on a sphere.  Results will be sorted by distance (nearest to farthest) from the reference point.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key nearGeoPoint:(PFGeoPoint *)geopoint withinRadians:(double)maxDistance</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>geopoint</Name>
+					<Abstract type="html">The reference point as a PFGeoPoint.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxDistance</Name>
+					<Abstract type="html">Maximum distance in radians.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:nearGeoPoint:withinRadians:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:withinGeoBoxFromSouthwest:toNortheast:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s coordinates (specified via PFGeoPoint be
+contained within a given rectangular geographic bounding box.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key withinGeoBoxFromSouthwest:(PFGeoPoint *)southwest toNortheast:(PFGeoPoint *)northeast</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>southwest</Name>
+					<Abstract type="html">The lower-left inclusive corner of the box.</Abstract>
+				</Parameter><Parameter>
+					<Name>northeast</Name>
+					<Abstract type="html">The upper-right inclusive corner of the box.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:withinGeoBoxFromSouthwest:toNortheast:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:withinPolygon:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s
+coordinates be contained within and on the bounds of a given polygon
+Supports closed and open (last point is connected to first) paths.
+(Requires parse-server@2.5.0)</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key withinPolygon:(NSArray&lt;PFGeoPoint*&gt; *)points</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">The polygon points as an Array of PFGeoPoint&apos;s.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:withinPolygon:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:polygonContains:</TokenIdentifier>
+			<Abstract type="html">Add a constraint to the query that requires a particular key&apos;s
+coordinates that contains a PFGeoPoint
+(Requires parse-server@2.6.0)</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key polygonContains:(PFGeoPoint *)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to be constrained.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">PFGeoPoint.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:polygonContains:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:matchesRegex:</TokenIdentifier>
+			<Abstract type="html">Add a regular expression constraint for finding string values that match the provided regular expression.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key matchesRegex:(NSString *)regex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the string to match is stored in.</Abstract>
+				</Parameter><Parameter>
+					<Name>regex</Name>
+					<Abstract type="html">The regular expression pattern to match.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:matchesRegex:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:matchesRegex:modifiers:</TokenIdentifier>
+			<Abstract type="html">Add a regular expression constraint for finding string values that match the provided regular expression.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key matchesRegex:(NSString *)regex modifiers:(nullable NSString *)modifiers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the string to match is stored in.</Abstract>
+				</Parameter><Parameter>
+					<Name>regex</Name>
+					<Abstract type="html">The regular expression pattern to match.</Abstract>
+				</Parameter><Parameter>
+					<Name>modifiers</Name>
+					<Abstract type="html">Any of the following supported PCRE modifiers:
+- i - Case insensitive search
+- m - Search across multiple lines of input</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:matchesRegex:modifiers:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:containsString:</TokenIdentifier>
+			<Abstract type="html">Add a constraint for finding string values that contain a provided substring.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key containsString:(nullable NSString *)substring</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the string to match is stored in.</Abstract>
+				</Parameter><Parameter>
+					<Name>substring</Name>
+					<Abstract type="html">The substring that the value must contain.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:containsString:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:hasPrefix:</TokenIdentifier>
+			<Abstract type="html">Add a constraint for finding string values that start with a provided prefix.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key hasPrefix:(nullable NSString *)prefix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the string to match is stored in.</Abstract>
+				</Parameter><Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The substring that the value must start with.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:hasPrefix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:hasSuffix:</TokenIdentifier>
+			<Abstract type="html">Add a constraint for finding string values that end with a provided suffix.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key hasSuffix:(nullable NSString *)suffix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the string to match is stored in.</Abstract>
+				</Parameter><Parameter>
+					<Name>suffix</Name>
+					<Abstract type="html">The substring that the value must end with.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:hasSuffix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/orQueryWithSubqueries:</TokenIdentifier>
+			<Abstract type="html">Returns a PFQuery that is the or of the passed in queries.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)orQueryWithSubqueries:(NSArray&lt;PFQuery*&gt; *)queries</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queries</Name>
+					<Abstract type="html">The list of queries to or together.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of PFQuery that is the or of the passed in queries.</Abstract></ReturnValue>
+			<Anchor>//api/name/orQueryWithSubqueries:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:matchesKey:inQuery:</TokenIdentifier>
+			<Abstract type="html">Adds a constraint that requires that a key&apos;s value matches a value in another key
+in objects returned by a sub query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key matchesKey:(NSString *)otherKey inQuery:(PFQuery *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the value is stored.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherKey</Name>
+					<Abstract type="html">The key in objects in the returned by the sub query whose value should match.</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:matchesKey:inQuery:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:doesNotMatchKey:inQuery:</TokenIdentifier>
+			<Abstract type="html">Adds a constraint that requires that a key&apos;s value NOT match a value in another key
+in objects returned by a sub query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key doesNotMatchKey:(NSString *)otherKey inQuery:(PFQuery *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the value is stored.</Abstract>
+				</Parameter><Parameter>
+					<Name>otherKey</Name>
+					<Abstract type="html">The key in objects in the returned by the sub query whose value should match.</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:doesNotMatchKey:inQuery:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:matchesQuery:</TokenIdentifier>
+			<Abstract type="html">Add a constraint that requires that a key&apos;s value matches a PFQuery constraint.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key matchesQuery:(PFQuery *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the value is stored in</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query the value should match</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:matchesQuery:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/whereKey:doesNotMatchQuery:</TokenIdentifier>
+			<Abstract type="html">Add a constraint that requires that a key&apos;s value to not match a PFQuery constraint.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)whereKey:(NSString *)key doesNotMatchQuery:(PFQuery *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the value is stored in</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query the value should not match</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/whereKey:doesNotMatchQuery:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/orderByAscending:</TokenIdentifier>
+			<Abstract type="html">Sort the results in ascending order with the given key.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)orderByAscending:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to order by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/orderByAscending:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/addAscendingOrder:</TokenIdentifier>
+			<Abstract type="html">Additionally sort in ascending order by the given key.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)addAscendingOrder:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to order by.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAscendingOrder:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/orderByDescending:</TokenIdentifier>
+			<Abstract type="html">Sort the results in descending order with the given key.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)orderByDescending:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to order by.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/orderByDescending:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/addDescendingOrder:</TokenIdentifier>
+			<Abstract type="html">Additionally sort in descending order by the given key.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)addDescendingOrder:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to order by.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDescendingOrder:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/orderBySortDescriptor:</TokenIdentifier>
+			<Abstract type="html">Sort the results using a given sort descriptor.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)orderBySortDescriptor:(NSSortDescriptor *)sortDescriptor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sortDescriptor</Name>
+					<Abstract type="html">The NSSortDescriptor to use to sort the results of the query.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/orderBySortDescriptor:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/orderBySortDescriptors:</TokenIdentifier>
+			<Abstract type="html">Sort the results using a given array of sort descriptors.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)orderBySortDescriptors:(nullable NSArray&lt;NSSortDescriptor*&gt; *)sortDescriptors</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sortDescriptors</Name>
+					<Abstract type="html">An array of NSSortDescriptor objects to use to sort the results of the query.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/orderBySortDescriptors:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getObjectInBackgroundWithId:</TokenIdentifier>
+			<Abstract type="html">Gets a PFObject asynchronously and calls the given block with the result.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;PFGenericObject&gt; *)getObjectInBackgroundWithId:(NSString *)objectId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/getObjectInBackgroundWithId:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getObjectInBackgroundWithId:block:</TokenIdentifier>
+			<Abstract type="html">Gets a PFObject asynchronously and calls the given block with the result.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (void)getObjectInBackgroundWithId:(NSString *)objectId block:(nullable void ( ^ ) ( PFGenericObject _Nullable object , NSError *_Nullable error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object that is being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+The block should have the following argument signature: ^(NSArray object, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getObjectInBackgroundWithId:block:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/queryForUser</TokenIdentifier>
+			<Abstract type="html">Please use [PFUser query] instead. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use [PFUser query] instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)queryForUser</Declaration>
+			
+			
+			<Anchor>//api/name/queryForUser</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/findObjectsInBackground</TokenIdentifier>
+			<Abstract type="html">Finds objects asynchronously and sets the NSArray of PFObject objects as a result of the task.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSArray&lt;PFGenericObject&gt; *&gt; *)findObjectsInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/findObjectsInBackground</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/findObjectsInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Finds objects asynchronously and calls the given block with the results.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (void)findObjectsInBackgroundWithBlock:(nullable PFQueryArrayResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(NSArray objects, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/findObjectsInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getFirstObjectInBackground</TokenIdentifier>
+			<Abstract type="html">Gets an object asynchronously and sets it as a result of the task.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;PFGenericObject&gt; *)getFirstObjectInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/getFirstObjectInBackground</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getFirstObjectInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Gets an object asynchronously and calls the given block with the result.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (void)getFirstObjectInBackgroundWithBlock:(nullable void ( ^ ) ( PFGenericObject _Nullable object , NSError *_Nullable error ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(PFObject object, NSError error).
+result will be nil if error is set OR no object was found matching the query.
+error will be nil if result is set OR if the query succeeded, but found no results.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFirstObjectInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/countObjectsInBackground</TokenIdentifier>
+			<Abstract type="html">Counts objects asynchronously and sets NSNumber with count as a result of the task.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)countObjectsInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/countObjectsInBackground</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/countObjectsInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Counts objects asynchronously and calls the given block with the counts.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (void)countObjectsInBackgroundWithBlock:(nullable PFIntegerResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(int count, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/countObjectsInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/cancel</TokenIdentifier>
+			<Abstract type="html">Cancels the current network request (if any). Ensures that callbacks won&apos;t be called.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setLimit:</TokenIdentifier>
+			<Abstract type="html">A limit on the number of objects to return. The default limit is 100, with a
+maximum of 1000 results being returned at a time.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/limit</TokenIdentifier>
+			<Abstract type="html">A limit on the number of objects to return. The default limit is 100, with a
+maximum of 1000 results being returned at a time.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/limit</TokenIdentifier>
+			<Abstract type="html">A limit on the number of objects to return. The default limit is 100, with a
+maximum of 1000 results being returned at a time.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger limit</Declaration>
+			
+			
+			<Anchor>//api/name/limit</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setSkip:</TokenIdentifier>
+			<Abstract type="html">The number of objects to skip before returning any.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger skip</Declaration>
+			
+			
+			<Anchor>//api/name/skip</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/skip</TokenIdentifier>
+			<Abstract type="html">The number of objects to skip before returning any.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger skip</Declaration>
+			
+			
+			<Anchor>//api/name/skip</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/skip</TokenIdentifier>
+			<Abstract type="html">The number of objects to skip before returning any.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger skip</Declaration>
+			
+			
+			<Anchor>//api/name/skip</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setCachePolicy:</TokenIdentifier>
+			<Abstract type="html">The cache policy to use for requests.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromLocalDatastore</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPin</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPinWithName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/cachePolicy</TokenIdentifier>
+			<Abstract type="html">The cache policy to use for requests.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromLocalDatastore</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPin</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPinWithName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/cachePolicy</TokenIdentifier>
+			<Abstract type="html">The cache policy to use for requests.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromLocalDatastore</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPin</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPinWithName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setMaxCacheAge:</TokenIdentifier>
+			<Abstract type="html">The age after which a cached value will be ignored</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval maxCacheAge</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheAge</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/maxCacheAge</TokenIdentifier>
+			<Abstract type="html">The age after which a cached value will be ignored</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval maxCacheAge</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheAge</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/maxCacheAge</TokenIdentifier>
+			<Abstract type="html">The age after which a cached value will be ignored</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval maxCacheAge</Declaration>
+			
+			
+			<Anchor>//api/name/maxCacheAge</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setHasCachedResult:</TokenIdentifier>
+			<Abstract type="html">Returns whether there is a cached result for this query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasCachedResult</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a cached result for this query, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasCachedResult</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/hasCachedResult</TokenIdentifier>
+			<Abstract type="html">Returns whether there is a cached result for this query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasCachedResult</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a cached result for this query, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasCachedResult</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/hasCachedResult</TokenIdentifier>
+			<Abstract type="html">Returns whether there is a cached result for this query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL hasCachedResult</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if there is a cached result for this query, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasCachedResult</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/clearCachedResult</TokenIdentifier>
+			<Abstract type="html">Clears the cached result for this query. If there is no cached result, this is a noop.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (void)clearCachedResult</Declaration>
+			
+			
+			<Anchor>//api/name/clearCachedResult</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFQuery/clearAllCachedResults</TokenIdentifier>
+			<Abstract type="html">Clears the cached results for all queries.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>+ (void)clearAllCachedResults</Declaration>
+			
+			
+			<Anchor>//api/name/clearAllCachedResults</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromLocalDatastore</TokenIdentifier>
+			<Abstract type="html">Change the source of this query to all pinned objects.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/PFQuery/cachePolicy</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (instancetype)fromLocalDatastore</Declaration>
+			
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/fromLocalDatastore</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPin</TokenIdentifier>
+			<Abstract type="html">Change the source of this query to the default group of pinned objects.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/PFQuery/cachePolicy</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (instancetype)fromPin</Declaration>
+			
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/fromPin</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/fromPinWithName:</TokenIdentifier>
+			<Abstract type="html">Change the source of this query to a specific group of pinned objects.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/PFQuery/cachePolicy</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (instancetype)fromPinWithName:(nullable NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The pinned group.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/fromPinWithName:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/ignoreACLs</TokenIdentifier>
+			<Abstract type="html">Ignore ACLs when querying from the Local Datastore.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)ignoreACLs</Declaration>
+			
+			<ReturnValue><Abstract type="html">The same instance of PFQuery as the receiver. This allows method chaining.</Abstract></ReturnValue>
+			<Anchor>//api/name/ignoreACLs</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/setTrace:</TokenIdentifier>
+			<Abstract type="html">Whether or not performance tracing should be done on the query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL trace</Declaration>
+			
+			
+			<Anchor>//api/name/trace</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/trace</TokenIdentifier>
+			<Abstract type="html">Whether or not performance tracing should be done on the query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL trace</Declaration>
+			
+			
+			<Anchor>//api/name/trace</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQuery/trace</TokenIdentifier>
+			<Abstract type="html">Whether or not performance tracing should be done on the query.</Abstract>
+			<DeclaredIn>PFQuery.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL trace</Declaration>
+			
+			
+			<Anchor>//api/name/trace</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getObjectInBackgroundWithId:target:selector:</TokenIdentifier>
+			<Abstract type="html">Gets a PFObject asynchronously. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFQuery.-getObjectInBackgroundWithId:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFQuery+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)getObjectInBackgroundWithId:(NSString *)objectId target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the object being requested.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target for the callback selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector for the callback.
+It should have the following signature: (void)callbackWithResult:(id)result error:(NSError *)error.
+Result will be nil if error is set and vice versa.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getObjectInBackgroundWithId:target:selector:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/findObjectsInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Finds objects asynchronously and calls the given callback with the results. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFQuery.-findObjectsInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFQuery+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)findObjectsInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call the selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(id)result error:(NSError *)error.
+Result will be nil if error is set and vice versa.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/findObjectsInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/getFirstObjectInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Gets an object asynchronously and calls the given callback with the results. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFQuery.-getFirstObjectInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFQuery+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)getFirstObjectInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call the selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(PFObject )result error:(NSError )error.
+result will be nil if error is set OR no object was found matching the query.
+error will be nil if result is set OR if the query succeeded, but found no results.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFirstObjectInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQuery/countObjectsInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Counts objects asynchronously and calls the given callback with the count. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFQuery.-countObjectsInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFQuery+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)countObjectsInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call the selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/countObjectsInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

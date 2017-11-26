@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFPurchase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFPurchase</TokenIdentifier>
+			<Abstract type="html">PFPurchase provides a set of APIs for working with in-app purchases.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/addObserverForProduct:block:</TokenIdentifier>
+			<Abstract type="html">Add application logic block which is run when buying a product.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<Declaration>+ (void)addObserverForProduct:(NSString *)productIdentifier block:(PFPurchaseProductObservationBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productIdentifier</Name>
+					<Abstract type="html">the product identifier</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to be run when buying a product.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObserverForProduct:block:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/buyProduct:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously initiates the purchase for the product.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<Declaration>+ (void)buyProduct:(NSString *)productIdentifier block:(nullable PFPurchaseBuyProductResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>productIdentifier</Name>
+					<Abstract type="html">the product identifier</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/buyProduct:block:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/downloadAssetForTransaction:completion:</TokenIdentifier>
+			<Abstract type="html">Asynchronously download the purchased asset, which is stored on Parse&apos;s server.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<Declaration>+ (void)downloadAssetForTransaction:(SKPaymentTransaction *)transaction completion:(PFPurchaseDownloadAssetResultBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transaction</Name>
+					<Abstract type="html">the transaction, which contains the receipt.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadAssetForTransaction:completion:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/downloadAssetForTransaction:completion:progress:</TokenIdentifier>
+			<Abstract type="html">Asynchronously download the purchased asset, which is stored on Parse&apos;s server.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<Declaration>+ (void)downloadAssetForTransaction:(SKPaymentTransaction *)transaction completion:(PFPurchaseDownloadAssetResultBlock)completion progress:(nullable PFProgressBlock)progress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transaction</Name>
+					<Abstract type="html">the transaction, which contains the receipt.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter><Parameter>
+					<Name>progress</Name>
+					<Abstract type="html">the progress block, which is called multiple times to reveal progress of the download.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadAssetForTransaction:completion:progress:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/restore</TokenIdentifier>
+			<Abstract type="html">Asynchronously restore completed transactions for the current user.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<Declaration>+ (void)restore</Declaration>
+			
+			
+			<Anchor>//api/name/restore</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPurchase/assetContentPathForProduct:</TokenIdentifier>
+			<Abstract type="html">Returns a content path of the asset of a product, if it was purchased and downloaded.</Abstract>
+			<DeclaredIn>PFPurchase.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSString *)assetContentPathForProduct:(PFProduct *)product</Declaration>
+			
+			
+			<Anchor>//api/name/assetContentPathForProduct:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

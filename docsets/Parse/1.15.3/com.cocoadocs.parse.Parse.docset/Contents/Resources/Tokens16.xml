@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFOfflineDecoder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFOfflineDecoder</TokenIdentifier>
+			<Abstract type="html">Extends the normal JSON to PFObject decoding to also deal with placeholders for new objects
+that have been saved offline.</Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFOfflineDecoder/decoderWithOfflineObjects:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)decoderWithOfflineObjects:(nullable NSDictionary *)offlineObjects</Declaration>
+			
+			
+			<Anchor>//api/name/decoderWithOfflineObjects:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

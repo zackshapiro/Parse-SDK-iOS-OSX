@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFCachePolicy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFCachePolicy</TokenIdentifier>
+			<Abstract type="html">PFCachePolicy specifies different caching policies that could be used with PFQuery.</Abstract>
+			<DeclaredIn>PFConstants.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFQuery</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFCachePolicyIgnoreCache</TokenIdentifier>
+            <Abstract type="html">     The query does not load from the cache or save results to the cache.
+     This is the default cache policy.
+     </Abstract>
+            <Declaration>kPFCachePolicyIgnoreCache</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFCachePolicyCacheOnly</TokenIdentifier>
+            <Abstract type="html">     The query only loads from the cache, ignoring the network.
+     If there are no cached results, this causes a NSError with kPFErrorCacheMiss code.
+     </Abstract>
+            <Declaration>kPFCachePolicyCacheOnly</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFCachePolicyNetworkOnly</TokenIdentifier>
+            <Abstract type="html">     The query does not load from the cache, but it will save results to the cache.
+     </Abstract>
+            <Declaration>kPFCachePolicyNetworkOnly</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFCachePolicyCacheElseNetwork</TokenIdentifier>
+            <Abstract type="html">     The query first tries to load from the cache, but if that fails, it loads results from the network.
+     If there are no cached results, this causes a NSError with kPFErrorCacheMiss code.
+     </Abstract>
+            <Declaration>kPFCachePolicyCacheElseNetwork</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFCachePolicyNetworkElseCache</TokenIdentifier>
+            <Abstract type="html">     The query first tries to load from the network, but if that fails, it loads results from the cache.
+     If there are no cached results, this causes a NSError with kPFErrorCacheMiss code.
+     </Abstract>
+            <Declaration>kPFCachePolicyNetworkElseCache</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFCachePolicyCacheThenNetwork</TokenIdentifier>
+            <Abstract type="html">     The query first loads from the cache, then loads from the network.
+     The callback will be called twice - first with the cached results, then with the network results.
+     Since it returns two results at different times, this cache policy cannot be used with synchronous or task methods.
+     </Abstract>
+            <Declaration>kPFCachePolicyCacheThenNetwork</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+	</File>
+</Tokens>

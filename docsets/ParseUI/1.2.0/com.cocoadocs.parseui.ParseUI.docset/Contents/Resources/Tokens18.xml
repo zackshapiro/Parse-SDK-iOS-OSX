@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFTextFieldSeparatorStyle.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFTextFieldSeparatorStyle</TokenIdentifier>
+			<Abstract type="html">PFTextFieldSeparatorStyle bitmask specifies the style of the separators,
+that should be used for a given PFTextField.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFTextField</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFTextFieldSeparatorStyleNone</TokenIdentifier>
+            <Abstract type="html">No separators are visible.</Abstract>
+            <Declaration>PFTextFieldSeparatorStyleNone</Declaration>
+            
+            <DeclaredIn>PFTextField.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFTextFieldSeparatorStyleTop</TokenIdentifier>
+            <Abstract type="html">Separator on top of the text field.</Abstract>
+            <Declaration>PFTextFieldSeparatorStyleTop</Declaration>
+            
+            <DeclaredIn>PFTextField.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFTextFieldSeparatorStyleBottom</TokenIdentifier>
+            <Abstract type="html">Separator at the bottom of the text field.</Abstract>
+            <Declaration>PFTextFieldSeparatorStyleBottom</Declaration>
+            
+            <DeclaredIn>PFTextField.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+	</File>
+</Tokens>

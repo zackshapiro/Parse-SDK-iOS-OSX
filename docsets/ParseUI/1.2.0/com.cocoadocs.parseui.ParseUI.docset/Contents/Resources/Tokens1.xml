@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFCollectionViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFCollectionViewCell</TokenIdentifier>
+			<Abstract type="html">The PFCollectionViewCell class represents a collection view cell which can
+download and display remote images stored on Parse as well as has a default simple text label.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFCollectionViewCell/setTextLabel:</TokenIdentifier>
+			<Abstract type="html">A simple lazy-loaded label for the collection view cell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) UILabel *textLabel</Declaration>
+			
+			
+			<Anchor>//api/name/textLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFCollectionViewCell/textLabel</TokenIdentifier>
+			<Abstract type="html">A simple lazy-loaded label for the collection view cell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) UILabel *textLabel</Declaration>
+			
+			
+			<Anchor>//api/name/textLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFCollectionViewCell/textLabel</TokenIdentifier>
+			<Abstract type="html">A simple lazy-loaded label for the collection view cell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) UILabel *textLabel</Declaration>
+			
+			
+			<Anchor>//api/name/textLabel</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFCollectionViewCell/setImageView:</TokenIdentifier>
+			<Abstract type="html">The lazy-loaded imageView of the collection view cell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFImageView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong, readonly) PFImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFCollectionViewCell/imageView</TokenIdentifier>
+			<Abstract type="html">The lazy-loaded imageView of the collection view cell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFImageView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong, readonly) PFImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFCollectionViewCell/imageView</TokenIdentifier>
+			<Abstract type="html">The lazy-loaded imageView of the collection view cell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFImageView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong, readonly) PFImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFCollectionViewCell/updateFromObject:</TokenIdentifier>
+			<Abstract type="html">This method should update all the relevant information inside a subclass of PFCollectionViewCell.</Abstract>
+			<DeclaredIn>PFCollectionViewCell.h</DeclaredIn>
+			
+			<Declaration>- (void)updateFromObject:(nullable PFObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An instance of PFObject to update from.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateFromObject:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

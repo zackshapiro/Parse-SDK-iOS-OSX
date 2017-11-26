@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFLogLevel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFLogLevel</TokenIdentifier>
+			<Abstract type="html">PFLogLevel enum specifies different levels of logging that could be used to limit or display more messages in logs.</Abstract>
+			<DeclaredIn>PFConstants.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/Parse</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/Parse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogLevelNone</TokenIdentifier>
+            <Abstract type="html">     Log level that disables all logging.
+     </Abstract>
+            <Declaration>PFLogLevelNone</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogLevelError</TokenIdentifier>
+            <Abstract type="html">     Log level that if set is going to output error messages to the log.
+     </Abstract>
+            <Declaration>PFLogLevelError</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogLevelWarning</TokenIdentifier>
+            <Abstract type="html">     Log level that if set is going to output the following messages to log:
+     - Errors
+     - Warnings
+     </Abstract>
+            <Declaration>PFLogLevelWarning</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogLevelInfo</TokenIdentifier>
+            <Abstract type="html">     Log level that if set is going to output the following messages to log:
+     - Errors
+     - Warnings
+     - Informational messages
+     </Abstract>
+            <Declaration>PFLogLevelInfo</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogLevelDebug</TokenIdentifier>
+            <Abstract type="html">     Log level that if set is going to output the following messages to log:
+     - Errors
+     - Warnings
+     - Informational messages
+     - Debug messages
+     </Abstract>
+            <Declaration>PFLogLevelDebug</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+	</File>
+</Tokens>

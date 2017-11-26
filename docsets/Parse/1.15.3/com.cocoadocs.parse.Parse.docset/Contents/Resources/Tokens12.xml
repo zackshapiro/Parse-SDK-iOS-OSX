@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFKnownParseObjectDecoder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFKnownParseObjectDecoder</TokenIdentifier>
+			<Abstract type="html">A subclass of PFDecoder which can keep PFObject that has been fetched instead of creating a new instance.</Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFKnownParseObjectDecoder/decoderWithFetchedObjects:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)decoderWithFetchedObjects:(nullable NSDictionary *)fetchedObjects</Declaration>
+			
+			
+			<Anchor>//api/name/decoderWithFetchedObjects:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

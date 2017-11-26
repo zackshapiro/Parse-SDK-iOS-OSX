@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFPurchaseTableViewCellState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFPurchaseTableViewCellState</TokenIdentifier>
+			<Abstract type="html">An enum that represents states of the PFPurchaseTableViewCell.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFPurchaseTableViewCellStateNormal</TokenIdentifier>
+            <Abstract type="html">Normal state of the cell.</Abstract>
+            <Declaration>PFPurchaseTableViewCellStateNormal</Declaration>
+            
+            <DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFPurchaseTableViewCellStateDownloading</TokenIdentifier>
+            <Abstract type="html">Downloading state of the cell.</Abstract>
+            <Declaration>PFPurchaseTableViewCellStateDownloading</Declaration>
+            
+            <DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFPurchaseTableViewCellStateDownloaded</TokenIdentifier>
+            <Abstract type="html">State of the cell, when the product was downloaded.</Abstract>
+            <Declaration>PFPurchaseTableViewCellStateDownloaded</Declaration>
+            
+            <DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+	</File>
+</Tokens>

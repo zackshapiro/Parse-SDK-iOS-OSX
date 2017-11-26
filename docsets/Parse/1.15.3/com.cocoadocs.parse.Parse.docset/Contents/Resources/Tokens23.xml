@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFPush.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFPush</TokenIdentifier>
+			<Abstract type="html">The PFPush class defines a push notification that can be sent from a client device.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/push</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)push</Declaration>
+			
+			
+			<Anchor>//api/name/push</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setChannel:</TokenIdentifier>
+			<Abstract type="html">Sets the channel on which this push notification will be sent.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setChannel:(nullable NSString *)channel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to set for this push.
+The channel name must start with a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setChannel:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setChannels:</TokenIdentifier>
+			<Abstract type="html">Sets the array of channels on which this push notification will be sent.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setChannels:(nullable NSArray&lt;NSString*&gt; *)channels</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channels</Name>
+					<Abstract type="html">The array of channels to set for this push.
+Each channel name must start with a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setChannels:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setQuery:</TokenIdentifier>
+			<Abstract type="html">Sets an installation query to which this push notification will be sent.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setQuery:(nullable PFQuery&lt;PFInstallation*&gt; *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The installation query to set for this push.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setQuery:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setMessage:</TokenIdentifier>
+			<Abstract type="html">Sets an alert message for this push notification.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setMessage:(nullable NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send in this push.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMessage:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setData:</TokenIdentifier>
+			<Abstract type="html">Sets an arbitrary data payload for this push notification.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setData:(nullable NSDictionary *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send in this push.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setData:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setPushToAndroid:</TokenIdentifier>
+			<Abstract type="html">Sets whether this push will go to Android devices. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use a PFInstallation.+query with a constraint on deviceType instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setPushToAndroid:(BOOL)pushToAndroid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pushToAndroid</Name>
+					<Abstract type="html">Whether this push will go to Android devices.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPushToAndroid:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setPushToIOS:</TokenIdentifier>
+			<Abstract type="html">Sets whether this push will go to iOS devices. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use a PFInstallation.+query with a constraint on deviceType instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)setPushToIOS:(BOOL)pushToIOS</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pushToIOS</Name>
+					<Abstract type="html">Whether this push will go to iOS devices.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPushToIOS:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/expireAtDate:</TokenIdentifier>
+			<Abstract type="html">Sets the expiration time for this notification.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFPush/expireAfterTimeInterval:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)expireAtDate:(nullable NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>date</Name>
+					<Abstract type="html">The time at which the notification should expire.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/expireAtDate:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/expireAfterTimeInterval:</TokenIdentifier>
+			<Abstract type="html">Sets the time interval after which this notification should expire.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)expireAfterTimeInterval:(NSTimeInterval)timeInterval</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timeInterval</Name>
+					<Abstract type="html">The interval after which the notification should expire.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/expireAfterTimeInterval:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/clearExpiration</TokenIdentifier>
+			<Abstract type="html">Clears both expiration values, indicating that the notification should never expire.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)clearExpiration</Declaration>
+			
+			
+			<Anchor>//api/name/clearExpiration</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/setPushDate:</TokenIdentifier>
+			<Abstract type="html">Date at which to send this push notification.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSDate *pushDate</Declaration>
+			
+			
+			<Anchor>//api/name/pushDate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/pushDate</TokenIdentifier>
+			<Abstract type="html">Date at which to send this push notification.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSDate *pushDate</Declaration>
+			
+			
+			<Anchor>//api/name/pushDate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFPush/pushDate</TokenIdentifier>
+			<Abstract type="html">Date at which to send this push notification.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSDate *pushDate</Declaration>
+			
+			
+			<Anchor>//api/name/pushDate</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToChannelInBackground:withMessage:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message to a channel.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)sendPushMessageToChannelInBackground:(NSString *)channel withMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushMessageToChannelInBackground:withMessage:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToChannelInBackground:withMessage:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends a push message to a channel and calls the given block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushMessageToChannelInBackground:(NSString *)channel withMessage:(NSString *)message block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushMessageToChannelInBackground:withMessage:block:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToQueryInBackground:withMessage:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message to a query.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)sendPushMessageToQueryInBackground:(PFQuery&lt;PFInstallation*&gt; *)query withMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to send to. The query must be a PFInstallation query created with PFInstallation.+query.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushMessageToQueryInBackground:withMessage:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToQueryInBackground:withMessage:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends a push message to a query and calls the given block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushMessageToQueryInBackground:(PFQuery&lt;PFInstallation*&gt; *)query withMessage:(NSString *)message block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to send to. The query must be a PFInstallation query
+created with [PFInstallation query].</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushMessageToQueryInBackground:withMessage:block:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPushInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously send this push message.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)sendPushInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushInBackground</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPushInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send this push message and executes the given callback block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>- (void)sendPushInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToChannelInBackground:withData:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message with arbitrary data to a channel.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)sendPushDataToChannelInBackground:(NSString *)channel withData:(NSDictionary *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushDataToChannelInBackground:withData:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToChannelInBackground:withData:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends a push message with arbitrary data to a channel and calls the given block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushDataToChannelInBackground:(NSString *)channel withData:(NSDictionary *)data block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushDataToChannelInBackground:withData:block:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToQueryInBackground:withData:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message with arbitrary data to a query.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)sendPushDataToQueryInBackground:(PFQuery&lt;PFInstallation*&gt; *)query withData:(NSDictionary *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to send to. The query must be a PFInstallation query
+created with PFInstallation.+query.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushDataToQueryInBackground:withData:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToQueryInBackground:withData:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends a push message with arbitrary data to a query and calls the given block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushDataToQueryInBackground:(PFQuery&lt;PFInstallation*&gt; *)query withData:(NSDictionary *)data block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to send to. The query must be a PFInstallation query
+created with PFInstallation.+query.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushDataToQueryInBackground:withData:block:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/handlePush:</TokenIdentifier>
+			<Abstract type="html">A default handler for push notifications while the app is active that
+could be used to mimic the behavior of iOS push notifications while the app is backgrounded or not running.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)handlePush:(nullable NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">The userInfo dictionary you get in appplication:didReceiveRemoteNotification:.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/handlePush:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/storeDeviceToken:</TokenIdentifier>
+			<Abstract type="html">Store the device token locally for push notifications.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)storeDeviceToken:(id)deviceToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceToken</Name>
+					<Abstract type="html">Either as an NSData straight from application:didRegisterForRemoteNotificationsWithDeviceToken:
+or as an NSString if you converted it yourself.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/storeDeviceToken:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/getSubscribedChannelsInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously get all the channels that this device is subscribed to.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSSet&lt;NSString*&gt; *&gt; *)getSubscribedChannelsInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/getSubscribedChannelsInBackground</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/getSubscribedChannelsInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously get all the channels that this device is subscribed to.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)getSubscribedChannelsInBackgroundWithBlock:(PFSetResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(NSSet channels, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getSubscribedChannelsInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/subscribeToChannelInBackground:</TokenIdentifier>
+			<Abstract type="html">Asynchronously subscribes the device to a channel of push notifications.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)subscribeToChannelInBackground:(NSString *)channel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to subscribe to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/subscribeToChannelInBackground:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/subscribeToChannelInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously subscribes the device to a channel of push notifications and calls the given block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)subscribeToChannelInBackground:(NSString *)channel block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to subscribe to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subscribeToChannelInBackground:block:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/unsubscribeFromChannelInBackground:</TokenIdentifier>
+			<Abstract type="html">Asynchronously unsubscribes the device from a channel of push notifications.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)unsubscribeFromChannelInBackground:(NSString *)channel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to unsubscribe from.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unsubscribeFromChannelInBackground:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/unsubscribeFromChannelInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously unsubscribes the device from a channel of push notifications and calls the given block.</Abstract>
+			<DeclaredIn>PFPush.h</DeclaredIn>
+			
+			<Declaration>+ (void)unsubscribeFromChannelInBackground:(NSString *)channel block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to unsubscribe from.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unsubscribeFromChannelInBackground:block:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToChannelInBackground:withMessage:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message to a channel. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+sendPushMessageToChannelInBackground:withMessage:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushMessageToChannelInBackground:(NSString *)channel withMessage:(NSString *)message target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushMessageToChannelInBackground:withMessage:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPushInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send this push message and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.-sendPushInBackgroundWithTarget:selector: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)sendPushInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToChannelInBackground:withData:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message with arbitrary data to a channel. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+sendPushDataToChannelInBackground:withData:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushDataToChannelInBackground:(NSString *)channel withData:(NSDictionary *)data target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushDataToChannelInBackground:withData:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/getSubscribedChannelsInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously get all the channels that this device is subscribed to. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+getSubscribedChannelsInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)getSubscribedChannelsInBackgroundWithTarget:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSSet )result error:(NSError )error.
+error will be nil on success and set if there was an error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getSubscribedChannelsInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/subscribeToChannelInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously subscribes the device to a channel of push notifications and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+subscribeToChannelInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)subscribeToChannelInBackground:(NSString *)channel target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to subscribe to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subscribeToChannelInBackground:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/unsubscribeFromChannelInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously unsubscribes the device from a channel of push notifications and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+unsubscribeFromChannelInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)unsubscribeFromChannelInBackground:(NSString *)channel target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to unsubscribe from.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unsubscribeFromChannelInBackground:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPush:</TokenIdentifier>
+			<Abstract type="html">Synchronously send this push message.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendPush:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the send succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPush:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToChannel:withMessage:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously send a push message to a channel.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)sendPushMessageToChannel:(NSString *)channel withMessage:(NSString *)message error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the send succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushMessageToChannel:withMessage:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToQuery:withMessage:error:</TokenIdentifier>
+			<Abstract type="html">Send a push message to a query.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)sendPushMessageToQuery:(PFQuery&lt;PFInstallation*&gt; *)query withMessage:(NSString *)message error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to send to. The query must be a PFInstallation query created with PFInstallation.+query.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the send succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushMessageToQuery:withMessage:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToChannel:withData:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously send a push message with arbitrary data to a channel.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)sendPushDataToChannel:(NSString *)channel withData:(NSDictionary *)data error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the send succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushDataToChannel:withData:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToQuery:withData:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously send a push message with arbitrary data to a query.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)sendPushDataToQuery:(PFQuery&lt;PFInstallation*&gt; *)query withData:(NSDictionary *)data error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">The query to send to. The query must be a PFInstallation query
+created with PFInstallation.+query.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the send succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendPushDataToQuery:withData:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/getSubscribedChannels:</TokenIdentifier>
+			<Abstract type="html">Synchronously get all the channels that this device is subscribed to.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSSet&lt;NSString*&gt; *)getSubscribedChannels:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an NSSet containing all the channel names this device is subscribed to.</Abstract></ReturnValue>
+			<Anchor>//api/name/getSubscribedChannels:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/subscribeToChannel:error:</TokenIdentifier>
+			<Abstract type="html">Synchrnously subscribes the device to a channel of push notifications.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)subscribeToChannel:(NSString *)channel error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to subscribe to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the subscribe succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/subscribeToChannel:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/unsubscribeFromChannel:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously unsubscribes the device to a channel of push notifications.</Abstract>
+			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)unsubscribeFromChannel:(NSString *)channel error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to unsubscribe from.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unsubscribe succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unsubscribeFromChannel:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

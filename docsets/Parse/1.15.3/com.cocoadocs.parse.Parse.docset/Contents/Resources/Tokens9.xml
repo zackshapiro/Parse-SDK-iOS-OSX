@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFFileUploadResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFFileUploadResult</TokenIdentifier>
+			<Abstract type="html">Response provided by a custom PFFileUploadController.</Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFFileUploadResult/setUrl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFFileUploadResult/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFFileUploadResult/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFFileUploadResult/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFFileUploadResult/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFFileUploadResult/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFFileUploadResult.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

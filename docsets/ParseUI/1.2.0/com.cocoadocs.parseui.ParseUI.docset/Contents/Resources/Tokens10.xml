@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFSignUpViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFSignUpViewController</TokenIdentifier>
+			<Abstract type="html">The PFSignUpViewController class that presents and manages
+a standard authentication interface for signing up a PFUser.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setFields:</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFSignUpFields</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/fields</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFSignUpFields</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/fields</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFSignUpFields</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFSignUpFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setSignUpView:</TokenIdentifier>
+			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFSignUpView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFSignUpView *signUpView</Declaration>
+			
+			
+			<Anchor>//api/name/signUpView</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/signUpView</TokenIdentifier>
+			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFSignUpView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFSignUpView *signUpView</Declaration>
+			
+			
+			<Anchor>//api/name/signUpView</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/signUpView</TokenIdentifier>
+			<Abstract type="html">The sign up view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFSignUpView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFSignUpView *signUpView</Declaration>
+			
+			
+			<Anchor>//api/name/signUpView</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFSignUpViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, weak) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFSignUpViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, weak) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFSignUpViewController.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFSignUpViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, weak) id&lt;PFSignUpViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setMinPasswordLength:</TokenIdentifier>
+			<Abstract type="html">Minimum required password length for user signups, defaults to 0.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger minPasswordLength</Declaration>
+			
+			
+			<Anchor>//api/name/minPasswordLength</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/minPasswordLength</TokenIdentifier>
+			<Abstract type="html">Minimum required password length for user signups, defaults to 0.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger minPasswordLength</Declaration>
+			
+			
+			<Anchor>//api/name/minPasswordLength</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/minPasswordLength</TokenIdentifier>
+			<Abstract type="html">Minimum required password length for user signups, defaults to 0.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger minPasswordLength</Declaration>
+			
+			
+			<Anchor>//api/name/minPasswordLength</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/setEmailAsUsername:</TokenIdentifier>
+			<Abstract type="html">Whether to use the email as username on the attached signUpView.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailAsUsername</Declaration>
+			
+			
+			<Anchor>//api/name/emailAsUsername</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSignUpViewController/emailAsUsername</TokenIdentifier>
+			<Abstract type="html">Whether to use the email as username on the attached signUpView.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailAsUsername</Declaration>
+			
+			
+			<Anchor>//api/name/emailAsUsername</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSignUpViewController/emailAsUsername</TokenIdentifier>
+			<Abstract type="html">Whether to use the email as username on the attached signUpView.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailAsUsername</Declaration>
+			
+			
+			<Anchor>//api/name/emailAsUsername</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

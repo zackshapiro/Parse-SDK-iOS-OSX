@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFImageView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFImageView</TokenIdentifier>
+			<Abstract type="html">An image view that downloads and displays remote image stored on Parse&apos;s server.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/setFile:</TokenIdentifier>
+			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFFile *file</Declaration>
+			
+			
+			<Anchor>//api/name/file</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/file</TokenIdentifier>
+			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFFile *file</Declaration>
+			
+			
+			<Anchor>//api/name/file</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFImageView/file</TokenIdentifier>
+			<Abstract type="html">The remote file on Parse&apos;s server that stores the image.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFFile *file</Declaration>
+			
+			
+			<Anchor>//api/name/file</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground</TokenIdentifier>
+			<Abstract type="html">Initiate downloading of the remote image.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;UIImage*&gt; *)loadInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/loadInBackground</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground:</TokenIdentifier>
+			<Abstract type="html">Initiate downloading of the remote image.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<Declaration>- (void)loadInBackground:(nullable PFImageViewImageResultBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadInBackground:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFImageView/loadInBackground:progressBlock:</TokenIdentifier>
+			<Abstract type="html">Initiate downloading of the remote image.</Abstract>
+			<DeclaredIn>PFImageView.h</DeclaredIn>
+			
+			<Declaration>- (void)loadInBackground:(nullable PFImageViewImageResultBlock)completion progressBlock:(nullable void ( ^ ) ( int percentDone ))progressBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">the completion block.</Abstract>
+				</Parameter><Parameter>
+					<Name>progressBlock</Name>
+					<Abstract type="html">called with the download progress as the image is being downloaded.
+Will be called with a value of 100 before the completion block is called.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadInBackground:progressBlock:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

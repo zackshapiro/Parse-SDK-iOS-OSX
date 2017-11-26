@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFAnonymousUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFAnonymousUtils</TokenIdentifier>
+			<Abstract type="html">Provides utility functions for working with Anonymously logged-in users.
+Anonymous users have some unique characteristics:</Abstract>
+			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/logInInBackground</TokenIdentifier>
+			<Abstract type="html">Creates an anonymous user asynchronously and sets as a result to BFTask.</Abstract>
+			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFUser*&gt; *)logInInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInInBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/logInWithBlock:</TokenIdentifier>
+			<Abstract type="html">Creates an anonymous user asynchronously and performs a provided block.</Abstract>
+			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInWithBlock:(nullable PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when anonymous user creation is complete.
+It should have the following argument signature: ^(PFUser user, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithBlock:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/isLinkedWithUser:</TokenIdentifier>
+			<Abstract type="html">Whether the PFUser object is logged in anonymously.</Abstract>
+			<DeclaredIn>PFAnonymousUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isLinkedWithUser:(nullable PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">PFUser object to check for anonymity. The user must be logged in on this device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the user is anonymous. NO if the user is not the current user or is not anonymous.</Abstract></ReturnValue>
+			<Anchor>//api/name/isLinkedWithUser:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnonymousUtils/logInWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Creates an anonymous user asynchronously and invokes a selector on a target. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFAnonymousUtils.+logInWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFAnonymousUtils+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.
+It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithTarget:selector:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

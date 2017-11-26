@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PFSubclassing.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PFSubclassing</TokenIdentifier>
+			<Abstract type="html">If a subclass of PFObject conforms to PFSubclassing and calls PFObject,
+Parse framework will be able to use that class as the native class for a Parse cloud object.</Abstract>
+			<DeclaredIn>PFSubclassing.h</DeclaredIn>
+            
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSubclassing/parseClassName</TokenIdentifier>
+			<Abstract type="html">The name of the class as seen in the REST API.</Abstract>
+			<DeclaredIn>PFSubclassing.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSubclassing/objectWithoutDataWithObjectId:</TokenIdentifier>
+			<Abstract type="html">Creates a reference to an existing PFObject for use in creating associations between PFObjects.</Abstract>
+			<DeclaredIn>PFSubclassing.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)objectWithoutDataWithObjectId:(nullable NSString *)objectId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The object id for the referenced object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new PFObject without data.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectWithoutDataWithObjectId:</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSubclassing/query</TokenIdentifier>
+			<Abstract type="html">Create a query which returns objects of this type.</Abstract>
+			<DeclaredIn>PFSubclassing.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSubclassing/queryWithPredicate:</TokenIdentifier>
+			<Abstract type="html">Returns a query for objects of this type with a given predicate.</Abstract>
+			<DeclaredIn>PFSubclassing.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFQuery/queryWithClassName:predicate:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (nullable PFQuery *)queryWithPredicate:(nullable NSPredicate *)predicate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>predicate</Name>
+					<Abstract type="html">The predicate to create conditions from.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of PFQuery.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryWithPredicate:</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSubclassing/registerSubclass</TokenIdentifier>
+			<Abstract type="html">Lets Parse know this class should be used to instantiate all objects with class type parseClassName.</Abstract>
+			<DeclaredIn>PFSubclassing.h</DeclaredIn>
+			
+			<Declaration>+ (void)registerSubclass</Declaration>
+			
+			
+			<Anchor>//api/name/registerSubclass</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

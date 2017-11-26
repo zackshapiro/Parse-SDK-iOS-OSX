@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFTextField.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFTextField</TokenIdentifier>
+			<Abstract type="html">PFTextField class serves as a stylable subclass of UITextField.
+It includes styles that are specific to ParseUI framework and allows advanced customization.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTextField/setSeparatorStyle:</TokenIdentifier>
+			<Abstract type="html">Separator style bitmask that should be applied to this textfield.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFTextFieldSeparatorStyle</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFTextFieldSeparatorStyle separatorStyle</Declaration>
+			
+			
+			<Anchor>//api/name/separatorStyle</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTextField/separatorStyle</TokenIdentifier>
+			<Abstract type="html">Separator style bitmask that should be applied to this textfield.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFTextFieldSeparatorStyle</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFTextFieldSeparatorStyle separatorStyle</Declaration>
+			
+			
+			<Anchor>//api/name/separatorStyle</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFTextField/separatorStyle</TokenIdentifier>
+			<Abstract type="html">Separator style bitmask that should be applied to this textfield.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFTextFieldSeparatorStyle</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFTextFieldSeparatorStyle separatorStyle</Declaration>
+			
+			
+			<Anchor>//api/name/separatorStyle</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTextField/setUI_APPEARANCE_SELECTOR:</TokenIdentifier>
+			<Abstract type="html">Color that should be used for the separators, if they are visible.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) UIColor *UI_APPEARANCE_SELECTOR</Declaration>
+			
+			
+			<Anchor>//api/name/UI_APPEARANCE_SELECTOR</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTextField/UI_APPEARANCE_SELECTOR</TokenIdentifier>
+			<Abstract type="html">Color that should be used for the separators, if they are visible.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) UIColor *UI_APPEARANCE_SELECTOR</Declaration>
+			
+			
+			<Anchor>//api/name/UI_APPEARANCE_SELECTOR</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFTextField/UI_APPEARANCE_SELECTOR</TokenIdentifier>
+			<Abstract type="html">Color that should be used for the separators, if they are visible.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) UIColor *UI_APPEARANCE_SELECTOR</Declaration>
+			
+			
+			<Anchor>//api/name/UI_APPEARANCE_SELECTOR</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTextField/initWithFrame:separatorStyle:</TokenIdentifier>
+			<Abstract type="html">This method is a convenience initializer that sets both frame and separatorStyle for an instance of PFTextField.</Abstract>
+			<DeclaredIn>PFTextField.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithFrame:(CGRect)frame separatorStyle:(PFTextFieldSeparatorStyle)separatorStyle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">The frame rectangle for the view, measured in points.</Abstract>
+				</Parameter><Parameter>
+					<Name>separatorStyle</Name>
+					<Abstract type="html">Initial separator style to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized instance of PFTextField or nil if it couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFrame:separatorStyle:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

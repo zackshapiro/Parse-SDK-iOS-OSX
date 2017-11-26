@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFLogInViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFLogInViewController</TokenIdentifier>
+			<Abstract type="html">The PFLogInViewController class presents and manages a standard authentication interface for logging in a PFUser.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setFields:</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFLogInFields</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFLogInFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/fields</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFLogInFields</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFLogInFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/fields</TokenIdentifier>
+			<Abstract type="html">A bitmask specifying the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFLogInFields</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, assign) PFLogInFields fields</Declaration>
+			
+			
+			<Anchor>//api/name/fields</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setLogInView:</TokenIdentifier>
+			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFLogInView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFLogInView *logInView</Declaration>
+			
+			
+			<Anchor>//api/name/logInView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/logInView</TokenIdentifier>
+			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFLogInView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFLogInView *logInView</Declaration>
+			
+			
+			<Anchor>//api/name/logInView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/logInView</TokenIdentifier>
+			<Abstract type="html">The log in view. It contains all the enabled log in elements.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFLogInView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFLogInView *logInView</Declaration>
+			
+			
+			<Anchor>//api/name/logInView</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFLogInViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, weak) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFLogInViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, weak) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate that responds to the control events of PFLogInViewController.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFLogInViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nullable, nonatomic, weak) id&lt;PFLogInViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setFacebookPermissions:</TokenIdentifier>
+			<Abstract type="html">The facebook permissions that Facebook log in requests for.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSArray&lt;NSString*&gt; *facebookPermissions</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPermissions</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/facebookPermissions</TokenIdentifier>
+			<Abstract type="html">The facebook permissions that Facebook log in requests for.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSArray&lt;NSString*&gt; *facebookPermissions</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPermissions</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/facebookPermissions</TokenIdentifier>
+			<Abstract type="html">The facebook permissions that Facebook log in requests for.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSArray&lt;NSString*&gt; *facebookPermissions</Declaration>
+			
+			
+			<Anchor>//api/name/facebookPermissions</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setSignUpController:</TokenIdentifier>
+			<Abstract type="html">The sign up controller if sign up is enabled.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFSignUpViewController *signUpController</Declaration>
+			
+			
+			<Anchor>//api/name/signUpController</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/signUpController</TokenIdentifier>
+			<Abstract type="html">The sign up controller if sign up is enabled.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFSignUpViewController *signUpController</Declaration>
+			
+			
+			<Anchor>//api/name/signUpController</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/signUpController</TokenIdentifier>
+			<Abstract type="html">The sign up controller if sign up is enabled.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFSignUpViewController *signUpController</Declaration>
+			
+			
+			<Anchor>//api/name/signUpController</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/setEmailAsUsername:</TokenIdentifier>
+			<Abstract type="html">Whether to prompt for the email as username on the login view.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailAsUsername</Declaration>
+			
+			
+			<Anchor>//api/name/emailAsUsername</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFLogInViewController/emailAsUsername</TokenIdentifier>
+			<Abstract type="html">Whether to prompt for the email as username on the login view.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailAsUsername</Declaration>
+			
+			
+			<Anchor>//api/name/emailAsUsername</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFLogInViewController/emailAsUsername</TokenIdentifier>
+			<Abstract type="html">Whether to prompt for the email as username on the login view.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL emailAsUsername</Declaration>
+			
+			
+			<Anchor>//api/name/emailAsUsername</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

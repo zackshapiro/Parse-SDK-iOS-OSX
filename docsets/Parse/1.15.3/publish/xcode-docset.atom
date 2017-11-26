@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://cocoadocs.org/docsets/Parse/xcode-docset.atom/20171126132231</id>
+    <title type="text">Parse</title>
+    <rights>Copyright © 2017 Parse. All rights reserved.</rights>
+    <link rel="self" href="http://cocoadocs.org/docsets/Parse/xcode-docset.atom"></link>
+    <docset:publisherName>Parse</docset:publisherName>
+    <docset:publisherID>com.cocoadocs.parse.documentation</docset:publisherID>
+    <updated>2017-11-26T13:22:31-05:00</updated>
+    <entry>
+        <id>tag:cocoadocs.org,2017-11-26:com.cocoadocs.parse.Parse/1.15.3</id>
+        <title type="text">Parse Documentation</title>
+        <updated>2017-11-26T13:22:31-05:00</updated>
+        <content type="text">Parse Documentation (v1.15.3)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http://cocoadocs.org/docsets/Parse/docset.xar" length="2070416"></link>
+        <docset:identifier>com.cocoadocs.parse.Parse</docset:identifier>
+        <docset:version>1.15.3</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>

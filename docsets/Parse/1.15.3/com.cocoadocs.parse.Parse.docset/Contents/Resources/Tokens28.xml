@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFUser</TokenIdentifier>
+			<Abstract type="html">The PFUser class is a local representation of a user persisted to the Parse Data.
+This class is a subclass of a PFObject, and retains the same functionality of a PFObject,
+but also extends it with various user specific methods, like authentication, signing up, and validation uniqueness.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/currentUser</TokenIdentifier>
+			<Abstract type="html">Gets the currently logged in user from disk and returns an instance of it.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)currentUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns a PFUser that is the currently logged in user. If there is none, returns nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentUser</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/getCurrentUserInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously loads the currently logged in user from disk and returns a task that encapsulates it.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;__kindofPFUser*&gt; *)getCurrentUserInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/getCurrentUserInBackground</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/setSessionToken:</TokenIdentifier>
+			<Abstract type="html">The session token for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *sessionToken</Declaration>
+			
+			
+			<Anchor>//api/name/sessionToken</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/sessionToken</TokenIdentifier>
+			<Abstract type="html">The session token for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *sessionToken</Declaration>
+			
+			
+			<Anchor>//api/name/sessionToken</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFUser/sessionToken</TokenIdentifier>
+			<Abstract type="html">The session token for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *sessionToken</Declaration>
+			
+			
+			<Anchor>//api/name/sessionToken</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/setIsNew:</TokenIdentifier>
+			<Abstract type="html">Whether the PFUser was just created from a request.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isNew</Declaration>
+			
+			
+			<Anchor>//api/name/isNew</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/isNew</TokenIdentifier>
+			<Abstract type="html">Whether the PFUser was just created from a request.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isNew</Declaration>
+			
+			
+			<Anchor>//api/name/isNew</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFUser/isNew</TokenIdentifier>
+			<Abstract type="html">Whether the PFUser was just created from a request.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isNew</Declaration>
+			
+			
+			<Anchor>//api/name/isNew</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/setAuthenticated:</TokenIdentifier>
+			<Abstract type="html">Whether the user is an authenticated object for the device.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isAuthenticated) BOOL authenticated</Declaration>
+			
+			
+			<Anchor>//api/name/authenticated</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/isAuthenticated</TokenIdentifier>
+			<Abstract type="html">Whether the user is an authenticated object for the device.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isAuthenticated) BOOL authenticated</Declaration>
+			
+			
+			<Anchor>//api/name/authenticated</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFUser/authenticated</TokenIdentifier>
+			<Abstract type="html">Whether the user is an authenticated object for the device.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isAuthenticated) BOOL authenticated</Declaration>
+			
+			
+			<Anchor>//api/name/authenticated</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/user</TokenIdentifier>
+			<Abstract type="html">Creates a new PFUser object.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)user</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns a new PFUser object.</Abstract></ReturnValue>
+			<Anchor>//api/name/user</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/enableAutomaticUser</TokenIdentifier>
+			<Abstract type="html">Enables automatic creation of anonymous users.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableAutomaticUser</Declaration>
+			
+			
+			<Anchor>//api/name/enableAutomaticUser</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/setUsername:</TokenIdentifier>
+			<Abstract type="html">The username for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/username</TokenIdentifier>
+			<Abstract type="html">The username for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFUser/username</TokenIdentifier>
+			<Abstract type="html">The username for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/setPassword:</TokenIdentifier>
+			<Abstract type="html">!
+The password for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/password</TokenIdentifier>
+			<Abstract type="html">!
+The password for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFUser/password</TokenIdentifier>
+			<Abstract type="html">!
+The password for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/setEmail:</TokenIdentifier>
+			<Abstract type="html">The email for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/email</TokenIdentifier>
+			<Abstract type="html">The email for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFUser/email</TokenIdentifier>
+			<Abstract type="html">The email for the PFUser.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUpInBackground</TokenIdentifier>
+			<Abstract type="html">Signs up the user asynchronously.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)signUpInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/signUpInBackground</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUpInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Signs up the user asynchronously.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>- (void)signUpInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signUpInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsernameInBackground:password:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to login a user with specified credentials.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;__kindofPFUser*&gt; *)logInWithUsernameInBackground:(NSString *)username password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInWithUsernameInBackground:password:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsernameInBackground:password:block:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to log in a user with specified credentials.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInWithUsernameInBackground:(NSString *)username password:(NSString *)password block:(nullable PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(PFUser user, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithUsernameInBackground:password:block:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/becomeInBackground:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to become a user with the given session token.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;__kindofPFUser*&gt; *)becomeInBackground:(NSString *)sessionToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The session token for the user.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/becomeInBackground:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/becomeInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to become a user with the given session token.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (void)becomeInBackground:(NSString *)sessionToken block:(nullable PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The session token for the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+The block should have the following argument signature: ^(PFUser user, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/becomeInBackground:block:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/enableRevocableSessionInBackground</TokenIdentifier>
+			<Abstract type="html">Enables revocable sessions and migrates the currentUser session token to use revocable session if needed.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask *)enableRevocableSessionInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">An instance of BFTask that is completed when revocable
+sessions are enabled and currentUser token is migrated.</Abstract></ReturnValue>
+			<Anchor>//api/name/enableRevocableSessionInBackground</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/enableRevocableSessionInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Enables revocable sessions and upgrades the currentUser session token to use revocable session if needed.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableRevocableSessionInBackgroundWithBlock:(nullable PFUserSessionUpgradeResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Block that will be called when revocable sessions are enabled and currentUser token is migrated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableRevocableSessionInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logOutInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs out the currently logged in user.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask *)logOutInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">An instance of BFTask, that is resolved with nil result when logging out completes.</Abstract></ReturnValue>
+			<Anchor>//api/name/logOutInBackground</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logOutInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs out the currently logged in user.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (void)logOutInBackgroundWithBlock:(nullable PFUserLogoutResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block that will be called when logging out completes or fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logOutInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmailInBackground:</TokenIdentifier>
+			<Abstract type="html">Send a password reset request asynchronously for a specified email and sets an
+error object. If a user account exists with that email, an email will be sent to
+that address with instructions on how to reset their password.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)requestPasswordResetForEmailInBackground:(NSString *)email</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestPasswordResetForEmailInBackground:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmailInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Send a password reset request asynchronously for a specified email.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+			<Declaration>+ (void)requestPasswordResetForEmailInBackground:(NSString *)email block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestPasswordResetForEmailInBackground:block:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/registerAuthenticationDelegate:forAuthType:</TokenIdentifier>
+			<Abstract type="html">Registers a third party authentication delegate.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFUserAuthenticationDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)registerAuthenticationDelegate:(id&lt;PFUserAuthenticationDelegate&gt;)delegate forAuthType:(NSString *)authType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The third party authenticaiton delegate to be registered.</Abstract>
+				</Parameter><Parameter>
+					<Name>authType</Name>
+					<Abstract type="html">The name of the type of third party authentication source.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerAuthenticationDelegate:forAuthType:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithAuthTypeInBackground:authData:</TokenIdentifier>
+			<Abstract type="html">Logs in a user with third party authentication credentials.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFUserAuthenticationDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BFTask&lt;__kindofPFUser*&gt; *)logInWithAuthTypeInBackground:(NSString *)authType authData:(NSDictionary&lt;NSString*,NSString*&gt; *)authData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>authType</Name>
+					<Abstract type="html">The name of the type of third party authentication source.</Abstract>
+				</Parameter><Parameter>
+					<Name>authData</Name>
+					<Abstract type="html">The user credentials of the third party authentication source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BFTask that is resolved to PFUser when logging in completes.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInWithAuthTypeInBackground:authData:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/linkWithAuthTypeInBackground:authData:</TokenIdentifier>
+			<Abstract type="html">Links this user to a third party authentication library.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFUserAuthenticationDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)linkWithAuthTypeInBackground:(NSString *)authType authData:(NSDictionary&lt;NSString*,NSString*&gt; *)authData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>authType</Name>
+					<Abstract type="html">The name of the type of third party authentication source.</Abstract>
+				</Parameter><Parameter>
+					<Name>authData</Name>
+					<Abstract type="html">The user credentials of the third party authentication source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BFTask that is resolved to @YES if linking succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/linkWithAuthTypeInBackground:authData:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/unlinkWithAuthTypeInBackground:</TokenIdentifier>
+			<Abstract type="html">Unlinks this user from a third party authentication library.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFUserAuthenticationDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)unlinkWithAuthTypeInBackground:(NSString *)authType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>authType</Name>
+					<Abstract type="html">The name of the type of third party authentication source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BFTask that is resolved to @YES if unlinking succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/unlinkWithAuthTypeInBackground:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/isLinkedWithAuthType:</TokenIdentifier>
+			<Abstract type="html">Indicates whether this user is linked with a third party authentication library of a specific type.</Abstract>
+			<DeclaredIn>PFUser.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/PFUserAuthenticationDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isLinkedWithAuthType:(NSString *)authType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>authType</Name>
+					<Abstract type="html">The name of the type of third party authentication source.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the user is linked with a provider, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/isLinkedWithAuthType:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUpInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Signs up the user asynchronously. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.-signUpInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)signUpInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signUpInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsernameInBackground:password:target:selector:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to login a user with specified credentials. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+logInWithUsernameInBackground:password:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInWithUsernameInBackground:(NSString *)username password:(NSString *)password target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
+It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithUsernameInBackground:password:target:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/becomeInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to become a user with the given session token. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+becomeInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)becomeInBackground:(NSString *)sessionToken target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The session token for the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
+It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/becomeInBackground:target:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmailInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Send a password reset request asynchronously for a specified email and sets an error object. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+requestPasswordResetForEmailInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)requestPasswordResetForEmailInBackground:(NSString *)email target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestPasswordResetForEmailInBackground:target:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUp</TokenIdentifier>
+			<Abstract type="html">Signs up the user synchronously.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)signUp</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns YES if the sign up was successful, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/signUp</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUp:</TokenIdentifier>
+			<Abstract type="html">Signs up the user synchronously.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)signUp:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error object to set on error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the sign up was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/signUp:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsername:password:</TokenIdentifier>
+			<Abstract type="html">Makes a synchronous request to login a user with specified credentials.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)logInWithUsername:(NSString *)username password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an instance of the PFUser on success.
+If login failed for either wrong password or wrong username, returns nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInWithUsername:password:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsername:password:error:</TokenIdentifier>
+			<Abstract type="html">Makes a synchronous request to login a user with specified credentials.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)logInWithUsername:(NSString *)username password:(NSString *)password error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error object to set on error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an instance of the PFUser on success.
+If login failed for either wrong password or wrong username, returns nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInWithUsername:password:error:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/become:</TokenIdentifier>
+			<Abstract type="html">Makes a synchronous request to become a user with the given session token.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)become:(NSString *)sessionToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The session token for the user.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an instance of the PFUser on success.
+If becoming a user fails due to incorrect token, it returns nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/become:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/become:error:</TokenIdentifier>
+			<Abstract type="html">Makes a synchronous request to become a user with the given session token.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)become:(NSString *)sessionToken error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The session token for the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error object to set on error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an instance of the PFUser on success.
+If becoming a user fails due to incorrect token, it returns nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/become:error:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logOut</TokenIdentifier>
+			<Abstract type="html">Synchronously* logs out the currently logged in user on disk.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (void)logOut</Declaration>
+			
+			
+			<Anchor>//api/name/logOut</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmail:</TokenIdentifier>
+			<Abstract type="html">Synchronously Send a password reset request for a specified email.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)requestPasswordResetForEmail:(NSString *)email</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns YES if the reset email request is successful. NO - if no account was found for the email address.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestPasswordResetForEmail:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmail:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously send a password reset request for a specified email and sets an error object.</Abstract>
+			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)requestPasswordResetForEmail:(NSString *)email error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error object to set on error.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns YES if the reset email request is successful. NO - if no account was found for the email address.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestPasswordResetForEmail:error:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

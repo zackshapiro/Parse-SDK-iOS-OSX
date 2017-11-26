@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFNetworkActivityIndicatorManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFNetworkActivityIndicatorManager</TokenIdentifier>
+			<Abstract type="html">PFNetworkActivityIndicatorManager manages the state of the network activity indicator in the status bar.
+When enabled, it will start managing the network activity indicator in the status bar,
+according to the network operations that are performed by Parse SDK.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/setEnabled:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the manager is enabled.
+If YES - the manager will start managing the status bar network activity indicator,
+according to the network operations that are performed by Parse SDK.
+The default value is YES.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/isEnabled</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the manager is enabled.
+If YES - the manager will start managing the status bar network activity indicator,
+according to the network operations that are performed by Parse SDK.
+The default value is YES.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFNetworkActivityIndicatorManager/enabled</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the manager is enabled.
+If YES - the manager will start managing the status bar network activity indicator,
+according to the network operations that are performed by Parse SDK.
+The default value is YES.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/setNetworkActivityIndicatorVisible:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the network activity indicator is currently displayed in the status bar.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isNetworkActivityIndicatorVisible) BOOL networkActivityIndicatorVisible</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityIndicatorVisible</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/isNetworkActivityIndicatorVisible</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the network activity indicator is currently displayed in the status bar.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isNetworkActivityIndicatorVisible) BOOL networkActivityIndicatorVisible</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityIndicatorVisible</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFNetworkActivityIndicatorManager/networkActivityIndicatorVisible</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether the network activity indicator is currently displayed in the status bar.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isNetworkActivityIndicatorVisible) BOOL networkActivityIndicatorVisible</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityIndicatorVisible</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/setNetworkActivityCount:</TokenIdentifier>
+			<Abstract type="html">The value that indicates current network activities count.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger networkActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityCount</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/networkActivityCount</TokenIdentifier>
+			<Abstract type="html">The value that indicates current network activities count.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger networkActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityCount</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFNetworkActivityIndicatorManager/networkActivityCount</TokenIdentifier>
+			<Abstract type="html">The value that indicates current network activities count.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger networkActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/networkActivityCount</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFNetworkActivityIndicatorManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Returns the shared network activity indicator manager object for the system.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>+ (PFNetworkActivityIndicatorManager *)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">The systemwide network activity indicator manager.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/incrementActivityCount</TokenIdentifier>
+			<Abstract type="html">Increments the number of active network requests.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>- (void)incrementActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/incrementActivityCount</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFNetworkActivityIndicatorManager/decrementActivityCount</TokenIdentifier>
+			<Abstract type="html">Decrements the number of active network requests.</Abstract>
+			<DeclaredIn>PFNetworkActivityIndicatorManager.h</DeclaredIn>
+			
+			<Declaration>- (void)decrementActivityCount</Declaration>
+			
+			
+			<Anchor>//api/name/decrementActivityCount</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

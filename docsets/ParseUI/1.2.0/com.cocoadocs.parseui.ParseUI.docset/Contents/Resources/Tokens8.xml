@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFQueryTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFQueryTableViewController</TokenIdentifier>
+			<Abstract type="html">This class allows you to think about a one-to-one mapping between a PFObject and a UITableViewCell,
+rather than having to juggle index paths.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/initWithStyle:className:</TokenIdentifier>
+			<Abstract type="html">Initializes with a class name of the PFObject that will be associated with this table.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithStyle:(UITableViewStyle)style className:(nullable NSString *)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>style</Name>
+					<Abstract type="html">The UITableViewStyle for the table</Abstract>
+				</Parameter><Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The class name of the instances of PFObject that this table will display.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized PFQueryTableViewController object or nil if the object couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStyle:className:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/initWithClassName:</TokenIdentifier>
+			<Abstract type="html">Initializes with a class name of the PFObjects that will be associated with this table.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithClassName:(nullable NSString *)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The class name of the instances of PFObject that this table will display.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized PFQueryTableViewController object or nil if the object couldn&apos;t be created.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClassName:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setParseClassName:</TokenIdentifier>
+			<Abstract type="html">The class name of the PFObject this table will use as a datasource.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/parseClassName</TokenIdentifier>
+			<Abstract type="html">The class name of the PFObject this table will use as a datasource.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/parseClassName</TokenIdentifier>
+			<Abstract type="html">The class name of the PFObject this table will use as a datasource.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setTextKey:</TokenIdentifier>
+			<Abstract type="html">The key to use to display for the cell text label.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *textKey</Declaration>
+			
+			
+			<Anchor>//api/name/textKey</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/textKey</TokenIdentifier>
+			<Abstract type="html">The key to use to display for the cell text label.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *textKey</Declaration>
+			
+			
+			<Anchor>//api/name/textKey</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/textKey</TokenIdentifier>
+			<Abstract type="html">The key to use to display for the cell text label.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *textKey</Declaration>
+			
+			
+			<Anchor>//api/name/textKey</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setImageKey:</TokenIdentifier>
+			<Abstract type="html">The key to use to display for the cell image view.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *imageKey</Declaration>
+			
+			
+			<Anchor>//api/name/imageKey</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/imageKey</TokenIdentifier>
+			<Abstract type="html">The key to use to display for the cell image view.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *imageKey</Declaration>
+			
+			
+			<Anchor>//api/name/imageKey</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/imageKey</TokenIdentifier>
+			<Abstract type="html">The key to use to display for the cell image view.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) IBInspectable NSString *imageKey</Declaration>
+			
+			
+			<Anchor>//api/name/imageKey</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setPlaceholderImage:</TokenIdentifier>
+			<Abstract type="html">The image to use as a placeholder for the cell images.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) IBInspectable UIImage *placeholderImage</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderImage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/placeholderImage</TokenIdentifier>
+			<Abstract type="html">The image to use as a placeholder for the cell images.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) IBInspectable UIImage *placeholderImage</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderImage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/placeholderImage</TokenIdentifier>
+			<Abstract type="html">The image to use as a placeholder for the cell images.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) IBInspectable UIImage *placeholderImage</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderImage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setLoadingViewEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the default loading view. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL loadingViewEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/loadingViewEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/loadingViewEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the default loading view. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL loadingViewEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/loadingViewEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/loadingViewEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the default loading view. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL loadingViewEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/loadingViewEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setPullToRefreshEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the built-in pull-to-refresh feature. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL pullToRefreshEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/pullToRefreshEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the built-in pull-to-refresh feature. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL pullToRefreshEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/pullToRefreshEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the built-in pull-to-refresh feature. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL pullToRefreshEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/pullToRefreshEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setPaginationEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the built-in pagination feature. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL paginationEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/paginationEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/paginationEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the built-in pagination feature. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL paginationEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/paginationEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/paginationEnabled</TokenIdentifier>
+			<Abstract type="html">Whether the table should use the built-in pagination feature. Default - YES.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable BOOL paginationEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/paginationEnabled</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setObjectsPerPage:</TokenIdentifier>
+			<Abstract type="html">The number of objects to show per page. Default - 25.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable NSUInteger objectsPerPage</Declaration>
+			
+			
+			<Anchor>//api/name/objectsPerPage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/objectsPerPage</TokenIdentifier>
+			<Abstract type="html">The number of objects to show per page. Default - 25.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable NSUInteger objectsPerPage</Declaration>
+			
+			
+			<Anchor>//api/name/objectsPerPage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/objectsPerPage</TokenIdentifier>
+			<Abstract type="html">The number of objects to show per page. Default - 25.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) IBInspectable NSUInteger objectsPerPage</Declaration>
+			
+			
+			<Anchor>//api/name/objectsPerPage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setLoading:</TokenIdentifier>
+			<Abstract type="html">Whether the table is actively loading new data from the server.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isLoading) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/isLoading</TokenIdentifier>
+			<Abstract type="html">Whether the table is actively loading new data from the server.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isLoading) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/loading</TokenIdentifier>
+			<Abstract type="html">Whether the table is actively loading new data from the server.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isLoading) BOOL loading</Declaration>
+			
+			
+			<Anchor>//api/name/loading</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/objectsWillLoad</TokenIdentifier>
+			<Abstract type="html">Called when objects will loaded from Parse. If you override this method, you must
+call [super objectsWillLoad] in your implementation.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)objectsWillLoad</Declaration>
+			
+			
+			<Anchor>//api/name/objectsWillLoad</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/objectsDidLoad:</TokenIdentifier>
+			<Abstract type="html">Called when objects have loaded from Parse. If you override this method, you must
+call [super objectsDidLoad:] in your implementation.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)objectsDidLoad:(nullable NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The Parse error from running the PFQuery, if there was any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectsDidLoad:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/setObjects:</TokenIdentifier>
+			<Abstract type="html">The array of instances of PFObject that is used as a data source.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSArray&lt;__kindofPFObject*&gt; *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/objects</TokenIdentifier>
+			<Abstract type="html">The array of instances of PFObject that is used as a data source.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSArray&lt;__kindofPFObject*&gt; *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFQueryTableViewController/objects</TokenIdentifier>
+			<Abstract type="html">The array of instances of PFObject that is used as a data source.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSArray&lt;__kindofPFObject*&gt; *objects</Declaration>
+			
+			
+			<Anchor>//api/name/objects</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/objectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Returns an object at a particular indexPath.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFObject *)objectAtIndexPath:(nullable NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">The indexPath.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The object at the specified index</Abstract></ReturnValue>
+			<Anchor>//api/name/objectAtIndexPath:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/removeObjectAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Removes an object at the specified index path, animated.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectAtIndexPath:(nullable NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectAtIndexPath:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/removeObjectAtIndexPath:animated:</TokenIdentifier>
+			<Abstract type="html">Removes an object at the specified index path, with or without animation.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectAtIndexPath:(nullable NSIndexPath *)indexPath animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectAtIndexPath:animated:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/removeObjectsAtIndexPaths:</TokenIdentifier>
+			<Abstract type="html">Removes all objects at the specified index paths, animated.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectsAtIndexPaths:(nullable NSArray&lt;NSIndexPath*&gt; *)indexPaths</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectsAtIndexPaths:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/removeObjectsAtIndexPaths:animated:</TokenIdentifier>
+			<Abstract type="html">Removes all objects at the specified index paths, with or without animation.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectsAtIndexPaths:(nullable NSArray&lt;NSIndexPath*&gt; *)indexPaths animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/removeObjectsAtIndexPaths:animated:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/clear</TokenIdentifier>
+			<Abstract type="html">Clears the table of all objects.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)clear</Declaration>
+			
+			
+			<Anchor>//api/name/clear</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/loadObjects</TokenIdentifier>
+			<Abstract type="html">Clears the table and loads the first page of objects.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSArray&lt;__kindofPFObject*&gt; *&gt; *)loadObjects</Declaration>
+			
+			<ReturnValue><Abstract type="html">An awaitable task that completes when the reload succeeds</Abstract></ReturnValue>
+			<Anchor>//api/name/loadObjects</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/loadObjects:clear:</TokenIdentifier>
+			<Abstract type="html">Loads the objects of the className at the specified page and appends it to the
+objects already loaded and refreshes the table.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSArray&lt;__kindofPFObject*&gt; *&gt; *)loadObjects:(NSInteger)page clear:(BOOL)clear</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>page</Name>
+					<Abstract type="html">The page of objects to load.</Abstract>
+				</Parameter><Parameter>
+					<Name>clear</Name>
+					<Abstract type="html">Whether to clear the table after receiving the objects</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An awaitable task that completes when the reload succeeds</Abstract></ReturnValue>
+			<Anchor>//api/name/loadObjects:clear:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/loadNextPage</TokenIdentifier>
+			<Abstract type="html">Loads the next page of objects, appends to table, and refreshes.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)loadNextPage</Declaration>
+			
+			
+			<Anchor>//api/name/loadNextPage</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/queryForTable</TokenIdentifier>
+			<Abstract type="html">Override to construct your own custom PFQuery to get the objects.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (PFQuery *)queryForTable</Declaration>
+			
+			<ReturnValue><Abstract type="html">PFQuery that loadObjects will use to the objects for this table.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryForTable</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/tableView:cellForRowAtIndexPath:object:</TokenIdentifier>
+			<Abstract type="html">Override this method to customize each cell given a PFObject that is loaded.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(nullable PFObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table view object associated with this controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">The indexPath of the cell.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The PFObject that is associated with the cell.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The cell that represents this object.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:cellForRowAtIndexPath:object:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFQueryTableViewController/tableView:cellForNextPageAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Override this method to customize the cell that allows the user to load the
+next page when pagination is turned on.</Abstract>
+			<DeclaredIn>PFQueryTableViewController.h</DeclaredIn>
+			
+			<Declaration>- (nullable PFTableViewCell *)tableView:(UITableView *)tableView cellForNextPageAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">The table view object associated with this controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">The indexPath of the cell.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The cell that allows the user to paginate.</Abstract></ReturnValue>
+			<Anchor>//api/name/tableView:cellForNextPageAtIndexPath:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

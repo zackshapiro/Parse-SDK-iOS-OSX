@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFSession</TokenIdentifier>
+			<Abstract type="html">PFSession is a local representation of a session.
+This class is a subclass of a PFObject,
+and retains the same functionality as any other subclass of PFObject.</Abstract>
+			<DeclaredIn>PFSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSession/setSessionToken:</TokenIdentifier>
+			<Abstract type="html">The session token string for this session.</Abstract>
+			<DeclaredIn>PFSession.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *sessionToken</Declaration>
+			
+			
+			<Anchor>//api/name/sessionToken</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFSession/sessionToken</TokenIdentifier>
+			<Abstract type="html">The session token string for this session.</Abstract>
+			<DeclaredIn>PFSession.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *sessionToken</Declaration>
+			
+			
+			<Anchor>//api/name/sessionToken</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFSession/sessionToken</TokenIdentifier>
+			<Abstract type="html">The session token string for this session.</Abstract>
+			<DeclaredIn>PFSession.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *sessionToken</Declaration>
+			
+			
+			<Anchor>//api/name/sessionToken</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFSession/getCurrentSessionInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously fetches a PFSession object related to the current user.</Abstract>
+			<DeclaredIn>PFSession.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFSession*&gt; *)getCurrentSessionInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">A task that is completed with an instance of PFSession class or is faulted if the operation fails.</Abstract></ReturnValue>
+			<Anchor>//api/name/getCurrentSessionInBackground</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFSession/getCurrentSessionInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously fetches a PFSession object related to the current user.</Abstract>
+			<DeclaredIn>PFSession.h</DeclaredIn>
+			
+			<Declaration>+ (void)getCurrentSessionInBackgroundWithBlock:(nullable PFSessionResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the operation completes.
+It should have the following argument signature: ^(PFSession session, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getCurrentSessionInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

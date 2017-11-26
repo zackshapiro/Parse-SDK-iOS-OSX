@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFDecoder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFDecoder</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2015-present, Parse, LLC.
+All rights reserved.</Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFDecoder/objectDecoder</TokenIdentifier>
+			<Abstract type="html">Globally available shared instance of PFDecoder.</Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+			
+			<Declaration>+ (PFDecoder *)objectDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/objectDecoder</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFDecoder/decodeObject:</TokenIdentifier>
+			<Abstract type="html">Takes a complex object that was deserialized and converts encoded
+dictionaries into the proper Parse types. This is the inverse of
+encodeObject:allowUnsaved:allowObjects:seenObjects:.</Abstract>
+			<DeclaredIn>PFDecoder.h</DeclaredIn>
+			
+			<Declaration>- (nullable id)decodeObject:(nullable id)object</Declaration>
+			
+			
+			<Anchor>//api/name/decodeObject:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

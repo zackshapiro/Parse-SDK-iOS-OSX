@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFCloud.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFCloud</TokenIdentifier>
+			<Abstract type="html">The PFCloud class provides methods for interacting with Parse Cloud Functions.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function asynchronously with the parameters provided.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;id&gt; *)callFunctionInBackground:(NSString *)function withParameters:(nullable NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/callFunctionInBackground:withParameters:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:block:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function asynchronously with the parameters provided
+and executes the given block when it is done.</Abstract>
+			<DeclaredIn>PFCloud.h</DeclaredIn>
+			
+			<Declaration>+ (void)callFunctionInBackground:(NSString *)function withParameters:(nullable NSDictionary *)parameters block:(nullable PFIdResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the function call finished.
+It should have the following argument signature: ^(id result, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callFunctionInBackground:withParameters:block:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunction:withParameters:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function synchronously with the parameters provided.</Abstract>
+			<DeclaredIn>PFCloud+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable id)callFunction:(NSString *)function withParameters:(nullable NSDictionary *)parameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The response from the cloud function.</Abstract></ReturnValue>
+			<Anchor>//api/name/callFunction:withParameters:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunction:withParameters:error:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function synchronously with the parameters provided and
+sets the error if there is one.</Abstract>
+			<DeclaredIn>PFCloud+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable id)callFunction:(NSString *)function withParameters:(nullable NSDictionary *)parameters error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The response from the cloud function.
+This result could be a NSDictionary, an NSArray, NSNumber or NSString.</Abstract></ReturnValue>
+			<Anchor>//api/name/callFunction:withParameters:error:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFCloud/callFunctionInBackground:withParameters:target:selector:</TokenIdentifier>
+			<Abstract type="html">Calls the given cloud function asynchronously with the parameters provided
+and then executes the given selector when it is done. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFCloud.+callFunctionInBackground:withParameters: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFCloud+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)callFunctionInBackground:(NSString *)function withParameters:(nullable NSDictionary *)parameters target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>function</Name>
+					<Abstract type="html">The function name to call.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to send to the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call the selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call when the function call finished.
+It should have the following signature: (void)callbackWithResult:(id)result error:(NSError *)error.
+Result will be nil if error is set and vice versa.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/callFunctionInBackground:withParameters:target:selector:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

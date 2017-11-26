@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PFFileUploadController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PFFileUploadController</TokenIdentifier>
+			<Abstract type="html">A policy interface for overriding the default upload behavior of uploading a PFFile
+to application&apos;s parse server. Allows for direct uploads to other file storage
+providers.</Abstract>
+			<DeclaredIn>PFFileUploadController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFFileUploadController/uploadSourceFilePath:fileName:mimeType:sessionToken:cancellationToken:progressBlock:</TokenIdentifier>
+			<Abstract type="html">Uploads a file asynchronously from file path for a given file state.</Abstract>
+			<DeclaredIn>PFFileUploadController.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;PFFileUploadResult*&gt; *_Nonnull)uploadSourceFilePath:(NSString *_Nonnull)sourceFilePath fileName:(NSString *_Nullable)fileName mimeType:(NSString *_Nullable)mimeType sessionToken:(NSString *_Nonnull)sessionToken cancellationToken:(BFCancellationToken *_Nonnull)cancellationToken progressBlock:(PFProgressBlock _Nonnull)progressBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sourceFilePath</Name>
+					<Abstract type="html">Path to the file to upload.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The PFFile&apos;s fileName.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The PFFile&apos;s mime type.</Abstract>
+				</Parameter><Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The current users&apos;s session token.</Abstract>
+				</Parameter><Parameter>
+					<Name>cancellationToken</Name>
+					<Abstract type="html">Cancellation token.</Abstract>
+				</Parameter><Parameter>
+					<Name>progressBlock</Name>
+					<Abstract type="html">Progress block to call (optional).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">BFTask with a success result set to PFFileUploadResult containing the url and name of the uploaded file.</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadSourceFilePath:fileName:mimeType:sessionToken:cancellationToken:progressBlock:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

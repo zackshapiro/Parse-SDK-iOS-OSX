@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFRelation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFRelation</TokenIdentifier>
+			<Abstract type="html">The PFRelation class that is used to access all of the children of a many-to-many relationship.
+Each instance of PFRelation is associated with a particular parent object and key.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/setTargetClass:</TokenIdentifier>
+			<Abstract type="html">The name of the class of the target child objects.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *targetClass</Declaration>
+			
+			
+			<Anchor>//api/name/targetClass</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/targetClass</TokenIdentifier>
+			<Abstract type="html">The name of the class of the target child objects.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *targetClass</Declaration>
+			
+			
+			<Anchor>//api/name/targetClass</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRelation/targetClass</TokenIdentifier>
+			<Abstract type="html">The name of the class of the target child objects.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *targetClass</Declaration>
+			
+			
+			<Anchor>//api/name/targetClass</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/query</TokenIdentifier>
+			<Abstract type="html">Returns a PFQuery object that can be used to get objects in this relation.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<Declaration>- (PFQuery&lt;ObjectType&gt; *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/addObject:</TokenIdentifier>
+			<Abstract type="html">Adds a relation to the passed in object.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<Declaration>- (void)addObject:(ObjectType)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">A PFObject object to add relation to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObject:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRelation/removeObject:</TokenIdentifier>
+			<Abstract type="html">Removes a relation to the passed in object.</Abstract>
+			<DeclaredIn>PFRelation.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObject:(ObjectType)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">A PFObject object to add relation to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObject:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

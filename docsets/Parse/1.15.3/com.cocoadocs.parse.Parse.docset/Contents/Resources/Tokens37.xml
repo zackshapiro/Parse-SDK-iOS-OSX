@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFErrorCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFErrorCode</TokenIdentifier>
+			<Abstract type="html">PFErrorCode enum contains all custom error codes that are used as code for NSError for callbacks on all classes.</Abstract>
+			<DeclaredIn>PFConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInternalServer</TokenIdentifier>
+            <Abstract type="html">     Internal server error. No information available.
+     </Abstract>
+            <Declaration>kPFErrorInternalServer</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorConnectionFailed</TokenIdentifier>
+            <Abstract type="html">     The connection to the Parse servers failed.
+     </Abstract>
+            <Declaration>kPFErrorConnectionFailed</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorObjectNotFound</TokenIdentifier>
+            <Abstract type="html">     Object doesn&apos;t exist, or has an incorrect password.
+     </Abstract>
+            <Declaration>kPFErrorObjectNotFound</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidQuery</TokenIdentifier>
+            <Abstract type="html">     You tried to find values matching a datatype that doesn&apos;t
+     support exact database matching, like an array or a dictionary.
+     </Abstract>
+            <Declaration>kPFErrorInvalidQuery</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidClassName</TokenIdentifier>
+            <Abstract type="html">     Missing or invalid classname. Classnames are case-sensitive.
+     They must start with a letter, and a-zA-Z0-9_ are the only valid characters.
+     </Abstract>
+            <Declaration>kPFErrorInvalidClassName</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorMissingObjectId</TokenIdentifier>
+            <Abstract type="html">     Missing object id.
+     </Abstract>
+            <Declaration>kPFErrorMissingObjectId</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidKeyName</TokenIdentifier>
+            <Abstract type="html">     Invalid key name. Keys are case-sensitive.
+     They must start with a letter, and a-zA-Z0-9_ are the only valid characters.
+     </Abstract>
+            <Declaration>kPFErrorInvalidKeyName</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidPointer</TokenIdentifier>
+            <Abstract type="html">     Malformed pointer. Pointers must be arrays of a classname and an object id.
+     </Abstract>
+            <Declaration>kPFErrorInvalidPointer</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidJSON</TokenIdentifier>
+            <Abstract type="html">     Malformed json object. A json dictionary is expected.
+     </Abstract>
+            <Declaration>kPFErrorInvalidJSON</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorCommandUnavailable</TokenIdentifier>
+            <Abstract type="html">     Tried to access a feature only available internally.
+     </Abstract>
+            <Declaration>kPFErrorCommandUnavailable</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorIncorrectType</TokenIdentifier>
+            <Abstract type="html">     Field set to incorrect type.
+     </Abstract>
+            <Declaration>kPFErrorIncorrectType</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidChannelName</TokenIdentifier>
+            <Abstract type="html">     Invalid channel name. A channel name is either an empty string (the broadcast channel)
+     or contains only a-zA-Z0-9_ characters and starts with a letter.
+     </Abstract>
+            <Declaration>kPFErrorInvalidChannelName</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidDeviceToken</TokenIdentifier>
+            <Abstract type="html">     Invalid device token.
+     </Abstract>
+            <Declaration>kPFErrorInvalidDeviceToken</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorPushMisconfigured</TokenIdentifier>
+            <Abstract type="html">     Push is misconfigured. See details to find out how.
+     </Abstract>
+            <Declaration>kPFErrorPushMisconfigured</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorObjectTooLarge</TokenIdentifier>
+            <Abstract type="html">     The object is too large.
+     </Abstract>
+            <Declaration>kPFErrorObjectTooLarge</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorOperationForbidden</TokenIdentifier>
+            <Abstract type="html">     That operation isn&apos;t allowed for clients.
+     </Abstract>
+            <Declaration>kPFErrorOperationForbidden</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorCacheMiss</TokenIdentifier>
+            <Abstract type="html">     The results were not found in the cache.
+     </Abstract>
+            <Declaration>kPFErrorCacheMiss</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidNestedKey</TokenIdentifier>
+            <Abstract type="html">     Keys in NSDictionary values may not include $ or ..
+     </Abstract>
+            <Declaration>kPFErrorInvalidNestedKey</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidFileName</TokenIdentifier>
+            <Abstract type="html">     Invalid file name.
+     A file name can contain only a-zA-Z0-9_. characters and should be between 1 and 36 characters.
+     </Abstract>
+            <Declaration>kPFErrorInvalidFileName</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidACL</TokenIdentifier>
+            <Abstract type="html">     Invalid ACL. An ACL with an invalid format was saved. This should not happen if you use PFACL.
+     </Abstract>
+            <Declaration>kPFErrorInvalidACL</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorTimeout</TokenIdentifier>
+            <Abstract type="html">     The request timed out on the server. Typically this indicates the request is too expensive.
+     </Abstract>
+            <Declaration>kPFErrorTimeout</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidEmailAddress</TokenIdentifier>
+            <Abstract type="html">     The email address was invalid.
+     </Abstract>
+            <Declaration>kPFErrorInvalidEmailAddress</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorDuplicateValue</TokenIdentifier>
+            <Abstract type="html">     A unique field was given a value that is already taken.
+     </Abstract>
+            <Declaration>kPFErrorDuplicateValue</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidRoleName</TokenIdentifier>
+            <Abstract type="html">     Role&apos;s name is invalid.
+     </Abstract>
+            <Declaration>kPFErrorInvalidRoleName</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorExceededQuota</TokenIdentifier>
+            <Abstract type="html">     Exceeded an application quota. Upgrade to resolve.
+     </Abstract>
+            <Declaration>kPFErrorExceededQuota</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFScriptError</TokenIdentifier>
+            <Abstract type="html">     Cloud Code script had an error.
+     </Abstract>
+            <Declaration>kPFScriptError</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFValidationError</TokenIdentifier>
+            <Abstract type="html">     Cloud Code validation failed.
+     </Abstract>
+            <Declaration>kPFValidationError</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorReceiptMissing</TokenIdentifier>
+            <Abstract type="html">     Product purchase receipt is missing.
+     </Abstract>
+            <Declaration>kPFErrorReceiptMissing</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidPurchaseReceipt</TokenIdentifier>
+            <Abstract type="html">     Product purchase receipt is invalid.
+     </Abstract>
+            <Declaration>kPFErrorInvalidPurchaseReceipt</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorPaymentDisabled</TokenIdentifier>
+            <Abstract type="html">     Payment is disabled on this device.
+     </Abstract>
+            <Declaration>kPFErrorPaymentDisabled</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidProductIdentifier</TokenIdentifier>
+            <Abstract type="html">     The product identifier is invalid.
+     </Abstract>
+            <Declaration>kPFErrorInvalidProductIdentifier</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorProductNotFoundInAppStore</TokenIdentifier>
+            <Abstract type="html">     The product is not found in the App Store.
+     </Abstract>
+            <Declaration>kPFErrorProductNotFoundInAppStore</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidServerResponse</TokenIdentifier>
+            <Abstract type="html">     The Apple server response is not valid.
+     </Abstract>
+            <Declaration>kPFErrorInvalidServerResponse</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorProductDownloadFileSystemFailure</TokenIdentifier>
+            <Abstract type="html">     Product fails to download due to file system error.
+     </Abstract>
+            <Declaration>kPFErrorProductDownloadFileSystemFailure</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidImageData</TokenIdentifier>
+            <Abstract type="html">     Fail to convert data to image.
+     </Abstract>
+            <Declaration>kPFErrorInvalidImageData</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUnsavedFile</TokenIdentifier>
+            <Abstract type="html">     Unsaved file.
+     </Abstract>
+            <Declaration>kPFErrorUnsavedFile</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorFileDeleteFailure</TokenIdentifier>
+            <Abstract type="html">     Fail to delete file.
+     </Abstract>
+            <Declaration>kPFErrorFileDeleteFailure</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorRequestLimitExceeded</TokenIdentifier>
+            <Abstract type="html">     Application has exceeded its request limit.
+     </Abstract>
+            <Declaration>kPFErrorRequestLimitExceeded</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidEventName</TokenIdentifier>
+            <Abstract type="html">     Invalid event name.
+     </Abstract>
+            <Declaration>kPFErrorInvalidEventName</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUsernameMissing</TokenIdentifier>
+            <Abstract type="html">     Username is missing or empty.
+     </Abstract>
+            <Declaration>kPFErrorUsernameMissing</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserPasswordMissing</TokenIdentifier>
+            <Abstract type="html">     Password is missing or empty.
+     </Abstract>
+            <Declaration>kPFErrorUserPasswordMissing</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUsernameTaken</TokenIdentifier>
+            <Abstract type="html">     Username has already been taken.
+     </Abstract>
+            <Declaration>kPFErrorUsernameTaken</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserEmailTaken</TokenIdentifier>
+            <Abstract type="html">     Email has already been taken.
+     </Abstract>
+            <Declaration>kPFErrorUserEmailTaken</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserEmailMissing</TokenIdentifier>
+            <Abstract type="html">     The email is missing, and must be specified.
+     </Abstract>
+            <Declaration>kPFErrorUserEmailMissing</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserWithEmailNotFound</TokenIdentifier>
+            <Abstract type="html">     A user with the specified email was not found.
+     </Abstract>
+            <Declaration>kPFErrorUserWithEmailNotFound</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserCannotBeAlteredWithoutSession</TokenIdentifier>
+            <Abstract type="html">     The user cannot be altered by a client without the session.
+     </Abstract>
+            <Declaration>kPFErrorUserCannotBeAlteredWithoutSession</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserCanOnlyBeCreatedThroughSignUp</TokenIdentifier>
+            <Abstract type="html">     Users can only be created through sign up.
+     </Abstract>
+            <Declaration>kPFErrorUserCanOnlyBeCreatedThroughSignUp</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorFacebookAccountAlreadyLinked</TokenIdentifier>
+            <Abstract type="html">     An existing Facebook account already linked to another user.
+     </Abstract>
+            <Declaration>kPFErrorFacebookAccountAlreadyLinked</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorAccountAlreadyLinked</TokenIdentifier>
+            <Abstract type="html">     An existing account already linked to another user.
+     </Abstract>
+            <Declaration>kPFErrorAccountAlreadyLinked</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidSessionToken</TokenIdentifier>
+            <Abstract type="html">     Error code indicating that the current session token is invalid.
+     </Abstract>
+            <Declaration>kPFErrorInvalidSessionToken</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorUserIdMismatch</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>kPFErrorUserIdMismatch</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorFacebookIdMissing</TokenIdentifier>
+            <Abstract type="html">     Facebook id missing from request.
+     </Abstract>
+            <Declaration>kPFErrorFacebookIdMissing</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorLinkedIdMissing</TokenIdentifier>
+            <Abstract type="html">     Linked id missing from request.
+     </Abstract>
+            <Declaration>kPFErrorLinkedIdMissing</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorFacebookInvalidSession</TokenIdentifier>
+            <Abstract type="html">     Invalid Facebook session.
+     </Abstract>
+            <Declaration>kPFErrorFacebookInvalidSession</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kPFErrorInvalidLinkedSession</TokenIdentifier>
+            <Abstract type="html">     Invalid linked session.
+     </Abstract>
+            <Declaration>kPFErrorInvalidLinkedSession</Declaration>
+            
+            <DeclaredIn>PFConstants.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+	</File>
+</Tokens>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ChatRoomHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ChatRoomHandler</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2016-present, Parse, LLC.
+All rights reserved.</Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/setRoom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) Room *room</Declaration>
+			
+			
+			<Anchor>//api/name/room</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/room</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) Room *room</Declaration>
+			
+			
+			<Anchor>//api/name/room</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChatRoomHandler/room</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) Room *room</Declaration>
+			
+			
+			<Anchor>//api/name/room</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/setClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFLiveQueryClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFLiveQueryClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ChatRoomHandler/client</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFLiveQueryClient *client</Declaration>
+			
+			
+			<Anchor>//api/name/client</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/initWithRoom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithRoom:(Room *)room</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRoom:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/queryForChatRoomManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>- (PFQuery *)queryForChatRoomManager:(ChatRoomManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/queryForChatRoomManager:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/liveQueryClientForChatRoomManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>- (PFLiveQueryClient *)liveQueryClientForChatRoomManager:(ChatRoomManager *)manager</Declaration>
+			
+			
+			<Anchor>//api/name/liveQueryClientForChatRoomManager:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ChatRoomHandler/chatRoomManager:didReceiveMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>main.m</DeclaredIn>
+			
+			<Declaration>- (void)chatRoomManager:(ChatRoomManager *)manager didReceiveMessage:(Message *)message</Declaration>
+			
+			
+			<Anchor>//api/name/chatRoomManager:didReceiveMessage:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ParseClientConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ParseClientConfiguration</TokenIdentifier>
+			<Abstract type="html">The ParseClientConfiguration represents the local configuration of the SDK to connect to the server with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setApplicationId:</TokenIdentifier>
+			<Abstract type="html">The Parse.com application id to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/applicationId</TokenIdentifier>
+			<Abstract type="html">The Parse.com application id to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/applicationId</TokenIdentifier>
+			<Abstract type="html">The Parse.com application id to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setClientKey:</TokenIdentifier>
+			<Abstract type="html">The Parse.com client key to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *clientKey</Declaration>
+			
+			
+			<Anchor>//api/name/clientKey</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/clientKey</TokenIdentifier>
+			<Abstract type="html">The Parse.com client key to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *clientKey</Declaration>
+			
+			
+			<Anchor>//api/name/clientKey</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/clientKey</TokenIdentifier>
+			<Abstract type="html">The Parse.com client key to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *clientKey</Declaration>
+			
+			
+			<Anchor>//api/name/clientKey</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setServer:</TokenIdentifier>
+			<Abstract type="html">The URL of the server that is being used by the SDK.
+Defaults to https://api.parse.com/1</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/server</TokenIdentifier>
+			<Abstract type="html">The URL of the server that is being used by the SDK.
+Defaults to https://api.parse.com/1</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/server</TokenIdentifier>
+			<Abstract type="html">The URL of the server that is being used by the SDK.
+Defaults to https://api.parse.com/1</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setFileUploadController:</TokenIdentifier>
+			<Abstract type="html">The custom upload controller that synchronously uploads PFFiles using its own policy.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly, nullable) id&lt;PFFileUploadController&gt; fileUploadController</Declaration>
+			
+			
+			<Anchor>//api/name/fileUploadController</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/fileUploadController</TokenIdentifier>
+			<Abstract type="html">The custom upload controller that synchronously uploads PFFiles using its own policy.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly, nullable) id&lt;PFFileUploadController&gt; fileUploadController</Declaration>
+			
+			
+			<Anchor>//api/name/fileUploadController</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/fileUploadController</TokenIdentifier>
+			<Abstract type="html">The custom upload controller that synchronously uploads PFFiles using its own policy.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly, nullable) id&lt;PFFileUploadController&gt; fileUploadController</Declaration>
+			
+			
+			<Anchor>//api/name/fileUploadController</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setLocalDatastoreEnabled:</TokenIdentifier>
+			<Abstract type="html">Whether or not to enable pinning in the SDK.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLocalDatastoreEnabled) BOOL localDatastoreEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/localDatastoreEnabled</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/isLocalDatastoreEnabled</TokenIdentifier>
+			<Abstract type="html">Whether or not to enable pinning in the SDK.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLocalDatastoreEnabled) BOOL localDatastoreEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/localDatastoreEnabled</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/localDatastoreEnabled</TokenIdentifier>
+			<Abstract type="html">Whether or not to enable pinning in the SDK.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isLocalDatastoreEnabled) BOOL localDatastoreEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/localDatastoreEnabled</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setApplicationGroupIdentifier:</TokenIdentifier>
+			<Abstract type="html">When set, enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *applicationGroupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/applicationGroupIdentifier</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/applicationGroupIdentifier</TokenIdentifier>
+			<Abstract type="html">When set, enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *applicationGroupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/applicationGroupIdentifier</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/applicationGroupIdentifier</TokenIdentifier>
+			<Abstract type="html">When set, enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *applicationGroupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/applicationGroupIdentifier</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setContainingApplicationBundleIdentifier:</TokenIdentifier>
+			<Abstract type="html">When set, controls the bundle identifier of the parent bundle to connect to.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *containingApplicationBundleIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containingApplicationBundleIdentifier</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/containingApplicationBundleIdentifier</TokenIdentifier>
+			<Abstract type="html">When set, controls the bundle identifier of the parent bundle to connect to.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *containingApplicationBundleIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containingApplicationBundleIdentifier</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/containingApplicationBundleIdentifier</TokenIdentifier>
+			<Abstract type="html">When set, controls the bundle identifier of the parent bundle to connect to.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *containingApplicationBundleIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/containingApplicationBundleIdentifier</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/setNetworkRetryAttempts:</TokenIdentifier>
+			<Abstract type="html">The maximum number of retry attempts to make upon a failed network request.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger networkRetryAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/networkRetryAttempts</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/networkRetryAttempts</TokenIdentifier>
+			<Abstract type="html">The maximum number of retry attempts to make upon a failed network request.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger networkRetryAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/networkRetryAttempts</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ParseClientConfiguration/networkRetryAttempts</TokenIdentifier>
+			<Abstract type="html">The maximum number of retry attempts to make upon a failed network request.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSUInteger networkRetryAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/networkRetryAttempts</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ParseClientConfiguration/configurationWithBlock:</TokenIdentifier>
+			<Abstract type="html">Create a new SDK configuration object. This will create a temporarily modifiable configuration, and pass it to a block
+to be initialized.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)configurationWithBlock:(void ( ^ ) ( id&lt;ParseMutableClientConfiguration&gt; configuration ))configurationBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configurationBlock</Name>
+					<Abstract type="html">A block used to modify the created configuration.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created configuration.</Abstract></ReturnValue>
+			<Anchor>//api/name/configurationWithBlock:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ParseClientConfiguration/new</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)new</Declaration>
+			
+			
+			<Anchor>//api/name/new</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ParseClientConfiguration/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

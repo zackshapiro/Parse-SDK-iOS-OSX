@@ -1,0 +1,2610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFObject</TokenIdentifier>
+			<Abstract type="html">The PFObject class is a local representation of data persisted to the Parse cloud.
+This is the main class that is used to interact with objects in your app.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/initWithClassName:</TokenIdentifier>
+			<Abstract type="html">Initializes a new empty PFObject instance with a class name.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithClassName:(NSString *)newClassName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newClassName</Name>
+					<Abstract type="html">A class name can be any alphanumeric string that begins with a letter.
+It represents an object in your app, like a &apos;User&apos; or a &apos;Document&apos;.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the object that is instantiated with the given class name.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithClassName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/objectWithClassName:</TokenIdentifier>
+			<Abstract type="html">Creates a new PFObject with a class name.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)objectWithClassName:(NSString *)className</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">A class name can be any alphanumeric string that begins with a letter.
+It represents an object in your app, like a &apos;User&apos; or a &apos;Document&apos;.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the object that is instantiated with the given class name.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectWithClassName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/objectWithClassName:dictionary:</TokenIdentifier>
+			<Abstract type="html">Creates a new PFObject with a class name, initialized with data
+constructed from the specified set of objects and keys.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)objectWithClassName:(NSString *)className dictionary:(nullable NSDictionary&lt;NSString*,id&gt; *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The object&apos;s class.</Abstract>
+				</Parameter><Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">An NSDictionary of keys and objects to set on the new PFObject.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A PFObject with the given class name and set with the given data.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectWithClassName:dictionary:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/objectWithoutDataWithClassName:objectId:NS_SWIFT_NAME:</TokenIdentifier>
+			<Abstract type="html">Creates a reference to an existing PFObject for use in creating associations between PFObjects.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)objectWithoutDataWithClassName:(NSString *)className objectId:(nullable NSString *)objectId NS_SWIFT_NAME</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>className</Name>
+					<Abstract type="html">The object&apos;s class.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The object id for the referenced object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A PFObject instance without data.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectWithoutDataWithClassName:objectId:NS_SWIFT_NAME:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setParseClassName:</TokenIdentifier>
+			<Abstract type="html">The class name of the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/parseClassName</TokenIdentifier>
+			<Abstract type="html">The class name of the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/parseClassName</TokenIdentifier>
+			<Abstract type="html">The class name of the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *parseClassName</Declaration>
+			
+			
+			<Anchor>//api/name/parseClassName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setObjectId:</TokenIdentifier>
+			<Abstract type="html">The id of the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/objectId</TokenIdentifier>
+			<Abstract type="html">The id of the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/objectId</TokenIdentifier>
+			<Abstract type="html">The id of the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setUpdatedAt:</TokenIdentifier>
+			<Abstract type="html">When the object was last updated.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/updatedAt</TokenIdentifier>
+			<Abstract type="html">When the object was last updated.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/updatedAt</TokenIdentifier>
+			<Abstract type="html">When the object was last updated.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *updatedAt</Declaration>
+			
+			
+			<Anchor>//api/name/updatedAt</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">When the object was created.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/createdAt</TokenIdentifier>
+			<Abstract type="html">When the object was created.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/createdAt</TokenIdentifier>
+			<Abstract type="html">When the object was created.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setACL:</TokenIdentifier>
+			<Abstract type="html">The ACL for this object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFACL *ACL</Declaration>
+			
+			
+			<Anchor>//api/name/ACL</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/ACL</TokenIdentifier>
+			<Abstract type="html">The ACL for this object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFACL *ACL</Declaration>
+			
+			
+			<Anchor>//api/name/ACL</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/ACL</TokenIdentifier>
+			<Abstract type="html">The ACL for this object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFACL *ACL</Declaration>
+			
+			
+			<Anchor>//api/name/ACL</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setAllKeys:</TokenIdentifier>
+			<Abstract type="html">Returns an array of the keys contained in this object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSArray&lt;NSString*&gt; *allKeys</Declaration>
+			
+			
+			<Anchor>//api/name/allKeys</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/allKeys</TokenIdentifier>
+			<Abstract type="html">Returns an array of the keys contained in this object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSArray&lt;NSString*&gt; *allKeys</Declaration>
+			
+			
+			<Anchor>//api/name/allKeys</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/allKeys</TokenIdentifier>
+			<Abstract type="html">Returns an array of the keys contained in this object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSArray&lt;NSString*&gt; *allKeys</Declaration>
+			
+			
+			<Anchor>//api/name/allKeys</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/objectForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the value associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/objectForKeyedSubscript:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable id)objectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key for which to return the corresponding value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectForKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Sets the object associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/setObject:forKeyedSubscript:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setObject:(id)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object for key. A strong reference to the object is maintained by PFObject.
+Raises an NSInvalidArgumentException if object is nil.
+If you need to represent a nil value - use NSNull.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key for object.
+Raises an NSInvalidArgumentException if key is nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/removeObjectForKey:</TokenIdentifier>
+			<Abstract type="html">Unsets a key on the object.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObjectForKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Returns the value associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/objectForKey:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable id)objectForKeyedSubscript:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key for which to return the corresponding value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setObject:forKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Returns the value associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/setObject:forKey:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setObject:(id)object forKeyedSubscript:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object for key. A strong reference to the object is maintained by PFObject.
+Raises an NSInvalidArgumentException if object is nil.
+If you need to represent a nil value - use NSNull.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key for object.
+Raises an NSInvalidArgumentException if key is nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setObject:forKeyedSubscript:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/relationForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the instance of PFRelation class associated with the given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (PFRelation *)relationForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the relation is associated with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/relationForKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/relationforKey:</TokenIdentifier>
+			<Abstract type="html">Returns the instance of PFRelation class associated with the given key. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.-relationForKey: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (PFRelation *)relationforKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key that the relation is associated with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/relationforKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/revert</TokenIdentifier>
+			<Abstract type="html">Clears any changes to this object made since the last call to save and sets it back to the server state.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)revert</Declaration>
+			
+			
+			<Anchor>//api/name/revert</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/revertObjectForKey:</TokenIdentifier>
+			<Abstract type="html">Clears any changes to this object&apos;s key that were done after last successful save and sets it back to the
+server state.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)revertObjectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to revert changes for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/revertObjectForKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/addObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Adds an object to the end of the array associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)addObject:(id)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObject:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/addObjectsFromArray:forKey:</TokenIdentifier>
+			<Abstract type="html">Adds the objects contained in another array to the end of the array associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)addObjectsFromArray:(NSArray *)objects forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addObjectsFromArray:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/addUniqueObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Adds an object to the array associated with a given key, only if it is not already present in the array.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)addUniqueObject:(id)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addUniqueObject:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/addUniqueObjectsFromArray:forKey:</TokenIdentifier>
+			<Abstract type="html">Adds the objects contained in another array to the array associated with a given key,
+only adding elements which are not already present in the array.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)addUniqueObjectsFromArray:(NSArray *)objects forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to add.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addUniqueObjectsFromArray:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/removeObject:forKey:</TokenIdentifier>
+			<Abstract type="html">Removes all occurrences of an object from the array associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObject:(id)object forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to remove.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObject:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/removeObjectsInArray:forKey:</TokenIdentifier>
+			<Abstract type="html">Removes all occurrences of the objects contained in another array from the array associated with a given key.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)removeObjectsInArray:(NSArray *)objects forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to remove.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeObjectsInArray:forKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/incrementKey:</TokenIdentifier>
+			<Abstract type="html">Increments the given key by 1.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)incrementKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/incrementKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/incrementKey:byAmount:</TokenIdentifier>
+			<Abstract type="html">Increments the given key by a number.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)incrementKey:(NSString *)key byAmount:(NSNumber *)amount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key.</Abstract>
+				</Parameter><Parameter>
+					<Name>amount</Name>
+					<Abstract type="html">The amount to increment.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/incrementKey:byAmount:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/saveInBackground</TokenIdentifier>
+			<Abstract type="html">Saves the PFObject asynchronously.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)saveInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/saveInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Saves the PFObject asynchronously and executes the given callback block.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)saveInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/saveEventually</TokenIdentifier>
+			<Abstract type="html">Saves this object to the server at some unspecified time in the future,
+even if Parse is currently inaccessible.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)saveEventually</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveEventually</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/saveEventually:</TokenIdentifier>
+			<Abstract type="html">Saves this object to the server at some unspecified time in the future,
+even if Parse is currently inaccessible.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)saveEventually:(nullable PFBooleanResultBlock)callback</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>callback</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveEventually:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/saveAllInBackground:</TokenIdentifier>
+			<Abstract type="html">Saves a collection of objects all at once asynchronously.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)saveAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to save.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveAllInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/saveAllInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Saves a collection of objects all at once asynchronously and executes the block when done.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)saveAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to save.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveAllInBackground:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/deleteAllInBackground:</TokenIdentifier>
+			<Abstract type="html">Deletes a collection of objects all at once asynchronously.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)deleteAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAllInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/deleteAllInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Deletes a collection of objects all at once asynchronously and executes the block when done.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)deleteAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteAllInBackground:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setDataAvailable:</TokenIdentifier>
+			<Abstract type="html">Gets whether the PFObject has been fetched.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isDataAvailable) BOOL dataAvailable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the PFObject is new or has been fetched or refreshed, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/dataAvailable</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/isDataAvailable</TokenIdentifier>
+			<Abstract type="html">Gets whether the PFObject has been fetched.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isDataAvailable) BOOL dataAvailable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the PFObject is new or has been fetched or refreshed, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/dataAvailable</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/dataAvailable</TokenIdentifier>
+			<Abstract type="html">Gets whether the PFObject has been fetched.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isDataAvailable) BOOL dataAvailable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the PFObject is new or has been fetched or refreshed, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/dataAvailable</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/refresh</TokenIdentifier>
+			<Abstract type="html">Refreshes the PFObject with the current data from the server. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use -fetch instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)refresh</Declaration>
+			
+			
+			<Anchor>//api/name/refresh</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/refresh:</TokenIdentifier>
+			<Abstract type="html">Synchronously refreshes the PFObject with the current data from the server and sets an error if it occurs. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use -fetch: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)refresh:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refresh:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/refreshInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously refreshes the PFObject and executes the given callback block. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use -fetchInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshInBackgroundWithBlock:(nullable PFObjectResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+The block should have the following argument signature: ^(PFObject object, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refreshInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchInBackground</TokenIdentifier>
+			<Abstract type="html">Fetches the PFObject asynchronously and sets it as a result for the task.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;__kindofPFObject*&gt; *)fetchInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Fetches the PFObject asynchronously and executes the given callback block.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchInBackgroundWithBlock:(nullable PFObjectResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(PFObject object, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchIfNeededInBackground</TokenIdentifier>
+			<Abstract type="html">Fetches the PFObject data asynchronously if dataAvailable is NO,
+then sets it as a result for the task.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;__kindofPFObject*&gt; *)fetchIfNeededInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchIfNeededInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchIfNeededInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Fetches the PFObject data asynchronously if dataAvailable is NO, then calls the callback block.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchIfNeededInBackgroundWithBlock:(nullable PFObjectResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(PFObject object, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchIfNeededInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllInBackground:</TokenIdentifier>
+			<Abstract type="html">Fetches all of the PFObject objects with the current data from the server asynchronously.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSArray&lt;__kindofPFObject*&gt; *&gt; *)fetchAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchAllInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Fetches all of the PFObject objects with the current data from the server asynchronously
+and calls the given block.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)fetchAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects block:(nullable PFArrayResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(NSArray objects, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllInBackground:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllIfNeededInBackground:</TokenIdentifier>
+			<Abstract type="html">Fetches all of the PFObject objects with the current data from the server asynchronously.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSArray&lt;__kindofPFObject*&gt; *&gt; *)fetchAllIfNeededInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchAllIfNeededInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllIfNeededInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Fetches all of the PFObjects with the current data from the server asynchronously
+and calls the given block.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)fetchAllIfNeededInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects block:(nullable PFArrayResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(NSArray objects, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllIfNeededInBackground:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchFromLocalDatastoreInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously loads data from the local datastore into this object,
+if it has not been fetched from the server already.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;__kindofPFObject*&gt; *)fetchFromLocalDatastoreInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchFromLocalDatastoreInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchFromLocalDatastoreInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously loads data from the local datastore into this object,
+if it has not been fetched from the server already.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchFromLocalDatastoreInBackgroundWithBlock:(nullable PFObjectResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(PFObject object, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchFromLocalDatastoreInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/deleteInBackground</TokenIdentifier>
+			<Abstract type="html">Deletes the PFObject asynchronously.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)deleteInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/deleteInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Deletes the PFObject asynchronously and executes the given callback block.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/deleteEventually</TokenIdentifier>
+			<Abstract type="html">Deletes this object from the server at some unspecified time in the future,
+even if Parse is currently inaccessible.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)deleteEventually</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteEventually</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/setDirty:</TokenIdentifier>
+			<Abstract type="html">Gets whether any key-value pair in this object (or its children)
+has been added/updated/removed and not saved yet.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isDirty) BOOL dirty</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether this object has been altered and not saved yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/dirty</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/isDirty</TokenIdentifier>
+			<Abstract type="html">Gets whether any key-value pair in this object (or its children)
+has been added/updated/removed and not saved yet.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isDirty) BOOL dirty</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether this object has been altered and not saved yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/dirty</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFObject/dirty</TokenIdentifier>
+			<Abstract type="html">Gets whether any key-value pair in this object (or its children)
+has been added/updated/removed and not saved yet.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly, getter=isDirty) BOOL dirty</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether this object has been altered and not saved yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/dirty</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/isDirtyForKey:</TokenIdentifier>
+			<Abstract type="html">Get whether a value associated with a key has been added/updated/removed and not saved yet.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isDirtyForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to check for</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether this key has been altered and not saved yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/isDirtyForKey:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)pinInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>- (void)pinInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pinInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackgroundWithName:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinInBackgroundWithName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)pinInBackgroundWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinInBackgroundWithName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackgroundWithName:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinInBackgroundWithName:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)pinInBackgroundWithName:(NSString *)name block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pinInBackgroundWithName:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)pinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinAllInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)pinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pinAllInBackground:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:withName:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:withName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)pinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinAllInBackground:withName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:withName:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously stores the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:withName:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)pinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pinAllInBackground:withName:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackground</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)unpinInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackgroundWithBlock:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)unpinInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpinInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinInBackgroundWithName:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackgroundWithName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BFTask&lt;NSNumber*&gt; *)unpinInBackgroundWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinInBackgroundWithName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinInBackgroundWithName:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinInBackgroundWithName:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)unpinInBackgroundWithName:(NSString *)name block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpinInBackgroundWithName:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjectsInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes all objects in the local datastore
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)unpinAllObjectsInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllObjectsInBackground</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjectsInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes all objects in the local datastore
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)unpinAllObjectsInBackgroundWithBlock:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpinAllObjectsInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjectsInBackgroundWithName:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes all objects with the specified pin name.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)unpinAllObjectsInBackgroundWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllObjectsInBackgroundWithName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjectsInBackgroundWithName:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes all objects with the specified pin name.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+			<Declaration>+ (void)unpinAllObjectsInBackgroundWithName:(NSString *)name block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpinAllObjectsInBackgroundWithName:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)unpinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllInBackground:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)unpinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpinAllInBackground:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:withName:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:withName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)unpinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllInBackground:withName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllInBackground:withName:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously removes the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAllInBackground:withName:block:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)unpinAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unpinAllInBackground:withName:block:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/object</TokenIdentifier>
+			<Abstract type="html">Creates an instance of the registered subclass with this class&apos;s PFSubclassing.</Abstract>
+			<DeclaredIn>PFObject+Subclass.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)object</Declaration>
+			
+			
+			<Anchor>//api/name/object</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/objectWithoutDataWithObjectId:NS_SWIFT_NAME:</TokenIdentifier>
+			<Abstract type="html">Creates a reference to an existing PFObject for use in creating associations between PFObjects.</Abstract>
+			<DeclaredIn>PFObject+Subclass.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)objectWithoutDataWithObjectId:(nullable NSString *)objectId NS_SWIFT_NAME</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The object id for the referenced object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of PFObject without data.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectWithoutDataWithObjectId:NS_SWIFT_NAME:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/registerSubclass</TokenIdentifier>
+			<Abstract type="html">Registers an Objective-C class for Parse to use for representing a given Parse class.</Abstract>
+			<DeclaredIn>PFObject+Subclass.h</DeclaredIn>
+			
+			<Declaration>+ (void)registerSubclass</Declaration>
+			
+			
+			<Anchor>//api/name/registerSubclass</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/query</TokenIdentifier>
+			<Abstract type="html">Returns a query for objects of type PFSubclassing.</Abstract>
+			<DeclaredIn>PFObject+Subclass.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/queryWithPredicate:</TokenIdentifier>
+			<Abstract type="html">Returns a query for objects of type PFSubclassing with a given predicate.</Abstract>
+			<DeclaredIn>PFObject+Subclass.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFQuery</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (nullable PFQuery *)queryWithPredicate:(nullable NSPredicate *)predicate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>predicate</Name>
+					<Abstract type="html">The predicate to create conditions from.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of PFQuery.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryWithPredicate:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/saveInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Saves the PFObject asynchronously and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.-saveInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)saveInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/saveAllInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Saves a collection of objects all at once asynchronously and calls a callback when done. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.+saveAllInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)saveAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to save.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )number error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveAllInBackground:target:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/refreshInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously refreshes the PFObject and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.-fetchInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target on which the selector will be called.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(PFObject )refreshedObject error:(NSError )error.
+error will be nil on success and set if there was an error.
+refreshedObject will be the PFObject with the refreshed data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refreshInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Fetches the PFObject asynchronously and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.-fetchInBackgroundWithBlock:` instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target on which the selector will be called.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(PFObject )refreshedObject error:(NSError )error.
+error will be nil on success and set if there was an error.
+refreshedObject will be the PFObject with the refreshed data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchIfNeededInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Fetches the PFObject&apos;s data asynchronously if dataAvailable is NO, then calls the callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.-fetchIfNeededInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchIfNeededInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target on which the selector will be called.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(PFObject )fetchedObject error:(NSError )error.
+error will be nil on success and set if there was an error.
+refreshedObject will be the PFObject with the refreshed data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchIfNeededInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Fetches all of the PFObject objects with the current data from the server asynchronously
+and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.+fetchAllInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)fetchAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target on which the selector will be called.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSArray )fetchedObjects error:(NSError )error.
+error will be nil on success and set if there was an error.
+fetchedObjects will the array of PFObject objects that were fetched.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllInBackground:target:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllIfNeededInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Fetches all of the PFObjects with the current data from the server asynchronously
+and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.+fetchAllIfNeededInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)fetchAllIfNeededInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target on which the selector will be called.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSArray )fetchedObjects error:(NSError )error.
+error will be nil on success and set if there was an error.
+fetchedObjects will the array of PFObject objects that were fetched.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllIfNeededInBackground:target:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/deleteInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Deletes the PFObject asynchronously and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.-deleteInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/deleteAllInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Deletes a collection of objects all at once asynchronously and calls a callback when done. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFObject.+deleteAllInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFObject+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)deleteAllInBackground:(nullable NSArray&lt;PFObject*&gt; *)objects target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )number error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteAllInBackground:target:selector:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/save</TokenIdentifier>
+			<Abstract type="html">Synchronously saves the PFObject.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)save</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether the save succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/save</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/save:</TokenIdentifier>
+			<Abstract type="html">Synchronously saves the PFObject and sets an error if it occurs.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)save:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the save succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/save:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/saveAll:</TokenIdentifier>
+			<Abstract type="html">Saves a collection of objects *synchronously all at once.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)saveAll:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to save.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the save succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveAll:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/saveAll:error:</TokenIdentifier>
+			<Abstract type="html">Saves a collection of objects synchronously all at once and sets an error if necessary.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)saveAll:(nullable NSArray&lt;PFObject*&gt; *)objects error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to save.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the save succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveAll:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetch</TokenIdentifier>
+			<Abstract type="html">Synchronously* fetches the PFObject with the current data from the server.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)fetch</Declaration>
+			
+			
+			<Anchor>//api/name/fetch</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetch:</TokenIdentifier>
+			<Abstract type="html">Synchronously fetches the PFObject with the current data from the server and sets an error if it occurs.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)fetch:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetch:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchIfNeeded</TokenIdentifier>
+			<Abstract type="html">Synchronously* fetches the PFObject data from the server if dataAvailable is NO.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)fetchIfNeeded</Declaration>
+			
+			
+			<Anchor>//api/name/fetchIfNeeded</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchIfNeeded:</TokenIdentifier>
+			<Abstract type="html">Synchronously fetches the PFObject data from the server if dataAvailable is NO.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)fetchIfNeeded:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchIfNeeded:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAll:</TokenIdentifier>
+			<Abstract type="html">Synchronously fetches all of the PFObject objects with the current data from the server.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSArray&lt;__kindofPFObject*&gt; *)fetchAll:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAll:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAll:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously fetches all of the PFObject objects with the current data from the server
+and sets an error if it occurs.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSArray&lt;__kindofPFObject*&gt; *)fetchAll:(nullable NSArray&lt;PFObject*&gt; *)objects error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAll:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllIfNeeded:</TokenIdentifier>
+			<Abstract type="html">Synchronously fetches all of the PFObject objects with the current data from the server.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSArray&lt;__kindofPFObject*&gt; *)fetchAllIfNeeded:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllIfNeeded:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/fetchAllIfNeeded:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously fetches all of the PFObject objects with the current data from the server
+and sets an error if it occurs.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSArray&lt;__kindofPFObject*&gt; *)fetchAllIfNeeded:(nullable NSArray&lt;PFObject*&gt; *)objects error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The list of objects to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchAllIfNeeded:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchFromLocalDatastore</TokenIdentifier>
+			<Abstract type="html">Synchronously loads data from the local datastore into this object,
+if it has not been fetched from the server already.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)fetchFromLocalDatastore</Declaration>
+			
+			
+			<Anchor>//api/name/fetchFromLocalDatastore</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/fetchFromLocalDatastore:</TokenIdentifier>
+			<Abstract type="html">Synchronously loads data from the local datastore into this object, if it has not been fetched
+from the server already.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)fetchFromLocalDatastore:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchFromLocalDatastore:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/delete</TokenIdentifier>
+			<Abstract type="html">Synchronously deletes the PFObject.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)delete</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether the delete succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/delete</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/delete:</TokenIdentifier>
+			<Abstract type="html">Synchronously deletes the PFObject and sets an error if it occurs.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)delete:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the delete succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/delete:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/deleteAll:</TokenIdentifier>
+			<Abstract type="html">Synchronously deletes a collection of objects all at once.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)deleteAll:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to delete.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the delete succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAll:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/deleteAll:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously deletes a collection of objects all at once and sets an error if necessary.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)deleteAll:(nullable NSArray&lt;PFObject*&gt; *)objects error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The array of objects to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the delete succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAll:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pin</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)pin</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pin</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pin:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)pin:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pin:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinWithName:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)pinWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinWithName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinWithName:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)pinWithName:(NSString *)name error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinWithName:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)pinAll:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinAll:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)pinAll:(nullable NSArray&lt;PFObject*&gt; *)objects error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinAll:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:withName:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:withName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)pinAll:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinAll:withName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:withName:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously stores the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:withName:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)pinAll:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects to be pinned.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the pin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/pinAll:withName:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpin</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pin:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)unpin</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpin</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpin:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the object and every object it points to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pin:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)unpin:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpin:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinWithName:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinWithName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)unpinWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinWithName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFObject/unpinWithName:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the object and every object it points to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFObject/pinWithName:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)unpinWithName:(NSString *)name error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinWithName:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjects</TokenIdentifier>
+			<Abstract type="html">Synchronously removes all objects in the local datastore
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)unpinAllObjects</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllObjects</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjects:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes all objects in the local datastore
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)unpinAllObjects:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllObjects:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjectsWithName:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes all objects with the specified pin name.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)unpinAllObjectsWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllObjectsWithName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAllObjectsWithName:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes all objects with the specified pin name.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)unpinAllObjectsWithName:(NSString *)name error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAllObjectsWithName:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)unpinAll:(nullable NSArray&lt;PFObject*&gt; *)objects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAll:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the objects and every object they point to in the local datastore, recursively,
+using a default pin name: PFObjectDefaultPin.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)unpinAll:(nullable NSArray&lt;PFObject*&gt; *)objects error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAll:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:withName:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:withName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)unpinAll:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAll:withName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFObject/unpinAll:withName:error:</TokenIdentifier>
+			<Abstract type="html">Synchronously removes the objects and every object they point to in the local datastore, recursively.</Abstract>
+			<DeclaredIn>PFObject+Synchronous.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/PFObject/pinAll:withName:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)unpinAll:(nullable NSArray&lt;PFObject*&gt; *)objects withName:(NSString *)name error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objects</Name>
+					<Abstract type="html">The objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the pin.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns whether the unpin succeeded.</Abstract></ReturnValue>
+			<Anchor>//api/name/unpinAll:withName:error:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

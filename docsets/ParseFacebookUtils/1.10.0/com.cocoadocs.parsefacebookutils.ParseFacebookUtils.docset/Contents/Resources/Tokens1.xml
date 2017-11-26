@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFFacebookUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFFacebookUtils</TokenIdentifier>
+			<Abstract type="html">The PFFacebookUtils class provides utility functions for using Facebook authentication with PFUsers.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/initializeFacebookWithApplicationLaunchOptions:</TokenIdentifier>
+			<Abstract type="html">Initializes Parse Facebook Utils.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)initializeFacebookWithApplicationLaunchOptions:(nullable NSDictionary *)launchOptions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>launchOptions</Name>
+					<Abstract type="html">The launchOptions as passed to [UIApplicationDelegate application:didFinishLaunchingWithOptions:].</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeFacebookWithApplicationLaunchOptions:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/facebookLoginManager</TokenIdentifier>
+			<Abstract type="html">FBSDKLoginManager provides methods for configuring login behavior, default audience
+and managing Facebook Access Token.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (FBSDKLoginManager *)facebookLoginManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">An instance of FBSDKLoginManager that is used by PFFacebookUtils.</Abstract></ReturnValue>
+			<Anchor>//api/name/facebookLoginManager</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInInBackgroundWithReadPermissions:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs in a user using Facebook with read permissions.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFUser*&gt; *)logInInBackgroundWithReadPermissions:(nullable NSArray&lt;NSString*&gt; *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of read permissions to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that has will a have result set to PFUser if operation succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInInBackgroundWithReadPermissions:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInInBackgroundWithReadPermissions:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs in a user using Facebook with read permissions.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInInBackgroundWithReadPermissions:(nullable NSArray&lt;NSString*&gt; *)permissions block:(nullable PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of read permissions to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the log in completes.
+It should have the following signature: ^(PFUser user, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInInBackgroundWithReadPermissions:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInInBackgroundWithPublishPermissions:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs in a user using Facebook with publish permissions.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFUser*&gt; *)logInInBackgroundWithPublishPermissions:(nullable NSArray&lt;NSString*&gt; *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of publish permissions to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that has will a have result set to PFUser if operation succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInInBackgroundWithPublishPermissions:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInInBackgroundWithPublishPermissions:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs in a user using Facebook with publish permissions.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInInBackgroundWithPublishPermissions:(nullable NSArray&lt;NSString*&gt; *)permissions block:(nullable PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of publish permissions to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the log in completes.
+It should have the following signature: ^(PFUser user, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInInBackgroundWithPublishPermissions:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInInBackgroundWithAccessToken:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs in a user using given Facebook Acess Token.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFUser*&gt; *)logInInBackgroundWithAccessToken:(FBSDKAccessToken *)accessToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">An instance of FBSDKAccessToken to use when logging in.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that has will a have result set to PFUser if operation succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInInBackgroundWithAccessToken:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/logInInBackgroundWithAccessToken:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously logs in a user using given Facebook Acess Token.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInInBackgroundWithAccessToken:(FBSDKAccessToken *)accessToken block:(nullable PFUserResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">An instance of FBSDKAccessToken to use when logging in.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the log in completes.
+It should have the following signature: ^(PFUser user, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInInBackgroundWithAccessToken:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUserInBackground:withReadPermissions:</TokenIdentifier>
+			<Abstract type="html">Asynchronously links Facebook with read permissions to an existing PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)linkUserInBackground:(PFUser *)user withReadPermissions:(nullable NSArray&lt;NSString*&gt; *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of read permissions to use when logging in with Facebook.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that will have a result set to @YES if operation succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/linkUserInBackground:withReadPermissions:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUserInBackground:withReadPermissions:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously links Facebook with read permissions to an existing PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)linkUserInBackground:(PFUser *)user withReadPermissions:(nullable NSArray&lt;NSString*&gt; *)permissions block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of read permissions to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the linking completes.
+It should have the following signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUserInBackground:withReadPermissions:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUserInBackground:withPublishPermissions:</TokenIdentifier>
+			<Abstract type="html">Asynchronously links Facebook with publish permissions to an existing PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)linkUserInBackground:(PFUser *)user withPublishPermissions:(NSArray&lt;NSString*&gt; *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of publish permissions to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that will have a result set to @YES if operation succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/linkUserInBackground:withPublishPermissions:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUserInBackground:withPublishPermissions:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously links Facebook with publish permissions to an existing PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)linkUserInBackground:(PFUser *)user withPublishPermissions:(NSArray&lt;NSString*&gt; *)permissions block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Array of publish permissions to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the linking completes.
+It should have the following signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUserInBackground:withPublishPermissions:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUserInBackground:withAccessToken:</TokenIdentifier>
+			<Abstract type="html">Asynchronously links Facebook Access Token to an existing PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)linkUserInBackground:(PFUser *)user withAccessToken:(FBSDKAccessToken *)accessToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">An instance of FBSDKAccessToken to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task that will have a result set to @YES if operation succeeds.</Abstract></ReturnValue>
+			<Anchor>//api/name/linkUserInBackground:withAccessToken:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/linkUserInBackground:withAccessToken:block:</TokenIdentifier>
+			<Abstract type="html">Asynchronously links Facebook Access Token to an existing PFUser.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)linkUserInBackground:(PFUser *)user withAccessToken:(FBSDKAccessToken *)accessToken block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to link to Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">An instance of FBSDKAccessToken to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute when the linking completes.
+It should have the following signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/linkUserInBackground:withAccessToken:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:</TokenIdentifier>
+			<Abstract type="html">Unlinks the PFUser from a Facebook account asynchronously.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)unlinkUserInBackground:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/unlinkUserInBackground:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/unlinkUserInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Unlinks the PFUser from a Facebook account asynchronously.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (void)unlinkUserInBackground:(PFUser *)user block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to unlink from Facebook.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unlinkUserInBackground:block:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFFacebookUtils/isLinkedWithUser:</TokenIdentifier>
+			<Abstract type="html">Whether the user has their account linked to Facebook.</Abstract>
+			<DeclaredIn>PFFacebookUtils.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isLinkedWithUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">User to check for a facebook link. The user must be logged in on this device.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the user has their account linked to Facebook, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/isLinkedWithUser:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

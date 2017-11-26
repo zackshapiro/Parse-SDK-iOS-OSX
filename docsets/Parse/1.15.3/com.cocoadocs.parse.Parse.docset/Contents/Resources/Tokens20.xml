@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFPolygon.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFPolygon</TokenIdentifier>
+			<Abstract type="html">PFPolygon may be used to embed a latitude / longitude points as the value for a key in a PFObject.
+It could be used to perform queries in a geospatial manner using PFQuery.-whereKey:polygonContains:.</Abstract>
+			<DeclaredIn>PFPolygon.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPolygon/polygonWithCoordinates:</TokenIdentifier>
+			<Abstract type="html">Creates a new PFPolygon object for the given CLLocation, set to the location&apos;s coordinates.</Abstract>
+			<DeclaredIn>PFPolygon.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)polygonWithCoordinates:(NSArray *)coordinates</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>coordinates</Name>
+					<Abstract type="html">Array of CLLocation, PFGeoPoint or (lat,lng)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a new PFPolygon at specified location.</Abstract></ReturnValue>
+			<Anchor>//api/name/polygonWithCoordinates:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPolygon/containsPoint:</TokenIdentifier>
+			<Abstract type="html">Test if this polygon contains a point</Abstract>
+			<DeclaredIn>PFPolygon.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)containsPoint:(PFGeoPoint *)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">PFGeoPoint to test</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a boolean.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsPoint:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPolygon/setCoordinates:</TokenIdentifier>
+			<Abstract type="html">Array of PFGeoPoints or CLLocations</Abstract>
+			<DeclaredIn>PFPolygon.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPolygon/coordinates</TokenIdentifier>
+			<Abstract type="html">Array of PFGeoPoints or CLLocations</Abstract>
+			<DeclaredIn>PFPolygon.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFPolygon/coordinates</TokenIdentifier>
+			<Abstract type="html">Array of PFGeoPoints or CLLocations</Abstract>
+			<DeclaredIn>PFPolygon.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *coordinates</Declaration>
+			
+			
+			<Anchor>//api/name/coordinates</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

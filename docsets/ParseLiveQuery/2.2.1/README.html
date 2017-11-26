@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h1>Parse LiveQuery Client for iOS/OSX</h1>
+<p><br>
+</p>
+<p><br>
+</p>
+<p></p>
+<p><code>PFQuery</code> is one of the key concepts for Parse. It allows you to retrieve <code>PFObject</code>s by specifying some conditions, making it easy to build apps such as a dashboard, a todo list or even some strategy games. However, <code>PFQuery</code> is based on a pull model, which is not suitable for apps that need real-time support.</p>
+<p>Suppose you are building an app that allows multiple users to edit the same file at the same time. <code>PFQuery</code> would not be an ideal tool since you can not know when to query from the server to get the updates.</p>
+<p>To solve this problem, we introduce Parse LiveQuery. This tool allows you to subscribe to a <code>PFQuery</code> you are interested in. Once subscribed, the server will notify clients whenever a <code>PFObject</code> that matches the <code>PFQuery</code> is created or updated, in real-time.</p>
+<h2>Setup Server</h2>
+<p>Parse LiveQuery contains two parts, the LiveQuery server and the LiveQuery clients. In order to use live queries, you need to set up both of them.</p>
+<p>The easiest way to setup the LiveQuery server is to make it run with the <a href="https://github.com/ParsePlatform/parse-server/wiki/Parse-LiveQuery#server-setup">Open Source Parse Server</a>.</p>
+
+
+
+
+<h2>Use Client</h2>
+<p>The LiveQuery client interface is based around the concept of <code>Subscription</code>s. You can register any <code>PFQuery</code> for live updates from the associated live query server, by simply calling <code>subscribe()</code> on a query:</p>
+<div class="highlight highlight-source-swift"><pre><span class="pl-k">let</span> myQuery <span class="pl-k">=</span> Message.<span class="pl-c1">query</span>()<span class="pl-k">!</span>.<span class="pl-c1">where</span>(<span class="pl-k">....</span>)
+<span class="pl-k">let</span> subscription<span class="pl-k">:</span> Subscription<span class="pl-k">&lt;</span>Message<span class="pl-k">&gt;</span> <span class="pl-k">=</span> Client.<span class="pl-smi">shared</span>.<span class="pl-c1">subscribe</span>(myQuery)</pre></div>
+<p>Where <code>Message</code> is a registered subclass of PFObject.</p>
+<p>Once you've subscribed to a query, you can <code>handle</code> events on them, like so:</p>
+<div class="highlight highlight-source-swift"><pre>subscription.<span class="pl-smi">handleEvent</span> { query, event <span class="pl-k">in</span>
+    <span class="pl-c"><span class="pl-c">//</span> Handle event</span>
+<span class="pl-c"></span>}</pre></div>
+<p>You can also handle a single type of event, if that's all you're interested in:</p>
+<div class="highlight highlight-source-swift"><pre>subscription.<span class="pl-c1">handle</span>(Event.<span class="pl-smi">Created</span>) { query, object <span class="pl-k">in</span>
+    <span class="pl-c"><span class="pl-c">//</span> Called whenever an object was created</span>
+<span class="pl-c"></span>}</pre></div>
+<p>Handling errors is and other events is similar, take a look at the <code>Subscription</code> class for more information.</p>
+<h2>Advanced Usage</h2>
+<p>You are not limited to a single Live Query Client - you can create your own instances of <code>Client</code> to manually control things like reconnecting, server URLs, and more.</p>
+<h2>How Do I Contribute?</h2>
+<p>We want to make contributing to this project as easy and transparent as possible. Please refer to the <a href="https://github.com/parse-community/ParseLiveQuery-iOS-OSX/blob/master/CONTRIBUTING.md">Contribution Guidelines</a>.</p>
+<hr>
+<p>As of April 5, 2017, Parse, LLC has transferred this code to the parse-community organization, and will no longer be contributing to or distributing this code.</p>
+</body></html>

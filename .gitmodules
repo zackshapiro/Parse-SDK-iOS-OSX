@@ -1,0 +1,3 @@
+[submodule "cocoadocs.org"]
+	path = cocoadocs.org
+	url = https://github.com/cocoapods/cocoadocs.org

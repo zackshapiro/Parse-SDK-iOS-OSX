@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFRole.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFRole</TokenIdentifier>
+			<Abstract type="html">The PFRole class represents a Role on the Parse server.
+PFRoles represent groupings of PFUser objects for the purposes of granting permissions
+(e.g. specifying a PFACL for a PFObject.
+Roles are specified by their sets of child users and child roles,
+all of which are granted any permissions that the parent role has.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/initWithName:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name.
+If no default ACL has been specified, you must provide an ACL for the role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithName:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/initWithName:acl:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithName:(NSString *)name acl:(nullable PFACL *)acl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter><Parameter>
+					<Name>acl</Name>
+					<Abstract type="html">The ACL for this role. Roles must have an ACL.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithName:acl:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFRole/roleWithName:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)roleWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/roleWithName:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFRole/roleWithName:acl:</TokenIdentifier>
+			<Abstract type="html">Constructs a new PFRole with the given name.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)roleWithName:(NSString *)name acl:(nullable PFACL *)acl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the Role to create.</Abstract>
+				</Parameter><Parameter>
+					<Name>acl</Name>
+					<Abstract type="html">The ACL for this role. Roles must have an ACL.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/roleWithName:acl:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/setName:</TokenIdentifier>
+			<Abstract type="html">Gets or sets the name for a role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/name</TokenIdentifier>
+			<Abstract type="html">Gets or sets the name for a role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRole/name</TokenIdentifier>
+			<Abstract type="html">Gets or sets the name for a role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/setUsers:</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFUser objects that are direct children of this role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFRelation&lt;PFUser*&gt; *users</Declaration>
+			
+			
+			<Anchor>//api/name/users</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/users</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFUser objects that are direct children of this role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFRelation&lt;PFUser*&gt; *users</Declaration>
+			
+			
+			<Anchor>//api/name/users</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRole/users</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFUser objects that are direct children of this role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFRelation&lt;PFUser*&gt; *users</Declaration>
+			
+			
+			<Anchor>//api/name/users</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/setRoles:</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFRole objects that are direct children of this role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFRelation&lt;PFRole*&gt; *roles</Declaration>
+			
+			
+			<Anchor>//api/name/roles</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFRole/roles</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFRole objects that are direct children of this role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFRelation&lt;PFRole*&gt; *roles</Declaration>
+			
+			
+			<Anchor>//api/name/roles</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFRole/roles</TokenIdentifier>
+			<Abstract type="html">Gets the PFRelation for the PFRole objects that are direct children of this role.</Abstract>
+			<DeclaredIn>PFRole.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PFRelation&lt;PFRole*&gt; *roles</Declaration>
+			
+			
+			<Anchor>//api/name/roles</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

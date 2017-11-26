@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFConfig</TokenIdentifier>
+			<Abstract type="html">PFConfig is a representation of the remote configuration object.
+It enables you to add things like feature gating, a/b testing or simple &quot;Message of the day&quot;.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFConfig/currentConfig</TokenIdentifier>
+			<Abstract type="html">Returns the most recently fetched config.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+			
+			<Declaration>+ (PFConfig *)currentConfig</Declaration>
+			
+			<ReturnValue><Abstract type="html">Current, last fetched instance of PFConfig.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentConfig</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFConfig/getCurrentConfigInBackground</TokenIdentifier>
+			<Abstract type="html">Returns the task that encapsulates the most recently fetched config.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFConfig*&gt; *)getCurrentConfigInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">Task that encapsulates current, last fetched instance of PFConfig.</Abstract></ReturnValue>
+			<Anchor>//api/name/getCurrentConfigInBackground</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFConfig/getConfigInBackground</TokenIdentifier>
+			<Abstract type="html">Gets the PFConfig asynchronously and sets it as a result of a task.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;PFConfig*&gt; *)getConfigInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/getConfigInBackground</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFConfig/getConfigInBackgroundWithBlock:</TokenIdentifier>
+			<Abstract type="html">Gets the PFConfig asynchronously and executes the given callback block.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+			
+			<Declaration>+ (void)getConfigInBackgroundWithBlock:(nullable PFConfigResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute.
+It should have the following argument signature: ^(PFConfig config, NSError error).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getConfigInBackgroundWithBlock:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFConfig/objectForKey:</TokenIdentifier>
+			<Abstract type="html">Returns the object associated with a given key.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+			
+			<Declaration>- (nullable id)objectForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key for which to return the corresponding configuration value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value associated with key, or nil if there is no such value.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKey:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFConfig/objectForKeyedSubscript:</TokenIdentifier>
+			<Abstract type="html">Returns the object associated with a given key.</Abstract>
+			<DeclaredIn>PFConfig.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/PFConfig/objectForKey:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable id)objectForKeyedSubscript:(NSString *)keyedSubscript</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyedSubscript</Name>
+					<Abstract type="html">The keyed subscript for which to return the corresponding configuration value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value associated with key, or nil if there is no such value.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectForKeyedSubscript:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFConfig/getConfig</TokenIdentifier>
+			<Abstract type="html">Gets the PFConfig object synchronously from the server.</Abstract>
+			<DeclaredIn>PFConfig+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFConfig *)getConfig</Declaration>
+			
+			<ReturnValue><Abstract type="html">Instance of PFConfig if the operation succeeded, otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/getConfig</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFConfig/getConfig:</TokenIdentifier>
+			<Abstract type="html">Gets the PFConfig object synchronously from the server and sets an error if it occurs.</Abstract>
+			<DeclaredIn>PFConfig+Synchronous.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFConfig *)getConfig:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Pointer to an NSError that will be set if necessary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance of PFConfig if the operation succeeded, otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/getConfig:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

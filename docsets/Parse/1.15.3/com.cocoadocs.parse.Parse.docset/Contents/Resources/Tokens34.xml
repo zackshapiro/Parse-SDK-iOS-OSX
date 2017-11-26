@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PFUserAuthenticationDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PFUserAuthenticationDelegate</TokenIdentifier>
+			<Abstract type="html">Provides a general interface for delegation of third party authentication with PFUsers.</Abstract>
+			<DeclaredIn>PFUserAuthenticationDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFUserAuthenticationDelegate/restoreAuthenticationWithAuthData:</TokenIdentifier>
+			<Abstract type="html">Called when restoring third party authentication credentials that have been serialized,
+such as session keys, user id, etc.</Abstract>
+			<DeclaredIn>PFUserAuthenticationDelegate.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)restoreAuthenticationWithAuthData:(nullable NSDictionary&lt;NSString*,NSString*&gt; *)authData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>authData</Name>
+					<Abstract type="html">The auth data for the provider. This value may be nil when unlinking an account.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES - if the authData was succesfully synchronized,
+or NO if user should not longer be associated because of bad authData.</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreAuthenticationWithAuthData:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

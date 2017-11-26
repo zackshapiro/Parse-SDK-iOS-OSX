@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFPointerOrLocalIdObjectEncoder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFPointerOrLocalIdObjectEncoder</TokenIdentifier>
+			<Abstract type="html">Encoding strategy that encodes PFObject to PFPointer with objectId or with localId.</Abstract>
+			<DeclaredIn>PFEncoder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

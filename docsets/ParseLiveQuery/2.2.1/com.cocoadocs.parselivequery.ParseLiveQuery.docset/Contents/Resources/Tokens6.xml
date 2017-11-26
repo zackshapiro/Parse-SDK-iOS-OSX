@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ChatRoomManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ChatRoomManagerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChatRoomManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ChatRoomManagerDelegate/chatRoomManager:didReceiveMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ChatRoomManager.h</DeclaredIn>
+			
+			<Declaration>- (void)chatRoomManager:(ChatRoomManager *)manager didReceiveMessage:(Message *)message</Declaration>
+			
+			
+			<Anchor>//api/name/chatRoomManager:didReceiveMessage:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cocoadocs.parse.Parse</string>
+	<key>CFBundleName</key>
+	<string>Parse Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.15.3</string>
+	<key>CFBundleVersion</key>
+	<string>1.15.3</string>
+	
+	
+	
+	<key>DocSetFallbackURL</key>
+	<string>http://cocoadocs.org/docsets/Parse</string>
+	<key>DocSetFeedName</key>
+	<string>Parse</string>
+	<key>DocSetFeedURL</key>
+	<string>http://cocoadocs.org/docsets/Parse/xcode-docset.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>com.cocoadocs.parse.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Parse</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 Parse. All rights reserved.</string>
+</dict>
+</plist>

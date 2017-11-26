@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFGeoPoint.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFGeoPoint</TokenIdentifier>
+			<Abstract type="html">PFGeoPoint may be used to embed a latitude / longitude point as the value for a key in a PFObject.
+It could be used to perform queries in a geospatial manner using PFQuery.-whereKey:nearGeoPoint:.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPoint</TokenIdentifier>
+			<Abstract type="html">Create a PFGeoPoint object. Latitude and longitude are set to 0.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)geoPoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns a new PFGeoPoint.</Abstract></ReturnValue>
+			<Anchor>//api/name/geoPoint</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPointWithLocation:</TokenIdentifier>
+			<Abstract type="html">Creates a new PFGeoPoint object for the given CLLocation, set to the location&apos;s coordinates.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)geoPointWithLocation:(nullable CLLocation *)location</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">Instace of CLLocation, with set latitude and longitude.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a new PFGeoPoint at specified location.</Abstract></ReturnValue>
+			<Anchor>//api/name/geoPointWithLocation:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPointWithLatitude:longitude:</TokenIdentifier>
+			<Abstract type="html">Create a new PFGeoPoint object with the specified latitude and longitude.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)geoPointWithLatitude:(double)latitude longitude:(double)longitude</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">Latitude of point in degrees.</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">Longitude of point in degrees.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New point object with specified latitude and longitude.</Abstract></ReturnValue>
+			<Anchor>//api/name/geoPointWithLatitude:longitude:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFGeoPoint/geoPointForCurrentLocationInBackground:</TokenIdentifier>
+			<Abstract type="html">Fetches the current device location and executes a block with a new PFGeoPoint object.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>+ (void)geoPointForCurrentLocationInBackground:(nullable PFGeoPointResultBlock)resultBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resultBlock</Name>
+					<Abstract type="html">A block which takes the newly created PFGeoPoint as an argument.
+It should have the following argument signature: ^(PFGeoPoint geoPoint, NSError error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/geoPointForCurrentLocationInBackground:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/setLatitude:</TokenIdentifier>
+			<Abstract type="html">Latitude of point in degrees. Valid range is from -90.0 to 90.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/latitude</TokenIdentifier>
+			<Abstract type="html">Latitude of point in degrees. Valid range is from -90.0 to 90.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFGeoPoint/latitude</TokenIdentifier>
+			<Abstract type="html">Latitude of point in degrees. Valid range is from -90.0 to 90.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/setLongitude:</TokenIdentifier>
+			<Abstract type="html">Longitude of point in degrees. Valid range is from -180.0 to 180.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/longitude</TokenIdentifier>
+			<Abstract type="html">Longitude of point in degrees. Valid range is from -180.0 to 180.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFGeoPoint/longitude</TokenIdentifier>
+			<Abstract type="html">Longitude of point in degrees. Valid range is from -180.0 to 180.0.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/distanceInRadiansTo:</TokenIdentifier>
+			<Abstract type="html">Get distance in radians from this point to specified point.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>- (double)distanceInRadiansTo:(nullable PFGeoPoint *)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">PFGeoPoint that represents the location of other point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Distance in radians between the receiver and point.</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceInRadiansTo:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/distanceInMilesTo:</TokenIdentifier>
+			<Abstract type="html">Get distance in miles from this point to specified point.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>- (double)distanceInMilesTo:(nullable PFGeoPoint *)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">PFGeoPoint that represents the location of other point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Distance in miles between the receiver and point.</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceInMilesTo:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFGeoPoint/distanceInKilometersTo:</TokenIdentifier>
+			<Abstract type="html">Get distance in kilometers from this point to specified point.</Abstract>
+			<DeclaredIn>PFGeoPoint.h</DeclaredIn>
+			
+			<Declaration>- (double)distanceInKilometersTo:(nullable PFGeoPoint *)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">PFGeoPoint that represents the location of other point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Distance in kilometers between the receiver and point.</Abstract></ReturnValue>
+			<Anchor>//api/name/distanceInKilometersTo:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

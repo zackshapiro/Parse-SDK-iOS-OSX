@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFAnalytics.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFAnalytics</TokenIdentifier>
+			<Abstract type="html">PFAnalytics provides an interface to Parse&apos;s logging and analytics backend.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackAppOpenedWithLaunchOptions:</TokenIdentifier>
+			<Abstract type="html">Tracks this application being launched. If this happened as the result of the
+user opening a push notification, this method sends along information to
+correlate this open with that push.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)trackAppOpenedWithLaunchOptions:(nullable NSDictionary *)launchOptions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>launchOptions</Name>
+					<Abstract type="html">The NSDictionary indicating the reason the application was
+launched, if any. This value can be found as a parameter to various
+UIApplicationDelegate methods, and can be empty or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the task encapsulating the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/trackAppOpenedWithLaunchOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackAppOpenedWithLaunchOptionsInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Tracks this application being launched.
+If this happened as the result of the user opening a push notification,
+this method sends along information to correlate this open with that push.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)trackAppOpenedWithLaunchOptionsInBackground:(nullable NSDictionary *)launchOptions block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>launchOptions</Name>
+					<Abstract type="html">The dictionary indicating the reason the application was
+launched, if any. This value can be found as a parameter to various
+UIApplicationDelegate methods, and can be empty or nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute on server response.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackAppOpenedWithLaunchOptionsInBackground:block:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackAppOpenedWithRemoteNotificationPayload:</TokenIdentifier>
+			<Abstract type="html">Tracks this application being launched. If this happened as the result of the
+user opening a push notification, this method sends along information to
+correlate this open with that push.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)trackAppOpenedWithRemoteNotificationPayload:(nullable NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">The Remote Notification payload, if any. This value can be
+found either under UIApplicationLaunchOptionsRemoteNotificationKey on launchOptions,
+or as a parameter to application:didReceiveRemoteNotification:.
+This can be empty or nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the task encapsulating the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/trackAppOpenedWithRemoteNotificationPayload:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackAppOpenedWithRemoteNotificationPayloadInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Tracks this application being launched. If this happened as the result of the
+user opening a push notification, this method sends along information to
+correlate this open with that push.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)trackAppOpenedWithRemoteNotificationPayloadInBackground:(nullable NSDictionary *)userInfo block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">The Remote Notification payload, if any. This value can be
+found either under UIApplicationLaunchOptionsRemoteNotificationKey on launchOptions,
+or as a parameter to application:didReceiveRemoteNotification:. This can be empty or nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute on server response.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackAppOpenedWithRemoteNotificationPayloadInBackground:block:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackEvent:</TokenIdentifier>
+			<Abstract type="html">Tracks the occurrence of a custom event.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)trackEvent:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the custom event to report to Parse as having happened.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the task encapsulating the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/trackEvent:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackEventInBackground:block:</TokenIdentifier>
+			<Abstract type="html">Tracks the occurrence of a custom event. Parse will store a data point at the
+time of invocation with the given event name. The event will be sent at some
+unspecified time in the future, even if Parse is currently inaccessible.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)trackEventInBackground:(NSString *)name block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the custom event to report to Parse as having happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute on server response.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackEventInBackground:block:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackEvent:dimensions:</TokenIdentifier>
+			<Abstract type="html">Tracks the occurrence of a custom event with additional dimensions. Parse will
+store a data point at the time of invocation with the given event name.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;NSNumber*&gt; *)trackEvent:(NSString *)name dimensions:(nullable NSDictionary&lt;NSString*,NSString*&gt; *)dimensions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the custom event to report to Parse as having happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>dimensions</Name>
+					<Abstract type="html">The NSDictionary of information by which to segment this event.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns the task encapsulating the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/trackEvent:dimensions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFAnalytics/trackEventInBackground:dimensions:block:</TokenIdentifier>
+			<Abstract type="html">Tracks the occurrence of a custom event with additional dimensions. Parse will
+store a data point at the time of invocation with the given event name. The
+event will be sent at some unspecified time in the future, even if Parse is currently inaccessible.</Abstract>
+			<DeclaredIn>PFAnalytics.h</DeclaredIn>
+			
+			<Declaration>+ (void)trackEventInBackground:(NSString *)name dimensions:(nullable NSDictionary&lt;NSString*,NSString*&gt; *)dimensions block:(nullable PFBooleanResultBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the custom event to report to Parse as having happened.</Abstract>
+				</Parameter><Parameter>
+					<Name>dimensions</Name>
+					<Abstract type="html">The NSDictionary of information by which to segment this event.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block to execute on server response.
+It should have the following argument signature: ^(BOOL succeeded, NSError *error)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackEventInBackground:dimensions:block:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

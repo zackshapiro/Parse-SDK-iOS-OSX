@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFTableViewCell</TokenIdentifier>
+			<Abstract type="html">The PFTableViewCell class represents a table view cell which can download and display remote images stored on Parse.</Abstract>
+			<DeclaredIn>PFTableViewCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTableViewCell/setImageView:</TokenIdentifier>
+			<Abstract type="html">The imageView of the table view cell.</Abstract>
+			<DeclaredIn>PFTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFTableViewCell/imageView</TokenIdentifier>
+			<Abstract type="html">The imageView of the table view cell.</Abstract>
+			<DeclaredIn>PFTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFTableViewCell/imageView</TokenIdentifier>
+			<Abstract type="html">The imageView of the table view cell.</Abstract>
+			<DeclaredIn>PFTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) PFImageView *imageView</Declaration>
+			
+			
+			<Anchor>//api/name/imageView</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

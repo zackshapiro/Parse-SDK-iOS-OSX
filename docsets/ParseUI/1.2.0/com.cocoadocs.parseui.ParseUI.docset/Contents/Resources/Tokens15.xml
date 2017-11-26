@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PFLogInFields.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PFLogInFields</TokenIdentifier>
+			<Abstract type="html">PFLogInFields bitmask specifies the log in elements which are enabled in the view.</Abstract>
+			<DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/PFLogInViewController</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/PFLogInView</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsNone</TokenIdentifier>
+            <Abstract type="html">No fields.</Abstract>
+            <Declaration>PFLogInFieldsNone</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsUsernameAndPassword</TokenIdentifier>
+            <Abstract type="html">Username and password fields.</Abstract>
+            <Declaration>PFLogInFieldsUsernameAndPassword</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsPasswordForgotten</TokenIdentifier>
+            <Abstract type="html">Forgot password button.</Abstract>
+            <Declaration>PFLogInFieldsPasswordForgotten</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsLogInButton</TokenIdentifier>
+            <Abstract type="html">Login button.</Abstract>
+            <Declaration>PFLogInFieldsLogInButton</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsFacebook</TokenIdentifier>
+            <Abstract type="html">Button to login with Facebook.</Abstract>
+            <Declaration>PFLogInFieldsFacebook</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsTwitter</TokenIdentifier>
+            <Abstract type="html">Button to login with Twitter.</Abstract>
+            <Declaration>PFLogInFieldsTwitter</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsSignUpButton</TokenIdentifier>
+            <Abstract type="html">Signup Button.</Abstract>
+            <Declaration>PFLogInFieldsSignUpButton</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsDismissButton</TokenIdentifier>
+            <Abstract type="html">Dismiss Button.</Abstract>
+            <Declaration>PFLogInFieldsDismissButton</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PFLogInFieldsDefault</TokenIdentifier>
+            <Abstract type="html">Default value. Combines Username, Password, Login, Signup, Forgot Password and Dismiss buttons.</Abstract>
+            <Declaration>PFLogInFieldsDefault</Declaration>
+            
+            <DeclaredIn>PFLogInView.h</DeclaredIn>
+            
+            <NodeRef refid="15"/>
+        </Token>
+        
+	</File>
+</Tokens>

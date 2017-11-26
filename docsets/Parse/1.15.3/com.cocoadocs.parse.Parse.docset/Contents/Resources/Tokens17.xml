@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFOfflineObjectEncoder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFOfflineObjectEncoder</TokenIdentifier>
+			<Abstract type="html">Encoding strategy that can encode objects that are available offline. After using this encoder,
+you must call encodeFinished and wait for its result to be finished before the results of the
+encoding will be valid.</Abstract>
+			<DeclaredIn>PFEncoder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFOfflineObjectEncoder/objectEncoderWithOfflineStore:database:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFEncoder.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)objectEncoderWithOfflineStore:(PFOfflineStore *)store database:(PFSQLiteDatabase *)database</Declaration>
+			
+			
+			<Anchor>//api/name/objectEncoderWithOfflineStore:database:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFOfflineObjectEncoder/encodeFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PFEncoder.h</DeclaredIn>
+			
+			<Declaration>- (BFTask *)encodeFinished</Declaration>
+			
+			
+			<Anchor>//api/name/encodeFinished</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

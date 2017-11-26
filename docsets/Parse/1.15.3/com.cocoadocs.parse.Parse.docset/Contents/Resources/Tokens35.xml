@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ParseMutableClientConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ParseMutableClientConfiguration</TokenIdentifier>
+			<Abstract type="html">The ParseMutableClientConfiguration represents a ParseClientConfiguration object that can be mutated.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setApplicationId:</TokenIdentifier>
+			<Abstract type="html">The Parse.com application id to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/applicationId</TokenIdentifier>
+			<Abstract type="html">The Parse.com application id to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/applicationId</TokenIdentifier>
+			<Abstract type="html">The Parse.com application id to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *applicationId</Declaration>
+			
+			
+			<Anchor>//api/name/applicationId</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setClientKey:</TokenIdentifier>
+			<Abstract type="html">The Parse.com client key to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *clientKey</Declaration>
+			
+			
+			<Anchor>//api/name/clientKey</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/clientKey</TokenIdentifier>
+			<Abstract type="html">The Parse.com client key to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *clientKey</Declaration>
+			
+			
+			<Anchor>//api/name/clientKey</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/clientKey</TokenIdentifier>
+			<Abstract type="html">The Parse.com client key to configure the SDK with.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *clientKey</Declaration>
+			
+			
+			<Anchor>//api/name/clientKey</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setServer:</TokenIdentifier>
+			<Abstract type="html">The URL of the server that is being used by the SDK.
+Defaults to https://api.parse.com/1.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/server</TokenIdentifier>
+			<Abstract type="html">The URL of the server that is being used by the SDK.
+Defaults to https://api.parse.com/1.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/server</TokenIdentifier>
+			<Abstract type="html">The URL of the server that is being used by the SDK.
+Defaults to https://api.parse.com/1.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *server</Declaration>
+			
+			
+			<Anchor>//api/name/server</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setFileUploadController:</TokenIdentifier>
+			<Abstract type="html">Sets a custom file upload controller that uploads PFFiles using its own policy.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readwrite, nullable) id&lt;PFFileUploadController&gt; fileUploadController</Declaration>
+			
+			
+			<Anchor>//api/name/fileUploadController</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/fileUploadController</TokenIdentifier>
+			<Abstract type="html">Sets a custom file upload controller that uploads PFFiles using its own policy.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readwrite, nullable) id&lt;PFFileUploadController&gt; fileUploadController</Declaration>
+			
+			
+			<Anchor>//api/name/fileUploadController</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/fileUploadController</TokenIdentifier>
+			<Abstract type="html">Sets a custom file upload controller that uploads PFFiles using its own policy.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readwrite, nullable) id&lt;PFFileUploadController&gt; fileUploadController</Declaration>
+			
+			
+			<Anchor>//api/name/fileUploadController</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setPF_TV_UNAVAILABLE:</TokenIdentifier>
+			<Abstract type="html">Whether or not to enable pinning in the SDK.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isLocalDatastoreEnabled) BOOL localDatastoreEnabled PF_TV_UNAVAILABLE</Declaration>
+			
+			
+			<Anchor>//api/name/PF_TV_UNAVAILABLE</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/isLocalDatastoreEnabled</TokenIdentifier>
+			<Abstract type="html">Whether or not to enable pinning in the SDK.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isLocalDatastoreEnabled) BOOL localDatastoreEnabled PF_TV_UNAVAILABLE</Declaration>
+			
+			
+			<Anchor>//api/name/PF_TV_UNAVAILABLE</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/PF_TV_UNAVAILABLE</TokenIdentifier>
+			<Abstract type="html">Whether or not to enable pinning in the SDK.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isLocalDatastoreEnabled) BOOL localDatastoreEnabled PF_TV_UNAVAILABLE</Declaration>
+			
+			
+			<Anchor>//api/name/PF_TV_UNAVAILABLE</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setPF_WATCH_UNAVAILABLE:</TokenIdentifier>
+			<Abstract type="html">When set, enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *PF_TV_UNAVAILABLE PF_WATCH_UNAVAILABLE</Declaration>
+			
+			
+			<Anchor>//api/name/PF_WATCH_UNAVAILABLE</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/PF_WATCH_UNAVAILABLE</TokenIdentifier>
+			<Abstract type="html">When set, enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *PF_TV_UNAVAILABLE PF_WATCH_UNAVAILABLE</Declaration>
+			
+			
+			<Anchor>//api/name/PF_WATCH_UNAVAILABLE</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/PF_WATCH_UNAVAILABLE</TokenIdentifier>
+			<Abstract type="html">When set, enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *PF_TV_UNAVAILABLE PF_WATCH_UNAVAILABLE</Declaration>
+			
+			
+			<Anchor>//api/name/PF_WATCH_UNAVAILABLE</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/setNetworkRetryAttempts:</TokenIdentifier>
+			<Abstract type="html">The maximum number of retry attempts to make upon a failed network request.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger networkRetryAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/networkRetryAttempts</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ParseMutableClientConfiguration/networkRetryAttempts</TokenIdentifier>
+			<Abstract type="html">The maximum number of retry attempts to make upon a failed network request.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger networkRetryAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/networkRetryAttempts</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/ParseMutableClientConfiguration/networkRetryAttempts</TokenIdentifier>
+			<Abstract type="html">The maximum number of retry attempts to make upon a failed network request.</Abstract>
+			<DeclaredIn>ParseClientConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSUInteger networkRetryAttempts</Declaration>
+			
+			
+			<Anchor>//api/name/networkRetryAttempts</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

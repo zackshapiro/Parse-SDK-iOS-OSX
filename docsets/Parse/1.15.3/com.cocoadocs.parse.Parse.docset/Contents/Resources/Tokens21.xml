@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFProduct.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFProduct</TokenIdentifier>
+			<Abstract type="html">The PFProduct class represents an in-app purchase product on the Parse server.
+By default, products can only be created via the Data Browser. Saving a PFProduct will result in error.
+However, the products&apos; metadata information can be queried and viewed.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setProductIdentifier:</TokenIdentifier>
+			<Abstract type="html">The product identifier of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/productIdentifier</TokenIdentifier>
+			<Abstract type="html">The product identifier of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/productIdentifier</TokenIdentifier>
+			<Abstract type="html">The product identifier of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *productIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/productIdentifier</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setIcon:</TokenIdentifier>
+			<Abstract type="html">The icon of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFFile *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/icon</TokenIdentifier>
+			<Abstract type="html">The icon of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFFile *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/icon</TokenIdentifier>
+			<Abstract type="html">The icon of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) PFFile *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setTitle:</TokenIdentifier>
+			<Abstract type="html">The title of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/title</TokenIdentifier>
+			<Abstract type="html">The title of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/title</TokenIdentifier>
+			<Abstract type="html">The title of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setSubtitle:</TokenIdentifier>
+			<Abstract type="html">The subtitle of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/subtitle</TokenIdentifier>
+			<Abstract type="html">The subtitle of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/subtitle</TokenIdentifier>
+			<Abstract type="html">The subtitle of the product.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSString *subtitle</Declaration>
+			
+			
+			<Anchor>//api/name/subtitle</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setOrder:</TokenIdentifier>
+			<Abstract type="html">The order in which the product information is displayed in PFProductTableViewController.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSNumber *order</Declaration>
+			
+			
+			<Anchor>//api/name/order</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/order</TokenIdentifier>
+			<Abstract type="html">The order in which the product information is displayed in PFProductTableViewController.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSNumber *order</Declaration>
+			
+			
+			<Anchor>//api/name/order</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/order</TokenIdentifier>
+			<Abstract type="html">The order in which the product information is displayed in PFProductTableViewController.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong) NSNumber *order</Declaration>
+			
+			
+			<Anchor>//api/name/order</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/setDownloadName:</TokenIdentifier>
+			<Abstract type="html">The name of the associated download.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *downloadName</Declaration>
+			
+			
+			<Anchor>//api/name/downloadName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFProduct/downloadName</TokenIdentifier>
+			<Abstract type="html">The name of the associated download.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *downloadName</Declaration>
+			
+			
+			<Anchor>//api/name/downloadName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFProduct/downloadName</TokenIdentifier>
+			<Abstract type="html">The name of the associated download.</Abstract>
+			<DeclaredIn>PFProduct.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) NSString *downloadName</Declaration>
+			
+			
+			<Anchor>//api/name/downloadName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

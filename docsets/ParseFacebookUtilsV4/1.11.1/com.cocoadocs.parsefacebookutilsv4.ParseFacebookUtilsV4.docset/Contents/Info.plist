@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cocoadocs.parsefacebookutilsv4.ParseFacebookUtilsV4</string>
+	<key>CFBundleName</key>
+	<string>ParseFacebookUtilsV4 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.11.1</string>
+	<key>CFBundleVersion</key>
+	<string>1.11.1</string>
+	
+	
+	
+	<key>DocSetFallbackURL</key>
+	<string>http://cocoadocs.org/docsets/ParseFacebookUtilsV4</string>
+	<key>DocSetFeedName</key>
+	<string>ParseFacebookUtilsV4</string>
+	<key>DocSetFeedURL</key>
+	<string>http://cocoadocs.org/docsets/ParseFacebookUtilsV4/xcode-docset.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>com.cocoadocs.parsefacebookutilsv4.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Parse</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 Parse. All rights reserved.</string>
+</dict>
+</plist>

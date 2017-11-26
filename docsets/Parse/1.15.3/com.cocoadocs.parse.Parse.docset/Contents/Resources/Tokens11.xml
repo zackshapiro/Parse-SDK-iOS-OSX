@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFInstallation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFInstallation</TokenIdentifier>
+			<Abstract type="html">A Parse Framework Installation Object that is a local representation of an
+installation persisted to the Parse cloud. This class is a subclass of a
+PFObject, and retains the same functionality of a PFObject, but also extends
+it with installation-specific fields and related immutability and validity
+checks.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFInstallation/currentInstallation</TokenIdentifier>
+			<Abstract type="html">Gets the currently-running installation from disk and returns an instance of it.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>+ (nullable instancetype)currentInstallation</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns a PFInstallation that represents the currently-running installation if it could be loaded from disk, otherwise - nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentInstallation</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFInstallation/getCurrentInstallationInBackground</TokenIdentifier>
+			<Abstract type="html">Asynchronously loads the currently-running installation from disk and returns an instance of it.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>+ (BFTask&lt;__kindofPFInstallation*&gt; *)getCurrentInstallationInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns a task that incapsulates the current installation.</Abstract></ReturnValue>
+			<Anchor>//api/name/getCurrentInstallationInBackground</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setDeviceType:</TokenIdentifier>
+			<Abstract type="html">The device type for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *deviceType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceType</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/deviceType</TokenIdentifier>
+			<Abstract type="html">The device type for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *deviceType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceType</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/deviceType</TokenIdentifier>
+			<Abstract type="html">The device type for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *deviceType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceType</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setInstallationId:</TokenIdentifier>
+			<Abstract type="html">The installationId for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *installationId</Declaration>
+			
+			
+			<Anchor>//api/name/installationId</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/installationId</TokenIdentifier>
+			<Abstract type="html">The installationId for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *installationId</Declaration>
+			
+			
+			<Anchor>//api/name/installationId</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/installationId</TokenIdentifier>
+			<Abstract type="html">The installationId for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *installationId</Declaration>
+			
+			
+			<Anchor>//api/name/installationId</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setDeviceToken:</TokenIdentifier>
+			<Abstract type="html">The device token for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *deviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/deviceToken</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/deviceToken</TokenIdentifier>
+			<Abstract type="html">The device token for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *deviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/deviceToken</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/deviceToken</TokenIdentifier>
+			<Abstract type="html">The device token for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *deviceToken</Declaration>
+			
+			
+			<Anchor>//api/name/deviceToken</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setBadge:</TokenIdentifier>
+			<Abstract type="html">The badge for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger badge</Declaration>
+			
+			
+			<Anchor>//api/name/badge</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/badge</TokenIdentifier>
+			<Abstract type="html">The badge for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger badge</Declaration>
+			
+			
+			<Anchor>//api/name/badge</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/badge</TokenIdentifier>
+			<Abstract type="html">The badge for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger badge</Declaration>
+			
+			
+			<Anchor>//api/name/badge</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setTimeZone:</TokenIdentifier>
+			<Abstract type="html">The name of the time zone for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/timeZone</TokenIdentifier>
+			<Abstract type="html">The name of the time zone for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/timeZone</TokenIdentifier>
+			<Abstract type="html">The name of the time zone for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy, readonly) NSString *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setChannels:</TokenIdentifier>
+			<Abstract type="html">The channels for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSArray&lt;NSString*&gt; *channels</Declaration>
+			
+			
+			<Anchor>//api/name/channels</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/channels</TokenIdentifier>
+			<Abstract type="html">The channels for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSArray&lt;NSString*&gt; *channels</Declaration>
+			
+			
+			<Anchor>//api/name/channels</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFInstallation/channels</TokenIdentifier>
+			<Abstract type="html">The channels for the PFInstallation.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSArray&lt;NSString*&gt; *channels</Declaration>
+			
+			
+			<Anchor>//api/name/channels</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFInstallation/setDeviceTokenFromData:</TokenIdentifier>
+			<Abstract type="html">Sets the device token string property from an NSData-encoded token.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>- (void)setDeviceTokenFromData:(nullable NSData *)deviceTokenData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceTokenData</Name>
+					<Abstract type="html">A token that identifies the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDeviceTokenFromData:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFInstallation/query</TokenIdentifier>
+			<Abstract type="html">Creates a PFQuery for PFInstallation objects.</Abstract>
+			<DeclaredIn>PFInstallation.h</DeclaredIn>
+			
+			<Declaration>+ (nullable PFQuery *)query</Declaration>
+			
+			
+			<Anchor>//api/name/query</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

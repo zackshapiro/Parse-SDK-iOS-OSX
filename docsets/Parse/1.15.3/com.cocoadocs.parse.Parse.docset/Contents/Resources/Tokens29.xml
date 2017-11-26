@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Parse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Parse</TokenIdentifier>
+			<Abstract type="html">The Parse class contains static functions that handle global configuration for the Parse framework.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/setApplicationId:clientKey:</TokenIdentifier>
+			<Abstract type="html">Sets the applicationId and clientKey of your application.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)setApplicationId:(NSString *)applicationId clientKey:(NSString *)clientKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>applicationId</Name>
+					<Abstract type="html">The application id of your Parse application.</Abstract>
+				</Parameter><Parameter>
+					<Name>clientKey</Name>
+					<Abstract type="html">The client key of your Parse application.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setApplicationId:clientKey:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/initializeWithConfiguration:</TokenIdentifier>
+			<Abstract type="html">Sets the configuration to be used for the Parse SDK.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)initializeWithConfiguration:(ParseClientConfiguration *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">The new configuration to set for the SDK.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initializeWithConfiguration:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/currentConfiguration</TokenIdentifier>
+			<Abstract type="html">Gets the current configuration in use by the Parse SDK.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (nullable ParseClientConfiguration *)currentConfiguration</Declaration>
+			
+			<ReturnValue><Abstract type="html">The current configuration in use by the SDK. Returns nil if the SDK has not been initialized yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentConfiguration</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/getApplicationId</TokenIdentifier>
+			<Abstract type="html">The current application id that was used to configure Parse framework.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)getApplicationId</Declaration>
+			
+			
+			<Anchor>//api/name/getApplicationId</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/getClientKey</TokenIdentifier>
+			<Abstract type="html">The current client key that was used to configure Parse framework.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (nullable NSString *)getClientKey</Declaration>
+			
+			
+			<Anchor>//api/name/getClientKey</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/enableLocalDatastore</TokenIdentifier>
+			<Abstract type="html">Enable pinning in your application. This must be called before your application can use
+pinning. The recommended way is to call this method before setApplicationId:clientKey:.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableLocalDatastore</Declaration>
+			
+			
+			<Anchor>//api/name/enableLocalDatastore</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/isLocalDatastoreEnabled</TokenIdentifier>
+			<Abstract type="html">Flag that indicates whether Local Datastore is enabled.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isLocalDatastoreEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if Local Datastore is enabled, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/isLocalDatastoreEnabled</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/enableDataSharingWithApplicationGroupIdentifier:</TokenIdentifier>
+			<Abstract type="html">Enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableDataSharingWithApplicationGroupIdentifier:(NSString *)groupIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupIdentifier</Name>
+					<Abstract type="html">Application Group Identifier to share data with.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableDataSharingWithApplicationGroupIdentifier:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/enableDataSharingWithApplicationGroupIdentifier:containingApplication:</TokenIdentifier>
+			<Abstract type="html">Enables data sharing with an application group identifier.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)enableDataSharingWithApplicationGroupIdentifier:(NSString *)groupIdentifier containingApplication:(NSString *)bundleIdentifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupIdentifier</Name>
+					<Abstract type="html">Application Group Identifier to share data with.</Abstract>
+				</Parameter><Parameter>
+					<Name>bundleIdentifier</Name>
+					<Abstract type="html">Bundle identifier of the containing application.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableDataSharingWithApplicationGroupIdentifier:containingApplication:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/applicationGroupIdentifierForDataSharing</TokenIdentifier>
+			<Abstract type="html">Application Group Identifier for Data Sharing.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)applicationGroupIdentifierForDataSharing</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSString value if data sharing is enabled, otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/applicationGroupIdentifierForDataSharing</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/containingApplicationBundleIdentifierForDataSharing</TokenIdentifier>
+			<Abstract type="html">Containing application bundle identifier for Data Sharing.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)containingApplicationBundleIdentifierForDataSharing</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSString value if data sharing is enabled, otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/containingApplicationBundleIdentifierForDataSharing</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/offlineMessagesEnabled:</TokenIdentifier>
+			<Abstract type="html">Set whether to show offline messages when using a Parse view or view controller related classes. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; This method has no effect.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)offlineMessagesEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">Whether a UIAlertView should be shown when the device is offline
+and network access is required from a view or view controller.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/offlineMessagesEnabled:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/errorMessagesEnabled:</TokenIdentifier>
+			<Abstract type="html">Set whether to show an error message when using a Parse view or view controller related classes
+and a Parse error was generated via a query. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; This method has no effect.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+			<Declaration>+ (void)errorMessagesEnabled:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">Whether a UIAlertView should be shown when an error occurs.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/errorMessagesEnabled:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/setLogLevel:</TokenIdentifier>
+			<Abstract type="html">Sets the level of logging to display.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFLogLevel</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)setLogLevel:(PFLogLevel)logLevel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logLevel</Name>
+					<Abstract type="html">Log level to set.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLogLevel:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/Parse/logLevel</TokenIdentifier>
+			<Abstract type="html">Log level that will be displayed.</Abstract>
+			<DeclaredIn>Parse.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PFLogLevel</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (PFLogLevel)logLevel</Declaration>
+			
+			<ReturnValue><Abstract type="html">A PFLogLevel value.</Abstract></ReturnValue>
+			<Anchor>//api/name/logLevel</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

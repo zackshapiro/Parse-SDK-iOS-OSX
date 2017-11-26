@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+
+<p><br>
+<br>
+<br>
+</p>
+<h2>Overview</h2>
+<p><code>ParseUI</code> is a collection of a handy user interface components to be used with Parse iOS SDK,<br>
+which streamline and simplify logging in / signing up <code>PFUser</code>s and displaying a list of <code>PFObject</code>s.</p>
+<h2>Getting Started</h2>
+
+
+
+<h4>Packaged Releases</h4>
+<p>You can download the latest release in a form of <code>ParseUI.framework</code> from our <a href="https://github.com/ParsePlatform/ParseUI-iOS/releases">Releases</a> page.</p>
+<p>Add <code>ParseUI.framework</code> to your Xcode project by dragging it into your project folder target, then add the following to any files that use <code>ParseUI</code> components:</p>
+<pre><code>#import &lt;ParseUI/ParseUI.h&gt;
+</code></pre>
+<h4>Build from Source</h4>
+<p><code>ParseUI</code> can also be built from source and supports Xcode subproject referencing.<br>
+Follow these steps to build and run via source code:</p>
+<ul>
+<li>Download the source code via <code>git clone</code> or in an archive</li>
+<li>Run <code>pod install</code> in the repo root to download all the dependencies</li>
+<li>Open <code>ParseUI.xcworkspace</code>
+</li>
+<li>Build and Run <code>ParseUIDemo</code> target</li>
+</ul>
+<h2>Components</h2>
+<h4>PFLogInViewController</h4>
+<p>If you are using Parse to manage users in your mobile app, you are already familiar with the <code>PFUser</code> class.<br>
+At some point in your app, you might want to present a screen to log in your <code>PFUser</code>.<br>
+<code>ParseUI</code> provides a view controller that does exactly this:</p>
+<div class="highlight highlight-source-objc"><pre>PFLogInViewController *logInViewController = [[PFLogInViewController <span class="pl-c1">alloc</span>] <span class="pl-c1">init</span>];
+logInViewController.delegate = self;
+[<span class="pl-c1">self</span> <span class="pl-c1">presentViewController:</span>logInViewController <span class="pl-c1">animated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">nil</span>];</pre></div>
+<h4>PFSignUpViewController</h4>
+<p>If you are using <code>PFLogInViewController</code> with the <code>PFLogInFieldsSignUpButton</code> option enabled,<br>
+you do not need to do any additional work to enable the sign up functionality.<br>
+When your user taps on the sign up button on the log in screen - a sign up screen will appear.<br>
+However, there are occasions where you might want to use the sign up screen independently of the log in screen.<br>
+This is when the <code>PFSignUpViewController</code> comes in handy.</p>
+<div class="highlight highlight-source-objc"><pre>PFSignUpViewController *controller = [[PFSignUpViewController <span class="pl-c1">alloc</span>] <span class="pl-c1">init</span>];
+controller.delegate = self;
+[<span class="pl-c1">self</span> <span class="pl-c1">presentViewController:</span>controller <span class="pl-c1">animated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">nil</span>];</pre></div>
+<h4>PFQueryTableViewController</h4>
+<p>Data oriented iOS applications are mostly a collection of <code>UITableViewController</code>s and corresponding <code>UITableView</code>s.<br>
+When using Parse, each cell of a <code>UITableView</code> typically represents data from a <code>PFObject</code>.<br>
+<code>PFQueryTableViewController</code> is a sub-class of <code>UITableViewController</code> that provides a layer of abstraction that lets you easily display data from one of your Parse classes.</p>
+<div class="highlight highlight-source-objc"><pre>PFQueryTableViewController *controller = [[PFQueryTableViewController <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithStyle:</span>UITableViewStylePlain <span class="pl-c1">className:</span><span class="pl-s"><span class="pl-pds">@"</span>Todo<span class="pl-pds">"</span></span>];
+[<span class="pl-c1">self</span> <span class="pl-c1">presentViewController:</span>controller <span class="pl-c1">animated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">nil</span>];</pre></div>
+<h4>PFQueryCollectionViewController</h4>
+<p>A lot of advanced use cases usually include displaying data in a custom dynamic layout that is different from a simple list.<br>
+<code>PFQueryTableViewController</code> is a sub-class of <code>UICollectionViewController</code> that provides a layer of abstraction that lets you easily display data from one of your Parse classes in any dynamic and custom layout you might think of</p>
+<p>To display data in a simple grid layout you can use the default <code>UICollectionViewFlowLayout</code>:</p>
+<div class="highlight highlight-source-objc"><pre>PFQueryCollectionViewController *controller = [[PFQueryCollectionViewController <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithClassName:</span><span class="pl-s"><span class="pl-pds">@"</span>Todo<span class="pl-pds">"</span></span>];
+UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)controller.collectionViewLayout;
+flowLayout.itemSize = CGSizeMake(<span class="pl-c1">100</span>.<span class="pl-c1">0f</span>, <span class="pl-c1">100</span>.<span class="pl-c1">0f</span>);
+[<span class="pl-c1">self</span> <span class="pl-c1">presentViewController:</span>controller <span class="pl-c1">animated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">nil</span>];</pre></div>
+<p>And, for example, to display data in a circular layout - you can pass an instance of <code>UICollectionViewLayout</code> at initialization time:</p>
+<div class="highlight highlight-source-objc"><pre>UICollectionViewLayout *customCircularLayout = ...;
+PFQueryCollectionViewController *controller = [[PFQueryCollectionViewController <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithCollectionViewLayout:</span>customCircularLayout
+                                                                                                          <span class="pl-c1">className:</span><span class="pl-s"><span class="pl-pds">@"</span>Todo<span class="pl-pds">"</span></span>];
+[<span class="pl-c1">self</span> <span class="pl-c1">presentViewController:</span>controller <span class="pl-c1">animated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">nil</span>];</pre></div>
+<h4>PFImageView</h4>
+<p>Many apps need to display images stored in the Parse Cloud as <code>PFFile</code>s.<br>
+However, to load remote images with the built-in <code>UIImageView</code> involves writing many lines of boilerplate code.<br>
+<code>PFImageView</code> simplifies this task by abstracting away these parts.</p>
+<div class="highlight highlight-source-objc"><pre>PFImageView *imageView = [[PFImageView <span class="pl-c1">alloc</span>] <span class="pl-c1">init</span>];
+imageView.image = [UIImage <span class="pl-c1">imageNamed:</span><span class="pl-s"><span class="pl-pds">@"</span>...<span class="pl-pds">"</span></span>]; <span class="pl-c"><span class="pl-c">//</span> placeholder image</span>
+imageView.file = (PFFile *)someObject[<span class="pl-s"><span class="pl-pds">@"</span>picture<span class="pl-pds">"</span></span>]; <span class="pl-c"><span class="pl-c">//</span> remote image</span>
+[imageView <span class="pl-c1">loadInBackground</span>];</pre></div>
+<h4>PFProductTableViewController</h4>
+<p><code>PFProductTableViewController</code> is a subclass of <code>PFQueryTableViewController</code> that displays all IAP products in a table view. Some content apps, such as an app that sells comic books or video tutorials, may find it handy to use <code>PFProductTableViewController</code> to sell the products. By default, each cell is a product, and tapping on a cell initiates the purchase for the product. If the product has associated downloadable content, the download will start when the cell is selected and a progress bar is displayed to indicate the progress of the download.</p>
+<h2>Learn More</h2>
+<ul>
+<li>Check out <a href="https://github.com/ParsePlatform/ParseUI-iOS/tree/master/ParseUIDemo">ParseUIDemo</a> project</li>
+<li>Read the <a href="https://parseplatform.github.io/docs/ios/guide/" rel="nofollow">iOS Guides</a>
+</li>
+<li>Browse official <a href="https://parse.com/docs/ios/api/" rel="nofollow">API Reference</a>
+</li>
+<li>Follow few <a href="https://parse.com/tutorials/" rel="nofollow">tutorials</a>
+</li>
+</ul>
+<h2>Contributing</h2>
+<p>See the CONTRIBUTING file for how to help out.</p>
+<hr>
+<p>As of April 5, 2017, Parse, LLC has transferred this code to the parse-community organization, and will no longer be contributing to or distributing this code.</p>
+</body></html>

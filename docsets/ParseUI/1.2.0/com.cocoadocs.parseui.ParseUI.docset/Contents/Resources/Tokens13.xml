@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PFLogInViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PFLogInViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The PFLogInViewControllerDelegate protocol defines methods a delegate of a PFLogInViewController should implement.
+All methods of this protocol are optional.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewController:shouldBeginLogInWithUsername:password:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate to determine whether the log in request should be submitted to the server.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logInController</Name>
+					<Abstract type="html">The login view controller that is requesting the data.</Abstract>
+				</Parameter><Parameter>
+					<Name>username</Name>
+					<Abstract type="html">the username the user tries to log in with.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">the password the user tries to log in with.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BOOL indicating whether the log in should proceed.</Abstract></ReturnValue>
+			<Anchor>//api/name/logInViewController:shouldBeginLogInWithUsername:password:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewController:didLogInUser:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a PFUser is logged in.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logInController</Name>
+					<Abstract type="html">The login view controller where login finished.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">PFUser object that is a result of the login.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInViewController:didLogInUser:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewController:didFailToLogInWithError:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the log in attempt fails.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(nullable NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logInController</Name>
+					<Abstract type="html">The login view controller where login failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">NSError object representing the error that occured.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInViewController:didFailToLogInWithError:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFLogInViewControllerDelegate/logInViewControllerDidCancelLogIn:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the log in screen is cancelled.</Abstract>
+			<DeclaredIn>PFLogInViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>logInController</Name>
+					<Abstract type="html">The login view controller where login was cancelled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInViewControllerDidCancelLogIn:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

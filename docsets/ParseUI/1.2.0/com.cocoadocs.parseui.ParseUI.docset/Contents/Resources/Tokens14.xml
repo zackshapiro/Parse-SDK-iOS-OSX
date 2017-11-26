@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PFSignUpViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PFSignUpViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The PFLogInViewControllerDelegate protocol defines methods a delegate of a PFSignUpViewController should implement.
+All methods of this protocol are optional.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSignUpViewControllerDelegate/signUpViewController:shouldBeginSignUp:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate to determine whether the sign up request should be submitted to the server.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)signUpViewController:(PFSignUpViewController *)signUpController shouldBeginSignUp:(NSDictionary&lt;NSString*,NSString*&gt; *)info</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>signUpController</Name>
+					<Abstract type="html">The signup view controller that is requesting the data.</Abstract>
+				</Parameter><Parameter>
+					<Name>info</Name>
+					<Abstract type="html">An NSDictionary instance which contains all sign up information that the user entered.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A BOOL indicating whether the sign up should proceed.</Abstract></ReturnValue>
+			<Anchor>//api/name/signUpViewController:shouldBeginSignUp:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSignUpViewControllerDelegate/signUpViewController:didSignUpUser:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when a PFUser is signed up.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>signUpController</Name>
+					<Abstract type="html">The signup view controller where signup finished.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">PFUser object that is a result of the sign up.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signUpViewController:didSignUpUser:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSignUpViewControllerDelegate/signUpViewController:didFailToSignUpWithError:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the sign up attempt fails.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)signUpViewController:(PFSignUpViewController *)signUpController didFailToSignUpWithError:(nullable NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>signUpController</Name>
+					<Abstract type="html">The signup view controller where signup failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">NSError object representing the error that occured.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signUpViewController:didFailToSignUpWithError:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PFSignUpViewControllerDelegate/signUpViewControllerDidCancelSignUp:</TokenIdentifier>
+			<Abstract type="html">Sent to the delegate when the sign up screen is cancelled.</Abstract>
+			<DeclaredIn>PFSignUpViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>signUpController</Name>
+					<Abstract type="html">The signup view controller where signup was cancelled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signUpViewControllerDidCancelSignUp:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

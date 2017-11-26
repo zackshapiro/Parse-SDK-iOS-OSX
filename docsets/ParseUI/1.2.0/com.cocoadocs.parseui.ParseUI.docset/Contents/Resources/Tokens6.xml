@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PFPurchaseTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PFPurchaseTableViewCell</TokenIdentifier>
+			<Abstract type="html">PFPurchaseTableViewCell is a subclass PFTableViewCell that is used to show
+products in a PFProductTableViewController.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPurchaseTableViewCell/setState:</TokenIdentifier>
+			<Abstract type="html">State of the cell.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PFPurchaseTableViewCellState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPurchaseTableViewCell/state</TokenIdentifier>
+			<Abstract type="html">State of the cell.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PFPurchaseTableViewCellState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFPurchaseTableViewCell/state</TokenIdentifier>
+			<Abstract type="html">State of the cell.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PFPurchaseTableViewCellState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPurchaseTableViewCell/setPriceLabel:</TokenIdentifier>
+			<Abstract type="html">Label where price of the product is displayed.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) UILabel *priceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/priceLabel</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPurchaseTableViewCell/priceLabel</TokenIdentifier>
+			<Abstract type="html">Label where price of the product is displayed.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) UILabel *priceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/priceLabel</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFPurchaseTableViewCell/priceLabel</TokenIdentifier>
+			<Abstract type="html">Label where price of the product is displayed.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) UILabel *priceLabel</Declaration>
+			
+			
+			<Anchor>//api/name/priceLabel</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPurchaseTableViewCell/setProgressView:</TokenIdentifier>
+			<Abstract type="html">Progress view that is shown, when the product is downloading.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) UIProgressView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPurchaseTableViewCell/progressView</TokenIdentifier>
+			<Abstract type="html">Progress view that is shown, when the product is downloading.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) UIProgressView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PFPurchaseTableViewCell/progressView</TokenIdentifier>
+			<Abstract type="html">Progress view that is shown, when the product is downloading.</Abstract>
+			<DeclaredIn>PFPurchaseTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, strong, readonly) UIProgressView *progressView</Declaration>
+			
+			
+			<Anchor>//api/name/progressView</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
