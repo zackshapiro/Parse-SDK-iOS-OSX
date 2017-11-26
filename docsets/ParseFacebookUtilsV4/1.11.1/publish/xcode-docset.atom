@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://cocoadocs.org/docsets/ParseFacebookUtilsV4/xcode-docset.atom/20171126161651</id>
+    <id>http://cocoadocs.org/docsets/ParseFacebookUtilsV4/xcode-docset.atom/20171126164854</id>
     <title type="text">ParseFacebookUtilsV4</title>
     <rights>Copyright © 2017 Parse. All rights reserved.</rights>
     <link rel="self" href="http://cocoadocs.org/docsets/ParseFacebookUtilsV4/xcode-docset.atom"></link>
     <docset:publisherName>Parse</docset:publisherName>
     <docset:publisherID>com.cocoadocs.parsefacebookutilsv4.documentation</docset:publisherID>
-    <updated>2017-11-26T16:16:51-05:00</updated>
+    <updated>2017-11-26T16:48:54-05:00</updated>
     <entry>
         <id>tag:cocoadocs.org,2017-11-26:com.cocoadocs.parsefacebookutilsv4.ParseFacebookUtilsV4/1.11.1</id>
         <title type="text">ParseFacebookUtilsV4 Documentation</title>
-        <updated>2017-11-26T16:16:51-05:00</updated>
+        <updated>2017-11-26T16:48:54-05:00</updated>
         <content type="text">ParseFacebookUtilsV4 Documentation (v1.11.1)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://cocoadocs.org/docsets/ParseFacebookUtilsV4/docset.xar" length="72104"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://cocoadocs.org/docsets/ParseFacebookUtilsV4/docset.xar" length="63878"></link>
         <docset:identifier>com.cocoadocs.parsefacebookutilsv4.ParseFacebookUtilsV4</docset:identifier>
         <docset:version>1.11.1</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>

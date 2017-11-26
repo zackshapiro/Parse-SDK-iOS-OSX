@@ -381,7 +381,7 @@ header#app_header {
     header#app_header a#logo svg .first-half {
       fill: #F2F2F2; }
     header#app_header a#logo svg .second-half {
-      fill: #66637A; }
+      fill: #B2B2B2; }
   header#app_header div#header_actions {
     background-color: #F2F2F2;
     position: absolute;
@@ -399,7 +399,7 @@ header#app_header {
       display: none;
       width: 320px;
       right: 0;
-      background-color: #66637A;
+      background-color: #B2B2B2;
       position: absolute;
       padding: 18px;
       top: 65px;
@@ -421,7 +421,7 @@ header#app_header {
             border: none; }
           header#app_header div#header_actions #dropdown ul li h3 {
             color: black;
-            background-color: #66637A;
+            background-color: #B2B2B2;
             font-size: 18px;
             text-transform: uppercase;
             display: inline-block;
@@ -441,7 +441,7 @@ header#app_header {
           header#app_header div#header_actions #dropdown ul li > p {
             padding-left: 12px; }
     header#app_header div#header_actions:hover {
-      background-color: #66637A; }
+      background-color: #B2B2B2; }
       header#app_header div#header_actions:hover #dropdown {
         display: block; }
       header#app_header div#header_actions:hover > svg path {
@@ -469,7 +469,7 @@ header#app_header {
     padding: 0;
     margin-bottom: 0; }
     header#app_header h1 em {
-      color: #66637A;
+      color: #B2B2B2;
       font-weight: normal;
       font-style: normal;
       margin-left: 12px; }
@@ -485,7 +485,7 @@ header#app_header {
     padding: 0;
     margin-bottom: 0;
     font-size: 26px;
-    color: #66637A; }
+    color: #B2B2B2; }
     header#app_header ul#subtitle span.arrow {
       vertical-align: middle;
       font-size: 18px; }
@@ -508,7 +508,7 @@ header#app_header {
         padding-bottom: 24px;
         line-height: 44px; }
       header#app_header ul#subtitle > li path#twitter-subtitle-bird {
-        fill: #66637A; }
+        fill: #B2B2B2; }
       header#app_header ul#subtitle > li .twitter-handle {
         vertical-align: text-top; }
       header#app_header ul#subtitle > li span.subtitle {
@@ -526,7 +526,7 @@ header#app_header {
       header#app_header ul#subtitle > li a {
         padding: 12px 24px;
         height: 20px;
-        color: #66637A;
+        color: #B2B2B2;
         display: block; }
       header#app_header ul#subtitle > li#travis a {
         padding: 12px 8px; }
@@ -766,7 +766,7 @@ article .deprecated {
     margin-bottom: 3px; }
 
 .task-item-suffix {
-  color: #66637A;
+  color: #B2B2B2;
   font-size: 12px;
   margin-left: 0.5em; }
 
@@ -812,7 +812,7 @@ div.section-method {
 
 .method-subsection.discussion-section h5 {
   text-transform: none;
-  color: #66637A; }
+  color: #B2B2B2; }
 
 .method-subsection {
   clear: both;
@@ -825,7 +825,7 @@ div.section-method {
     margin-top: 0;
     text-align: right;
     float: left;
-    color: #66637A;
+    color: #B2B2B2;
     line-height: 18px;
     text-transform: initial; }
   .method-subsection .params {

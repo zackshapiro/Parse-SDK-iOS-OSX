@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PF_Twitter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PF_Twitter</TokenIdentifier>
+			<Abstract type="html">The PF_Twitter class is a simple interface for interacting with the Twitter REST API,
+automating sign-in and OAuth signing of requests against the API.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/init</TokenIdentifier>
+			<Abstract type="html">Initializes an instance of PF_Twitter configured to access device Twitter accounts with Accounts.framework,
+and remote access to Twitter accounts - and, if no accounts are found locally - through a built-in webview.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/setConsumerKey:</TokenIdentifier>
+			<Abstract type="html">Consumer key of the application that is used to authorize with Twitter.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/consumerKey</TokenIdentifier>
+			<Abstract type="html">Consumer key of the application that is used to authorize with Twitter.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PF_Twitter/consumerKey</TokenIdentifier>
+			<Abstract type="html">Consumer key of the application that is used to authorize with Twitter.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/setConsumerSecret:</TokenIdentifier>
+			<Abstract type="html">Consumer secret of the application that is used to authorize with Twitter.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/consumerSecret</TokenIdentifier>
+			<Abstract type="html">Consumer secret of the application that is used to authorize with Twitter.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PF_Twitter/consumerSecret</TokenIdentifier>
+			<Abstract type="html">Consumer secret of the application that is used to authorize with Twitter.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/setAuthToken:</TokenIdentifier>
+			<Abstract type="html">Auth token for the current user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/authToken</TokenIdentifier>
+			<Abstract type="html">Auth token for the current user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PF_Twitter/authToken</TokenIdentifier>
+			<Abstract type="html">Auth token for the current user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/setAuthTokenSecret:</TokenIdentifier>
+			<Abstract type="html">Auth token secret for the current user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *authTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/authTokenSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/authTokenSecret</TokenIdentifier>
+			<Abstract type="html">Auth token secret for the current user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *authTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/authTokenSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PF_Twitter/authTokenSecret</TokenIdentifier>
+			<Abstract type="html">Auth token secret for the current user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *authTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/authTokenSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/setUserId:</TokenIdentifier>
+			<Abstract type="html">Twitter user id of the currently signed in user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/userId</TokenIdentifier>
+			<Abstract type="html">Twitter user id of the currently signed in user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PF_Twitter/userId</TokenIdentifier>
+			<Abstract type="html">Twitter user id of the currently signed in user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/setScreenName:</TokenIdentifier>
+			<Abstract type="html">Twitter screen name of the currently signed in user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/screenName</TokenIdentifier>
+			<Abstract type="html">Twitter screen name of the currently signed in user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PF_Twitter/screenName</TokenIdentifier>
+			<Abstract type="html">Twitter screen name of the currently signed in user.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, copy) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/authorizeInBackground</TokenIdentifier>
+			<Abstract type="html">Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties
+if the Twitter user grants permission to the application.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>- (BFTask *)authorizeInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/authorizeInBackground</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/deauthorizeInBackground</TokenIdentifier>
+			<Abstract type="html">Invalidates an OAuth token for the current user, if the Twitter user has granted permission to the
+current application.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>- (BFTask *)deauthorizeInBackground</Declaration>
+			
+			<ReturnValue><Abstract type="html">The task, that encapsulates the work being done.</Abstract></ReturnValue>
+			<Anchor>//api/name/deauthorizeInBackground</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/authorizeWithSuccess:failure:cancel:</TokenIdentifier>
+			<Abstract type="html">Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties
+if the Twitter user grants permission to the application.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>- (void)authorizeWithSuccess:(nullable void ( ^ ) ( void ))success failure:(nullable void ( ^ ) ( NSError *__nullable error ))failure cancel:(nullable void ( ^ ) ( void ))cancel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">Invoked upon successful authorization.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">Invoked upon an error occurring in the authorization process.</Abstract>
+				</Parameter><Parameter>
+					<Name>cancel</Name>
+					<Abstract type="html">Invoked when the user cancels authorization.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authorizeWithSuccess:failure:cancel:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PF_Twitter/signRequest:</TokenIdentifier>
+			<Abstract type="html">Adds a 3-legged OAuth signature to an NSMutableURLRequest based
+upon the properties set for the Twitter object.</Abstract>
+			<DeclaredIn>PF_Twitter.h</DeclaredIn>
+			
+			<Declaration>- (void)signRequest:(nullable NSMutableURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">Request to sign.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signRequest:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

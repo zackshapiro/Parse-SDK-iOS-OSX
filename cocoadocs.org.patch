@@ -28,7 +28,7 @@ index 0b6206d..c8deb3a 100644
  
  
 diff --git a/views/_vars.scss b/views/_vars.scss
-index 7702c59..3407826 100644
+index 7702c59..5eef461 100644
 --- a/views/_vars.scss
 +++ b/views/_vars.scss
 @@ -1,10 +1,10 @@
@@ -43,7 +43,7 @@ index 7702c59..3407826 100644
 +$code: "webfont_input", "Monaco", "Menlo", "Consolas", "Courier New", monospace; 
 +$highlight-color: #169CEE; 
 +$highlight-dark-color: #66637A; 
-+$darker-color: #66637A; 
++$darker-color: #B2B2B2; 
  $darker-dark-color: #A8A8A8; 
  $background-color: #F2F2F2; 
 -$alt-link-color: #B7233F; 
@@ -94,7 +94,7 @@ index 38ca521..577a575 100644
  
      <link rel="stylesheet" type="text/css" href="appledoc_stylesheet.css" media="all" />
 diff --git a/views/appledoc_template/_header.html b/views/appledoc_template/_header.html
-index 016dcdb..b44ac58 100644
+index 016dcdb..ff8a1e5 100644
 --- a/views/appledoc_template/_header.html
 +++ b/views/appledoc_template/_header.html
 @@ -2,12 +2,47 @@
@@ -151,8 +151,70 @@ index 016dcdb..b44ac58 100644
      </a>
  
      <div id="header_actions" width="65" height="65" alt="Header Action Button">
+@@ -15,42 +50,21 @@
+       <div id="dropdown">
+         <ul>
+ 
+-          <li class="icon">
+-            <hr/>
+-            <h3>Add to Dash</h3>
+-            <div claass ="clearfix"></div>
+-
+-            <div class="thumbnail">
+-              <%= render_erb( Dir.pwd + '/views/appledoc_template/svg/nav-dash-icon.svg') %>
+-            </div>
+-            <div class="details">
+-              <p>Add <a href="dash-feed://http%3A%2F%2Fcocoadocs.org%2Fdocsets%2F<%= @spec.name %>%2F<%= @spec.name %>.xml">Docset to Dash</a></p>
+-              <p><a href="http://kapeli.com/dash">Download App</a></p>
+-            </div>
+-            <div claass ="clearfix"></div>
+-
+-          </li>
+-
+-          <li class="icon">
++          <li>
+             <hr/>
+-            <h3>Add to Xcode</h3>
+-            <div claass ="clearfix"></div>
+-
+-            <div class="thumbnail">
+-              <%= render_erb( Dir.pwd + '/views/appledoc_template/svg/nav-xcode-icon.svg') %>
+-            </div>
+-            <div class="details">
+-              <p>Add Docset with <a href="docs-for-xcode://http%3A%2F%2Fcocoadocs.org%2Fdocsets%2F<%= @spec.name %>%2Fxcode-docset.atom">Docs For Xcode</a></p>
+-              <p><a href="http://documancer.com/xcode">Download App</a></p>
+-          </div>
+-          <div claass ="clearfix"></div>
+-
++            <h3>Other API Docs</h3>
++            <div class ="clearfix"></div>
++            <p><a href="http://parseplatform.org/Parse-SDK-iOS-OSX">Parse SDK</a></p>
++            <p><a href="http://parseplatform.org/Parse-SDK-iOS-OSX/docsets/ParseLiveQuery">Parse Live Query SDK</a></p>
++            <p><a href="http://parseplatform.org/Parse-SDK-iOS-OSX/docsets/ParseUI">Parse UI</a></p>
++            <p><a href="http://parseplatform.org/Parse-SDK-iOS-OSX/docsets/ParseFacebookUtilsV4">Parse Facebook Utils V4</a></p>
++            <p><a href="http://parseplatform.org/Parse-SDK-iOS-OSX/docsets/ParseTwitterUtils">Parse Twitter Utils</a></p>
++            <div class ="clearfix"></div>
+           </li>
+-
+           <li>
+             <hr/>
+             <h3>CocoaPods</h3>
+-            <div claass ="clearfix"></div>
++            <div class ="clearfix"></div>
+ 
+             <% if @spec.or_is_github? %>
+               <p><a href="<%= @spec.or_github_url %>" id="open_in_github" data-github-username="<%= @spec.or_user %>" data-github-repo="<%= @spec.or_repo %>" data-github-ref="<%= @spec.or_git_ref %>">Open Repo in Github</a><p>
+@@ -63,7 +77,7 @@
+               <p><a href="<%= @spec.homepage %>">Open Pod Homepage</a><p>
+             <% end %>
+ 
+-            <div claass ="clearfix"></div>
++            <div class ="clearfix"></div>
+           </li>
+         </ul>
+       </div>
 diff --git a/views/cocoadocs.defaults.yml b/views/cocoadocs.defaults.yml
-index 21ced75..c2c0620 100644
+index 21ced75..4a2d0da 100644
 --- a/views/cocoadocs.defaults.yml
 +++ b/views/cocoadocs.defaults.yml
 @@ -1,14 +1,14 @@
@@ -170,7 +232,7 @@ index 21ced75..c2c0620 100644
 +highlight-dark-color: '#66637A'
  
 -darker-color: '#C6B7B2'
-+darker-color: '#66637A'
++darker-color: '#B2B2B2'
  darker-dark-color: '#A8A8A8'
  
  background-color: '#F2F2F2'

@@ -682,51 +682,6 @@ ever holding the entire PFFile contents in memory at once.</Abstract>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFFile/saveInBackgroundWithTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Saves the file asynchronously and invokes the given selector on a target. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFFile.-saveInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFFile+Deprecated.h</DeclaredIn>
-			
-			<Declaration>- (void)saveInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/saveInBackgroundWithTarget:selector:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFFile/getDataInBackgroundWithTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously gets the data from cache if available or fetches its contents from the network. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFFile.-getDataInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFFile+Deprecated.h</DeclaredIn>
-			
-			<Declaration>- (void)getDataInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSData )result error:(NSError )error.
-error will be nil on success and set if there was an error.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/getDataInBackgroundWithTarget:selector:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PFFile/save</TokenIdentifier>
 			<Abstract type="html">Saves the file synchronously.</Abstract>
 			<DeclaredIn>PFFile+Synchronous.h</DeclaredIn>
@@ -812,6 +767,51 @@ Sets an error if it occurs.</Abstract>
 			<ReturnValue><Abstract type="html">A stream containing the data. Returns nil if there was an error in
 fetching.</Abstract></ReturnValue>
 			<Anchor>//api/name/getDataStream:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFFile/saveInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Saves the file asynchronously and invokes the given selector on a target. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFFile.-saveInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFFile+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)saveInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFFile/getDataInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously gets the data from cache if available or fetches its contents from the network. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFFile.-getDataInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFFile+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)getDataInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSData )result error:(NSError )error.
+error will be nil on success and set if there was an error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getDataInBackgroundWithTarget:selector:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
