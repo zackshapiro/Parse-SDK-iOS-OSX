@@ -1,0 +1,152 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Client.swift",
+      "line": 26,
+      "symbol": "Client.userDisconnected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Client.swift",
+      "line": 26,
+      "symbol": "Client.userDisconnected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Client.swift",
+      "line": 26,
+      "symbol": "Client.userDisconnected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 119,
+      "symbol": "Client.websocketDidReceiveData(socket:data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 119,
+      "symbol": "Client.websocketDidReceiveData(socket:data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 119,
+      "symbol": "Client.websocketDidReceiveData(socket:data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 123,
+      "symbol": "Client.websocketDidReceiveMessage(socket:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 123,
+      "symbol": "Client.websocketDidReceiveMessage(socket:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 123,
+      "symbol": "Client.websocketDidReceiveMessage(socket:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 131,
+      "symbol": "Client.websocketDidConnect(socket:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 131,
+      "symbol": "Client.websocketDidConnect(socket:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 131,
+      "symbol": "Client.websocketDidConnect(socket:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 136,
+      "symbol": "Client.websocketDidDisconnect(socket:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 136,
+      "symbol": "Client.websocketDidDisconnect(socket:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 136,
+      "symbol": "Client.websocketDidDisconnect(socket:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 145,
+      "symbol": "Client.webSocket(_:didCloseWithCode:reason:wasClean:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 145,
+      "symbol": "Client.webSocket(_:didCloseWithCode:reason:wasClean:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/ClientPrivate.swift",
+      "line": 145,
+      "symbol": "Client.webSocket(_:didCloseWithCode:reason:wasClean:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/Errors.swift",
+      "line": 13,
+      "symbol": "LiveQueryErrors",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/Errors.swift",
+      "line": 13,
+      "symbol": "LiveQueryErrors",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery/Sources/ParseLiveQuery/Internal/Errors.swift",
+      "line": 13,
+      "symbol": "LiveQueryErrors",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/florent/src/Parse/Parse-SDK-iOS-OSX/cocoadocs.org/activity/download/ParseLiveQuery/2.2.1/ParseLiveQuery"
+}
