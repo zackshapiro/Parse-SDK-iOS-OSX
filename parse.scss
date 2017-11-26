@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'alrightRegular';
+  src: url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-regular-webfont.eot');
+  src: url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-regular-webfont.woff') format('woff'),
+       url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-regular-webfont.ttf') format('truetype'),
+       url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-regular-webfont.svg#alrightsublpwebfontuseonly-Rg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'din';
+  src: url('http://docs.parseplatform.org/assets/fonts/DIN17SBOP-Regular.eot');
+  src: url('http://docs.parseplatform.org/assets/fonts/DIN17SBOP-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://docs.parseplatform.org/assets/fonts/DIN17SBOP-Regular.woff') format('woff'),
+       url('http://docs.parseplatform.org/assets/fonts/DIN17SBOP-Regular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alrightBold';
+  src: url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-bold-webfont.eot');
+  src: url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-bold-webfont.woff') format('woff'),
+       url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-bold-webfont.ttf') format('truetype'),
+       url('http://docs.parseplatform.org/assets/fonts/ttfah-alrightsublpwebfontuseonly-bold-webfont.svg#alrightsublpwebfontuseonly-Bd') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face { font-family: 'webfont_din-regular'; src: url("http://docs.parseplatform.org/assets/fonts/din17sbop-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'webfont_input'; src: url("http://docs.parseplatform.org/assets/fonts/d94de4bd-16a6-4c19-81bd-ed8f4e1624c6-3.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'webfont_alright'; src: url("http://docs.parseplatform.org/assets/fonts/ttfah-AlrightSubLPWebfontUseOnly-Light.woff") format("woff"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'webfont_alright'; src: url("http://docs.parseplatform.org/assets/fonts/ttfah-AlrightSubLPWebfontUseOnly-Regular.woff") format("woff"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'webfont_alright'; src: url("http://docs.parseplatform.org/assets/fonts/ttfah-AlrightSubLPWebfontUseOnly-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'webfont_alright'; src: url("http://docs.parseplatform.org/assets/fonts/ttfah-AlrightSubLPWebfontUseOnly-Bold.woff") format("woff"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'webfont_alright'; src: url("http://docs.parseplatform.org/assets/fonts/ttfah-AlrightSubLPWebfontUseOnly-Bold.woff") format("woff"); font-weight: 800; font-style: normal; }
+
+$header-logo-padding-mobile: 10px;
+$header-logo-width-mobile: 75px;
+$header-logo-height-mobile: 25px;
+
+$header-logo-padding-desktop: 0;
+$header-logo-width-desktop: 170px;
+$header-logo-height-desktop: 49px;
+
+$header-logo-type-width-desktop: 102px;
+$header-logo-type-height-desktop: 34px;
+
+$header-logo-glyph-width: 49px;
+$header-logo-glyph-height: $header-logo-glyph-width; // its a square
+
+// blues
+$color-parse-blue: #169CEE !default;
+$color-denim: #117DBF !default;
+$color-picton-blue: #5DB6F0 !default;
+//$color-curious-blue: #1595E6 !default;
+$color-selago: #f8fcfe !default;
+
+$color-core-blue: #1494E3 !default;
+$color-push-blue: #148DD9 !default;
+$color-analytics-blue: #117EC2 !default;
+// purples
+$color-martinique: #3B2C48 !default;
+$color-comet: #555572 !default;
+$color-dolphin: #66637A !default;
+// grays
+$color-gun-powder: #434359 !default;
+$color-regent-gray: #7C8C9C !default;
+$color-bright-gray: #434359 !default;
+$color-shuttle-gray: #5A6b77 !default;
+$color-ebony: #070D12 !default;
+$color-ebony-lighter: #0E1B24 !default;
+$color-vista-white: #FDFAFB !default;
+$color-off-white: #FDFAFB !default;
+$color-charade: #2C2C3B !default;
+$color-mischka: #E0E0EA !default;
+$color-thunder: #110D11 !default;
+$color-pale-sky: #6D7A82 !default;
+// greens
+$color-carib-green: #00DB7C !default;
+$color-foam: #F2FEF9 !default;
+// reds
+$color-rad-red: #FF395E !default;
+
+// blog colors
+// $color-shuttle-gray: #5A6B77;
+// $color-parse-blue: #5298FC;
+$color-river-bed: #485864;
+$color-gallery-gray: #EDEDED;
+$color-heather-gray: #BFCCD5;
+$color-tundora-gray: #414141;
+$color-mine-shaft-gray: #212121;
+$color-cerulean-blue: #336BBB;
+$color-heliotrope-purple: #a952fc;
+$color-aquamarine-blue: #65D7DF;
+$color-pastel-green: #65DF7E;
+$color-carnation-red: #FC5252;
+$color-st-tropaz-blue: #295BA2;
+
+a#logo{
+  // display:block;
+  // position:absolute;
+  // left: 50%; top:50%;
+  // padding: $header-logo-padding-mobile;
+  // transform: translate(-50%, -50%);
+  // margin:0;
+
+  svg{
+      display: block;
+      height: 40px;
+      width: 90px;
+
+      fill: $color-parse-blue;
+    .line{
+      fill:none;
+      stroke-width:10;
+      stroke-miterlimit:10;
+      &.one{
+        stroke: $color-rad-red;
+        stroke-dasharray: 89px;
+        stroke-dashoffset: 89px;
+      }
+      &.two{
+        stroke: $color-carib-green;
+        stroke-dasharray:  89px;
+        stroke-dashoffset: 89px;
+      }
+      &.three{
+        stroke: $color-parse-blue;
+          stroke-dasharray:  200px, 89px;
+          stroke-dashoffset: 200px;
+      }
+    }
+  }
+&:hover{
+  svg{
+    .line{
+      
+      transition: all cubic-bezier(0.645, 0.045, 0.355, 1);
+      &.one{
+        transition-delay: 0s;
+        transition-duration: 2s;
+        stroke-dashoffset: 269px;
+      }
+      &.two{
+        transition-delay: .1s;
+        transition-duration: 2.1s;
+        stroke-dashoffset:  269px;
+      }
+      &.three{
+        transition-delay: .25s;
+        transition-duration: 2.5s;
+        stroke-dashoffset:  490px;
+      }
+    }
+  }
+}
+}
+
+.hidden { display:none !important; }

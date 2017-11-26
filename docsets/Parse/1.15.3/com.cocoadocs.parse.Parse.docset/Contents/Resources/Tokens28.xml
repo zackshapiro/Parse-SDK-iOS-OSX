@@ -612,106 +612,6 @@ It should have the following argument signature: ^(BOOL succeeded, NSError *erro
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUpInBackgroundWithTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Signs up the user asynchronously. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.-signUpInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
-			
-			<Declaration>- (void)signUpInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/signUpInBackgroundWithTarget:selector:</Anchor>
-            <NodeRef refid="28"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsernameInBackground:password:target:selector:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronous request to login a user with specified credentials. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+logInWithUsernameInBackground:password:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)logInWithUsernameInBackground:(NSString *)username password:(NSString *)password target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>username</Name>
-					<Abstract type="html">The username of the user.</Abstract>
-				</Parameter><Parameter>
-					<Name>password</Name>
-					<Abstract type="html">The password of the user.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
-It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/logInWithUsernameInBackground:password:target:selector:</Anchor>
-            <NodeRef refid="28"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFUser/becomeInBackground:target:selector:</TokenIdentifier>
-			<Abstract type="html">Makes an asynchronous request to become a user with the given session token. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+becomeInBackground:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)becomeInBackground:(NSString *)sessionToken target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>sessionToken</Name>
-					<Abstract type="html">The session token for the user.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
-It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/becomeInBackground:target:selector:</Anchor>
-            <NodeRef refid="28"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmailInBackground:target:selector:</TokenIdentifier>
-			<Abstract type="html">Send a password reset request asynchronously for a specified email and sets an error object. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+requestPasswordResetForEmailInBackground:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)requestPasswordResetForEmailInBackground:(NSString *)email target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">Target object for the selector.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector that will be called when the asynchronous request is complete.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/requestPasswordResetForEmailInBackground:target:selector:</Anchor>
-            <NodeRef refid="28"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUp</TokenIdentifier>
 			<Abstract type="html">Signs up the user synchronously.</Abstract>
 			<DeclaredIn>PFUser+Synchronous.h</DeclaredIn>
@@ -870,6 +770,106 @@ If becoming a user fails due to incorrect token, it returns nil.</Abstract></Ret
 			</Parameters>
 			<ReturnValue><Abstract type="html">Returns YES if the reset email request is successful. NO - if no account was found for the email address.</Abstract></ReturnValue>
 			<Anchor>//api/name/requestPasswordResetForEmail:error:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFUser/signUpInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Signs up the user asynchronously. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.-signUpInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)signUpInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/signUpInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/logInWithUsernameInBackground:password:target:selector:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to login a user with specified credentials. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+logInWithUsernameInBackground:password:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)logInWithUsernameInBackground:(NSString *)username password:(NSString *)password target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
+It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithUsernameInBackground:password:target:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/becomeInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Makes an asynchronous request to become a user with the given session token. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+becomeInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)becomeInBackground:(NSString *)sessionToken target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sessionToken</Name>
+					<Abstract type="html">The session token for the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchrounous request is complete.
+It should have the following signature: (void)callbackWithUser:(PFUser )user error:(NSError )error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/becomeInBackground:target:selector:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFUser/requestPasswordResetForEmailInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Send a password reset request asynchronously for a specified email and sets an error object. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFUser.+requestPasswordResetForEmailInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFUser+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)requestPasswordResetForEmailInBackground:(NSString *)email target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>email</Name>
+					<Abstract type="html">Email of the account to send a reset password request.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target object for the selector.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector that will be called when the asynchronous request is complete.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestPasswordResetForEmailInBackground:target:selector:</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		

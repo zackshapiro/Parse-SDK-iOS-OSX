@@ -1,7 +1,7 @@
 mkdir -p docsets
 pushd cocoadocs.org
-# ./cocoadocs.rb preview ParseUI
-# cp -R activity/docsets/ParseUI ../docsets/
+./cocoadocs.rb preview ParseUI
+cp -R activity/docsets/ParseUI ../docsets/
 
 ./cocoadocs.rb preview Parse
 cp -R activity/docsets/Parse ../docsets/

@@ -590,164 +590,6 @@ It should have the following argument signature: ^(BOOL succeeded, NSError *erro
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToChannelInBackground:withMessage:target:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously send a push message to a channel. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+sendPushMessageToChannelInBackground:withMessage:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)sendPushMessageToChannelInBackground:(NSString *)channel withMessage:(NSString *)message target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>channel</Name>
-					<Abstract type="html">The channel to send to. The channel name must start with
-a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
-				</Parameter><Parameter>
-					<Name>message</Name>
-					<Abstract type="html">The message to send.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/sendPushMessageToChannelInBackground:withMessage:target:selector:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPushInBackgroundWithTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously send this push message and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.-sendPushInBackgroundWithTarget:selector: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
-			
-			<Declaration>- (void)sendPushInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/sendPushInBackgroundWithTarget:selector:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToChannelInBackground:withData:target:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously send a push message with arbitrary data to a channel. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+sendPushDataToChannelInBackground:withData:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)sendPushDataToChannelInBackground:(NSString *)channel withData:(NSDictionary *)data target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>channel</Name>
-					<Abstract type="html">The channel to send to. The channel name must start with
-a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
-				</Parameter><Parameter>
-					<Name>data</Name>
-					<Abstract type="html">The data to send.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/sendPushDataToChannelInBackground:withData:target:selector:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFPush/getSubscribedChannelsInBackgroundWithTarget:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously get all the channels that this device is subscribed to. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+getSubscribedChannelsInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)getSubscribedChannelsInBackgroundWithTarget:(id)target selector:(SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSSet )result error:(NSError )error.
-error will be nil on success and set if there was an error.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/getSubscribedChannelsInBackgroundWithTarget:selector:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFPush/subscribeToChannelInBackground:target:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously subscribes the device to a channel of push notifications and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+subscribeToChannelInBackground:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)subscribeToChannelInBackground:(NSString *)channel target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>channel</Name>
-					<Abstract type="html">The channel to subscribe to. The channel name must start with
-a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/subscribeToChannelInBackground:target:selector:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PFPush/unsubscribeFromChannelInBackground:target:selector:</TokenIdentifier>
-			<Abstract type="html">Asynchronously unsubscribes the device from a channel of push notifications and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+unsubscribeFromChannelInBackground:block: instead.&lt;/span&gt;)</Abstract>
-			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
-			
-			<Declaration>+ (void)unsubscribeFromChannelInBackground:(NSString *)channel target:(nullable id)target selector:(nullable SEL)selector</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>channel</Name>
-					<Abstract type="html">The channel to unsubscribe from.</Abstract>
-				</Parameter><Parameter>
-					<Name>target</Name>
-					<Abstract type="html">The object to call selector on.</Abstract>
-				</Parameter><Parameter>
-					<Name>selector</Name>
-					<Abstract type="html">The selector to call.
-It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
-error will be nil on success and set if there was an error.
-[result boolValue] will tell you whether the call succeeded or not.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/unsubscribeFromChannelInBackground:target:selector:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPush:</TokenIdentifier>
 			<Abstract type="html">Synchronously send this push message.</Abstract>
 			<DeclaredIn>PFPush+Synchronous.h</DeclaredIn>
@@ -914,6 +756,164 @@ a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">Returns whether the unsubscribe succeeded.</Abstract></ReturnValue>
 			<Anchor>//api/name/unsubscribeFromChannel:error:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushMessageToChannelInBackground:withMessage:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message to a channel. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+sendPushMessageToChannelInBackground:withMessage:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushMessageToChannelInBackground:(NSString *)channel withMessage:(NSString *)message target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushMessageToChannelInBackground:withMessage:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PFPush/sendPushInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send this push message and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.-sendPushInBackgroundWithTarget:selector: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>- (void)sendPushInBackgroundWithTarget:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/sendPushDataToChannelInBackground:withData:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously send a push message with arbitrary data to a channel. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+sendPushDataToChannelInBackground:withData:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)sendPushDataToChannelInBackground:(NSString *)channel withData:(NSDictionary *)data target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendPushDataToChannelInBackground:withData:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/getSubscribedChannelsInBackgroundWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously get all the channels that this device is subscribed to. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+getSubscribedChannelsInBackgroundWithBlock: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)getSubscribedChannelsInBackgroundWithTarget:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSSet )result error:(NSError )error.
+error will be nil on success and set if there was an error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getSubscribedChannelsInBackgroundWithTarget:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/subscribeToChannelInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously subscribes the device to a channel of push notifications and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+subscribeToChannelInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)subscribeToChannelInBackground:(NSString *)channel target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to subscribe to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subscribeToChannelInBackground:target:selector:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PFPush/unsubscribeFromChannelInBackground:target:selector:</TokenIdentifier>
+			<Abstract type="html">Asynchronously unsubscribes the device from a channel of push notifications and calls the given callback. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Please use PFPush.+unsubscribeFromChannelInBackground:block: instead.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>PFPush+Deprecated.h</DeclaredIn>
+			
+			<Declaration>+ (void)unsubscribeFromChannelInBackground:(NSString *)channel target:(nullable id)target selector:(nullable SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>channel</Name>
+					<Abstract type="html">The channel to unsubscribe from.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to call selector on.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">The selector to call.
+It should have the following signature: (void)callbackWithResult:(NSNumber )result error:(NSError )error.
+error will be nil on success and set if there was an error.
+[result boolValue] will tell you whether the call succeeded or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unsubscribeFromChannelInBackground:target:selector:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
